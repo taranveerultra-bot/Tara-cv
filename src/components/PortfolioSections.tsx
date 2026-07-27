@@ -198,7 +198,7 @@ export const AboutSection = () => (
                     <p className="mt-8 max-w-3xl text-xl leading-relaxed text-secondary">
                         New Zealand has been home for more than a decade. I studied in Christchurch and have spent most
                         of my time here living in Auckland and Christchurch, with time also spent in Wellington and
-                        Taranaki. Auckland is now my main base and commercial focus. The scale of its market, its
+                        Tauranga. Auckland is now my main base and commercial focus. The scale of its market, its
                         competition and the variety of businesses operating here create the kind of growth problems I
                         enjoy working on.
                     </p>
