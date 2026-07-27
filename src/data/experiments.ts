@@ -2,24 +2,17 @@ import { IExperiment } from "@/types";
 
 export const experiments: IExperiment[] = [
     {
-        title: "AI lead qualification",
+        title: "Tui Digital",
         description:
-            "Exploring a lightweight agent that summarises enquiries, identifies urgency and prepares a useful first response.",
+            "My personal digital marketing studio where I experiment with SEO, modern web development, AI workflows and content marketing. It represents how I approach building scalable online businesses.",
         status: "Building",
-        icon: "automation",
-    },
-    {
-        title: "Local visibility monitor",
-        description:
-            "A reporting concept that turns rankings, reviews and profile activity into a simple weekly action list.",
-        status: "Exploring",
-        icon: "local",
-    },
-    {
-        title: "Marketing operations toolkit",
-        description:
-            "Reusable components and workflows for launching high-quality landing pages and measurement plans faster.",
-        status: "Live",
         icon: "growth",
+    },
+    {
+        title: "The Matchmaking Bureau",
+        description:
+            "An international platform currently under development for South Asian communities, with a focus on thoughtful user experience and long-term scalability.",
+        status: "Building",
+        icon: "code",
     },
 ];

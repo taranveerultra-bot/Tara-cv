@@ -9,12 +9,13 @@ const CTA = () => (
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)] bg-[size:5rem_4rem]" />
             <div className="absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_110%,#304fff55,transparent)]" />
             <div className="relative mx-auto max-w-3xl">
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Let&apos;s build momentum</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Let&apos;s talk growth</p>
                 <h2 className="mt-4 text-balance text-3xl font-semibold leading-tight sm:text-5xl">
-                    Have a digital problem worth solving?
+                    What would meaningful growth look like for your business?
                 </h2>
                 <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-white/65">
-                    Tell me what you are trying to improve. I&apos;ll bring a clear point of view and a practical next step.
+                    Tell me about your goals, current challenges and where you want to go. I&apos;ll bring an honest
+                    perspective and a practical next step.
                 </p>
                 <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
                     <Link

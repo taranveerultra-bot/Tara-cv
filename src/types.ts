@@ -17,6 +17,8 @@ export interface IProject {
     category: string;
     summary: string;
     outcome: string;
+    responsibilities: string[];
+    results: string[];
     tags: string[];
     accent: string;
     href?: string;
@@ -39,13 +41,6 @@ export interface IExperiment {
 export interface ISkillGroup {
     title: string;
     skills: string[];
-}
-
-export interface ITestimonial {
-    name: string;
-    role: string;
-    message: string;
-    initials: string;
 }
 
 export interface ISocials {

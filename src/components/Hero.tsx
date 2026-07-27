@@ -24,7 +24,7 @@ const Hero = () => (
             <div className="mx-auto max-w-4xl text-center">
                 <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/80 px-4 py-2 text-sm font-medium shadow-sm backdrop-blur">
                     <span className="h-2 w-2 rounded-full bg-emerald-500" />
-                    Available for select New Zealand projects
+                    Available for marketing roles and selected projects
                 </div>
 
                 <h1 className="text-balance text-4xl font-bold leading-tight text-foreground sm:text-5xl md:text-7xl">
@@ -36,8 +36,8 @@ const Hero = () => (
                     .
                 </h1>
                 <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-foreground-accent md:text-xl">
-                    SEO, AI, high-performance websites, automation and digital marketing—
-                    brought together by one independent consultant who can think and build.
+                    I combine search strategy, useful content, modern websites and practical automation to build
+                    trust, visibility and sustainable growth.
                 </p>
 
                 <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -52,7 +52,7 @@ const Hero = () => (
                         href="#contact"
                         className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-black/10 bg-white px-7 py-3.5 font-semibold transition hover:-translate-y-0.5 hover:border-black/25 sm:w-auto"
                     >
-                        Talk about your project
+                        Discuss your business goals
                         <HiArrowUpRight aria-hidden="true" />
                     </Link>
                 </div>
@@ -74,7 +74,7 @@ const Hero = () => (
                         <div>
                             <p className="text-sm font-medium text-primary">One connected growth system</p>
                             <h2 className="mt-3 max-w-xl text-2xl font-semibold leading-tight sm:text-3xl">
-                                Strategy, execution and measurement without the agency layers.
+                                Long-term growth built through trust, visibility and useful digital experiences.
                             </h2>
                             <div className="mt-8 grid grid-cols-2 gap-3">
                                 {capabilities.map(({ label, icon: Icon }) => (
@@ -93,10 +93,10 @@ const Hero = () => (
                             <p className="text-xs uppercase tracking-[0.2em] text-white/45">Working style</p>
                             <ul className="mt-5 space-y-4">
                                 {[
-                                    "Commercial thinking first",
-                                    "Clear weekly priorities",
+                                    "Business outcomes first",
+                                    "Clear, practical priorities",
                                     "Hands-on implementation",
-                                    "Measurement built in",
+                                    "Long-term thinking",
                                 ].map((item) => (
                                     <li key={item} className="flex items-center gap-3 text-sm text-white/80">
                                         <HiCheckCircle className="h-5 w-5 text-emerald-400" aria-hidden="true" />

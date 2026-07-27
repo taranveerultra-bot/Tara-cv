@@ -7,7 +7,6 @@ import {
     ServicesSection,
     SkillsSection,
 } from "@/components/PortfolioSections";
-import Testimonials from "@/components/Testimonials";
 
 const HomePage = () => (
     <>
@@ -17,7 +16,6 @@ const HomePage = () => (
         <ExperimentsSection />
         <AboutSection />
         <SkillsSection />
-        <Testimonials />
         <CTA />
     </>
 );

@@ -47,10 +47,10 @@ export const ProjectsSection = () => (
         <Section
             id="projects"
             eyebrow="Selected work"
-            title="Digital work built around real business outcomes."
-            description="A selection of the systems, websites and growth problems I like solving. Real case-study details will be added as client approvals are confirmed."
+            title="Real projects shaped by long-term thinking."
+            description="SEO, content, websites and digital platforms built to solve practical business and customer problems."
         >
-            <div className="grid gap-6 lg:grid-cols-3">
+            <div className="grid gap-6 lg:grid-cols-2">
                 {projects.map((project) => (
                     <article
                         key={project.title}
@@ -62,6 +62,30 @@ export const ProjectsSection = () => (
                             <h3 className="mt-2 text-2xl font-semibold">{project.title}</h3>
                             <p className="mt-3 text-base leading-relaxed text-foreground-accent">{project.summary}</p>
                             <p className="mt-4 border-l-2 border-primary pl-3 text-sm font-medium">{project.outcome}</p>
+                            <div className="mt-6 grid gap-5 sm:grid-cols-2">
+                                <div>
+                                    <h4 className="text-sm font-semibold">What I worked on</h4>
+                                    <ul className="mt-3 space-y-2">
+                                        {project.responsibilities.map((item) => (
+                                            <li key={item} className="flex gap-2 text-sm text-foreground-accent">
+                                                <HiCheck className="mt-0.5 h-4 w-4 shrink-0 text-secondary" aria-hidden="true" />
+                                                {item}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 className="text-sm font-semibold">Outcomes</h4>
+                                    <ul className="mt-3 space-y-2">
+                                        {project.results.map((item) => (
+                                            <li key={item} className="flex gap-2 text-sm text-foreground-accent">
+                                                <HiCheck className="mt-0.5 h-4 w-4 shrink-0 text-secondary" aria-hidden="true" />
+                                                {item}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
                             <div className="mt-5 flex flex-wrap gap-2">
                                 {project.tags.map((tag) => (
                                     <span key={tag} className="rounded-full bg-hero-background px-3 py-1 text-xs font-medium">
@@ -119,11 +143,11 @@ export const ExperimentsSection = () => (
     <Container>
         <Section
             id="experiments"
-            eyebrow="Experiments"
-            title="Always testing what could make the work better."
-            description="Small prototypes and practical ideas at the intersection of marketing, AI and product development."
+            eyebrow="Experiments & ventures"
+            title="Building, testing and learning through my own platforms."
+            description="Ongoing ventures where I explore scalable digital businesses, thoughtful user experiences and practical marketing systems."
         >
-            <div className="grid gap-5 md:grid-cols-3">
+            <div className="grid gap-5 md:grid-cols-2">
                 {experiments.map((experiment) => (
                     <article key={experiment.title} className="rounded-3xl border border-black/10 p-6">
                         <div className="flex items-center justify-between">
@@ -148,18 +172,19 @@ export const AboutSection = () => (
                 <div>
                     <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">About Taran</p>
                     <h2 className="mt-4 text-3xl font-bold leading-tight sm:text-5xl">
-                        A marketer who can build. A developer who understands growth.
+                        I enjoy solving business problems with technology.
                     </h2>
                 </div>
                 <div>
                     <p className="text-xl leading-relaxed text-white/75">
-                        I work across strategy, search, design, development and automation to help New Zealand
-                        businesses build a stronger digital presence—and turn it into measurable opportunity.
+                        I combine marketing and technical execution to help businesses become easier to find, easier
+                        to trust and easier to engage with.
                     </p>
                     <p className="mt-5 leading-relaxed text-white/55">
-                        My best work happens when a problem needs both commercial judgment and hands-on technical
-                        execution. That could mean improving local visibility, rebuilding a website, connecting a
-                        marketing workflow or making analytics useful again.
+                        I believe strong businesses are built through trust, useful content, good user experiences and
+                        patient marketing. Paid advertising can accelerate growth, but lasting visibility comes from
+                        understanding how people search, what customers need and which systems will keep creating value
+                        over time.
                     </p>
                     <div className="mt-8 grid gap-3 sm:grid-cols-2">
                         {["Independent & hands-on", "Based in Auckland", "Clear, direct communication", "Built for measurable progress"].map(

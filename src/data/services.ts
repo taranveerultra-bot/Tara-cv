@@ -2,7 +2,7 @@ import { IService } from "@/types";
 
 export const services: IService[] = [
     {
-        title: "SEO & content systems",
+        title: "SEO strategy",
         description:
             "Technical foundations, search strategy and useful content built around how your customers actually look for help.",
         icon: "search",
@@ -30,11 +30,18 @@ export const services: IService[] = [
         deliverables: ["Profile optimisation", "Local signals", "Review strategy"],
     },
     {
-        title: "Digital growth strategy",
+        title: "Content marketing",
         description:
-            "A focused plan across channels, offers and customer journeys—without bloated retainers or vanity activity.",
+            "Useful, search-informed content that answers real customer questions and builds trust and authority over time.",
         icon: "strategy",
-        deliverables: ["Channel planning", "Campaign direction", "Lead funnels"],
+        deliverables: ["Content strategy", "Editorial planning", "Search-led publishing"],
+    },
+    {
+        title: "Lead generation",
+        description:
+            "Clear customer journeys that connect visibility with focused pages, stronger offers and practical follow-up.",
+        icon: "growth",
+        deliverables: ["Landing pages", "Conversion journeys", "Enquiry systems"],
     },
     {
         title: "Analytics & measurement",
