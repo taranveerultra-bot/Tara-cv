@@ -26,16 +26,10 @@ export default function CaseStudiesPage() {
             <section className="py-20 sm:py-28">
                 <Container>
                     <div className="rounded-[2rem] bg-hero-background p-8 sm:p-12">
-                        <p className="text-sm font-bold uppercase tracking-[0.16em] text-secondary">
-                            In preparation
-                        </p>
+                        <p className="text-sm font-bold uppercase tracking-[0.16em] text-secondary">Coming soon</p>
                         <h2 className="mt-5 max-w-3xl text-4xl font-extrabold sm:text-5xl">
-                            Case studies will be written from verified project details.
+                            Case studies coming soon.
                         </h2>
-                        <p className="mt-6 max-w-2xl text-xl leading-relaxed text-foreground-accent">
-                            Nothing will be published here until the problem, work and outcomes have been
-                            reviewed and approved by Taran.
-                        </p>
                         {/* TODO: Add approved case studies after Taran provides the source material. */}
                     </div>
                 </Container>

@@ -1,14 +1,10 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { HiArrowRight } from "react-icons/hi2";
 
 import Container from "@/components/Container";
-import { insights } from "@/data/insights";
 
 export const metadata: Metadata = {
     title: "Insights",
-    description:
-        "Practical answers about SEO, CRM, websites, automation and sustainable business growth.",
+    description: "Original insights from Taran about marketing, business systems and sustainable growth.",
     alternates: { canonical: "/insights" },
 };
 
@@ -30,35 +26,12 @@ export default function InsightsPage() {
 
             <section className="py-20 sm:py-28">
                 <Container>
-                    <div className="grid gap-px overflow-hidden rounded-[2rem] border border-black/10 bg-black/10">
-                        {insights.map((insight, index) => (
-                            <article
-                                key={insight.slug}
-                                className="group relative grid gap-8 bg-white p-7 transition hover:bg-hero-background sm:p-10 lg:grid-cols-[7rem_1fr_auto] lg:items-start"
-                            >
-                                <span className="text-5xl font-extrabold text-black/15">
-                                    {String(index + 1).padStart(2, "0")}
-                                </span>
-                                <div>
-                                    <div className="flex flex-wrap gap-2 text-sm font-semibold text-foreground-accent">
-                                        <span>{insight.category}</span>
-                                        <span aria-hidden="true">·</span>
-                                        <span>{insight.readTime}</span>
-                                    </div>
-                                    <h2 className="mt-4 max-w-3xl text-3xl font-extrabold sm:text-4xl">
-                                        <Link href={`/insights/${insight.slug}`} className="before:absolute before:inset-0">
-                                            {insight.title}
-                                        </Link>
-                                    </h2>
-                                    <p className="mt-5 max-w-3xl text-lg leading-relaxed text-foreground-accent">
-                                        {insight.summary}
-                                    </p>
-                                </div>
-                                <span className="relative grid h-12 w-12 place-items-center rounded-full bg-primary transition group-hover:translate-x-1">
-                                    <HiArrowRight aria-hidden="true" />
-                                </span>
-                            </article>
-                        ))}
+                    <div className="rounded-[2rem] bg-hero-background p-8 sm:p-12">
+                        <p className="text-sm font-bold uppercase tracking-[0.16em] text-secondary">Coming soon</p>
+                        <h2 className="mt-5 max-w-3xl text-4xl font-extrabold sm:text-5xl">
+                            Insights coming soon.
+                        </h2>
+                        {/* TODO: Add only articles based on Taran's original ideas and final approval. */}
                     </div>
                 </Container>
             </section>

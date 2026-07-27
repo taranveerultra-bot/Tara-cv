@@ -3,40 +3,6 @@ export interface IMenuItem {
     url: string;
 }
 
-export interface IContentSection {
-    heading: string;
-    paragraphs: string[];
-    points?: string[];
-}
-
-export interface IInsight {
-    slug: string;
-    title: string;
-    question: string;
-    summary: string;
-    category: string;
-    readTime: string;
-    publishedLabel: string;
-    sections: IContentSection[];
-    takeaway: string;
-}
-
-export interface ICaseStudy {
-    slug: string;
-    title: string;
-    eyebrow: string;
-    summary: string;
-    challenge: string;
-    role: string;
-    duration: string;
-    services: string[];
-    image: string;
-    imageAlt: string;
-    links: Array<{ label: string; href: string }>;
-    sections: IContentSection[];
-    outcomes: string[];
-}
-
 export type IconName =
     | "analytics"
     | "automation"
