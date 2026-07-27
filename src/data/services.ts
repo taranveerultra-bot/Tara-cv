@@ -13,7 +13,7 @@ export const services: IService[] = [
         description:
             "Fast, premium websites that make your offer easier to understand and your business easier to trust.",
         icon: "code",
-        deliverables: ["Next.js builds", "Landing pages", "Conversion UX"],
+        deliverables: ["High-performance websites", "Landing pages", "Conversion UX"],
     },
     {
         title: "AI automation",

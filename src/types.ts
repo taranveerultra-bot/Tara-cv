@@ -26,7 +26,10 @@ export interface IProject {
     evidenceImage?: string;
     evidenceImageAlt?: string;
     evidenceTitle?: string;
-    href?: string;
+    links?: Array<{
+        label: string;
+        href: string;
+    }>;
 }
 
 export interface IService {
@@ -43,6 +46,7 @@ export interface IExperiment {
     icon: IconName;
     image: string;
     imageAlt: string;
+    href?: string;
 }
 
 export interface ISkillGroup {

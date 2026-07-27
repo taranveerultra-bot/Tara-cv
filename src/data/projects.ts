@@ -24,6 +24,11 @@ export const projects: IProject[] = [
         accent: "",
         image: "/images/projects/harmony-clean.png",
         imageAlt: "Harmony Clean Christchurch service page showing navigation, quote call to action and customer review",
+        links: [
+            { label: "Christchurch website", href: "https://harmonyclean.co.nz/" },
+            { label: "Auckland website", href: "https://harmonycleanauckland.co.nz/" },
+            { label: "Wellington website", href: "https://harmonycleanwellington.co.nz/" },
+        ],
     },
     {
         title: "Hyper Carpet Cleaning",
@@ -47,6 +52,7 @@ export const projects: IProject[] = [
         accent: "",
         image: "/images/projects/hyper-carpet-cleaning.png",
         imageAlt: "Hyper Carpet Cleaning website homepage with quote form",
+        links: [{ label: "Visit website", href: "https://hypercarpetcleaning.co.nz/" }],
     },
     {
         title: "Tui Digital",
@@ -69,6 +75,7 @@ export const projects: IProject[] = [
         accent: "",
         image: "/images/projects/tui-digital.png",
         imageAlt: "Tui Digital marketing studio homepage",
+        links: [{ label: "Visit website", href: "https://tuidigital.co.nz/" }],
     },
     {
         title: "The Matchmaking Bureau",
@@ -113,6 +120,7 @@ export const projects: IProject[] = [
         accent: "",
         image: "/images/projects/pop-up-penguins.png",
         imageAlt: "Pop Up Penguins content website homepage",
+        links: [{ label: "Visit website", href: "https://popuppenguins.co.nz/" }],
     },
     {
         title: "TaxPop",
@@ -133,7 +141,7 @@ export const projects: IProject[] = [
             "Mobile Lighthouse: 100 Performance, 91 Accessibility, 100 Best Practices and 100 SEO",
             "A scalable foundation for further educational content",
         ],
-        tags: ["HTML", "Calculators", "Information architecture", "SEO"],
+        tags: ["Interactive tools", "Calculators", "Information architecture", "SEO"],
         accent: "",
         image: "/images/projects/taxpop.png",
         imageAlt: "TaxPop New Zealand tax reference and calculator platform",
@@ -141,5 +149,6 @@ export const projects: IProject[] = [
         evidenceImageAlt:
             "Google PageSpeed Insights mobile report for TaxPop showing 100 Performance, 91 Accessibility, 100 Best Practices and 100 SEO",
         evidenceTitle: "Performance that makes a difference",
+        links: [{ label: "Visit website", href: "https://taxpop.co.nz/" }],
     },
 ];

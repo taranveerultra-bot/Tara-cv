@@ -9,6 +9,7 @@ export const experiments: IExperiment[] = [
         icon: "search",
         image: "/images/projects/pop-up-penguins.png",
         imageAlt: "Pop Up Penguins content website homepage",
+        href: "https://popuppenguins.co.nz/",
     },
     {
         title: "TaxPop",
@@ -18,5 +19,6 @@ export const experiments: IExperiment[] = [
         icon: "code",
         image: "/images/projects/taxpop.png",
         imageAlt: "TaxPop New Zealand tax reference and calculator platform",
+        href: "https://taxpop.co.nz/",
     },
 ];

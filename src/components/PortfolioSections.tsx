@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { HiArrowUpRight } from "react-icons/hi2";
 
 import Container from "./Container";
 import Icon from "./Icon";
@@ -62,6 +64,22 @@ export const ProjectsSection = () => (
                                         </span>
                                     ))}
                                 </div>
+                                {project.links && (
+                                    <div className="mt-6 flex flex-wrap gap-3">
+                                        {project.links.map((link) => (
+                                            <Link
+                                                key={link.href}
+                                                href={link.href}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="inline-flex min-h-11 items-center gap-2 rounded-full border border-foreground px-5 py-2.5 text-sm font-semibold transition hover:bg-foreground hover:text-white"
+                                            >
+                                                {link.label}
+                                                <HiArrowUpRight aria-hidden="true" />
+                                            </Link>
+                                        ))}
+                                    </div>
+                                )}
                             </div>
                             {project.evidenceImage && (
                                 <figure className="overflow-hidden rounded-[2rem] bg-hero-background lg:col-span-2">
@@ -150,6 +168,17 @@ export const ExperimentsSection = () => (
                                 </div>
                                 <h3 className="mt-12 text-4xl font-extrabold sm:text-5xl">{experiment.title}</h3>
                                 <p className="mt-5 max-w-xl leading-relaxed opacity-75">{experiment.description}</p>
+                                {experiment.href && (
+                                    <Link
+                                        href={experiment.href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="mt-7 inline-flex min-h-11 items-center gap-2 rounded-full border border-current px-5 py-2.5 text-sm font-semibold transition hover:opacity-60"
+                                    >
+                                        Visit website
+                                        <HiArrowUpRight aria-hidden="true" />
+                                    </Link>
+                                )}
                             </div>
                         </article>
                     ))}

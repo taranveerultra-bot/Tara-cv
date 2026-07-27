@@ -19,8 +19,9 @@ export const metadata: Metadata = {
     description: siteDetails.metadata.description,
     keywords: [
         "digital marketing consultant New Zealand",
+        "business growth consultant Auckland",
         "SEO consultant Auckland",
-        "Next.js developer New Zealand",
+        "website development New Zealand",
         "AI automation consultant",
         "Google Business Profile optimisation",
     ],
@@ -61,7 +62,7 @@ const structuredData = {
         addressLocality: "Auckland",
         addressCountry: "NZ",
     },
-    knowsAbout: ["SEO", "Digital Marketing", "Web Development", "AI Automation", "Analytics"],
+    knowsAbout: ["SEO", "Digital Marketing", "Website Strategy", "AI Automation", "Analytics"],
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
