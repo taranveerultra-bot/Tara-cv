@@ -34,6 +34,16 @@ const Footer = () => (
                                 </Link>
                             </li>
                         ))}
+                        <li>
+                            <Link href="/case-studies" className="text-white/60 hover:text-primary">
+                                Case Studies
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/insights" className="text-white/60 hover:text-primary">
+                                Insights
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
             </div>

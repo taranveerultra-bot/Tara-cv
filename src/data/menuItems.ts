@@ -2,8 +2,9 @@ import { IMenuItem } from "@/types";
 
 export const menuItems: IMenuItem[] = [
     { text: "Home", url: "/#home" },
-    { text: "Work", url: "/#projects" },
-    { text: "Case Studies", url: "/case-studies" },
-    { text: "Insights", url: "/insights" },
+    { text: "Projects", url: "/#projects" },
+    { text: "Services", url: "/#services" },
+    { text: "Experiments", url: "/#experiments" },
     { text: "About", url: "/#about" },
+    { text: "Contact", url: "/#contact" },
 ];

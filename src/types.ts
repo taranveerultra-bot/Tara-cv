@@ -47,7 +47,6 @@ export type IconName =
     | "strategy";
 
 export interface IProject {
-    caseStudySlug?: string;
     title: string;
     category: string;
     summary: string;
