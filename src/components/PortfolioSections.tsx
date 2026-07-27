@@ -66,6 +66,15 @@ export const ProjectsSection = () => (
                                 </div>
                                 {project.links && (
                                     <div className="mt-6 flex flex-wrap gap-3">
+                                        {project.caseStudySlug && (
+                                            <Link
+                                                href={`/case-studies/${project.caseStudySlug}`}
+                                                className="inline-flex min-h-11 items-center gap-2 rounded-full bg-foreground px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-secondary"
+                                            >
+                                                Read case study
+                                                <HiArrowUpRight aria-hidden="true" />
+                                            </Link>
+                                        )}
                                         {project.links.map((link) => (
                                             <Link
                                                 key={link.href}

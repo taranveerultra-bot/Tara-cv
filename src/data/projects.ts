@@ -2,6 +2,7 @@ import { IProject } from "@/types";
 
 export const projects: IProject[] = [
     {
+        caseStudySlug: "harmony-clean-sustainable-local-growth",
         title: "Harmony Clean",
         category: "Long-term digital marketing & SEO growth",
         summary:
@@ -123,6 +124,7 @@ export const projects: IProject[] = [
         links: [{ label: "Visit website", href: "https://popuppenguins.co.nz/" }],
     },
     {
+        caseStudySlug: "taxpop-making-tax-information-easier-to-use",
         title: "TaxPop",
         category: "Tax information platform",
         summary:

@@ -20,8 +20,8 @@ const Header = () => {
     return (
         <header className="fixed inset-x-0 top-0 z-50 mx-auto w-full">
             <Container className="!px-0">
-                <nav className="flex items-center justify-between border-b border-black/10 bg-hero-background/95 px-5 py-3 backdrop-blur-xl md:px-6 md:py-4">
-                    <Link href="#home" className="flex items-center gap-3" aria-label="Taran home">
+                <nav className="flex items-center justify-between border-b border-black/10 bg-white/95 px-5 py-3 backdrop-blur-xl md:px-6 md:py-4">
+                    <Link href="/#home" className="flex items-center gap-3" aria-label="Taran home">
                         <BrandMark />
                         <span className="manrope text-xl font-semibold text-foreground">
                             {siteDetails.siteName}
@@ -42,7 +42,7 @@ const Header = () => {
                     </ul>
 
                     <Link
-                        href="#contact"
+                        href="/#contact"
                         className="hidden min-h-12 items-center gap-2 rounded-full bg-foreground px-7 py-3 text-base font-semibold text-white transition hover:bg-secondary md:flex"
                     >
                         Start a conversation

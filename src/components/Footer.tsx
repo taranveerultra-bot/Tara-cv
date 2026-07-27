@@ -9,7 +9,7 @@ const Footer = () => (
         <Container>
             <div className="flex flex-col justify-between gap-10 md:flex-row md:items-end">
                 <div>
-                    <Link href="#home" className="inline-flex items-center gap-3 font-semibold">
+                    <Link href="/#home" className="inline-flex items-center gap-3 font-semibold">
                         <span className="grid h-9 w-9 place-items-center rounded-full bg-primary text-sm text-foreground">T</span>
                         {siteDetails.siteName}
                     </Link>
