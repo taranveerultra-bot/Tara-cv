@@ -8,6 +8,8 @@ import Container from "./Container";
 import { menuItems } from "@/data/menuItems";
 import { siteDetails } from "@/data/siteDetails";
 
+const headerMenuItems = menuItems.filter((item) => item.text !== "Experiments");
+
 const BrandMark = () => (
     <span className="grid h-9 w-9 place-items-center rounded-full bg-foreground text-sm font-bold text-white">
         T
@@ -29,7 +31,7 @@ const Header = () => {
                     </Link>
 
                     <ul className="hidden items-center gap-7 md:flex">
-                        {menuItems.map((item) => (
+                        {headerMenuItems.map((item) => (
                             <li key={item.text}>
                                 <Link
                                     href={item.url}
@@ -69,7 +71,7 @@ const Header = () => {
             {isOpen && (
                 <div id="mobile-menu" className="border-b bg-white px-6 pb-6 shadow-lg md:hidden">
                     <ul className="space-y-1">
-                        {menuItems.map((item) => (
+                        {headerMenuItems.map((item) => (
                             <li key={item.text}>
                                 <Link
                                     href={item.url}
