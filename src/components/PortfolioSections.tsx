@@ -181,7 +181,7 @@ export const AboutSection = () => (
                         </div>
                         <div className="py-4">
                             <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-secondary/70">Education</dt>
-                            <dd className="mt-1 font-semibold text-secondary">Studied in Queenstown</dd>
+                            <dd className="mt-1 font-semibold text-secondary">Studied in Christchurch</dd>
                         </div>
                         <div className="py-4">
                             <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-secondary/70">Local experience</dt>
@@ -196,46 +196,41 @@ export const AboutSection = () => (
                         New Zealand is home. Building businesses here taught me how local trust works.
                     </h2>
                     <p className="mt-8 max-w-3xl text-xl leading-relaxed text-secondary">
-                        New Zealand has been home for more than a decade. I studied in Queenstown and have lived in
+                        New Zealand has been home for more than a decade. I studied in Christchurch and have lived in
                         Auckland, Christchurch, Wellington and Taranaki. Time spent across different parts of the country
                         has given me firsthand experience of the people, communities and businesses that make Aotearoa
                         distinctive.
                     </p>
 
-                    <div className="mt-10 grid gap-5 sm:grid-cols-2">
-                        <div className="border-t border-black/25 pt-5">
-                            <h3 className="text-xl font-bold text-secondary">Why I learned marketing</h3>
-                            <p className="mt-3 leading-relaxed text-secondary/80">
-                                I started my own business and needed customers. A good service was not enough; people had
-                                to find it, trust it and understand why it was right for them. That led me into SEO,
-                                websites, content, Google Business Profile and digital strategy.
-                            </p>
-                        </div>
-                        <div className="border-t border-black/25 pt-5">
-                            <h3 className="text-xl font-bold text-secondary">What local customers notice</h3>
-                            <p className="mt-3 leading-relaxed text-secondary/80">
-                                In New Zealand, reputation travels quickly. Reviews, recommendations and a professional
-                                first impression matter because customers look for businesses that feel credible,
-                                familiar and likely to keep their promises.
-                            </p>
-                        </div>
-                        <div className="border-t border-black/25 pt-5">
-                            <h3 className="text-xl font-bold text-secondary">How I learned</h3>
-                            <p className="mt-3 leading-relaxed text-secondary/80">
-                                I invested in coaching and learned from experienced marketers. The biggest lessons came
-                                from applying those ideas in real businesses—testing, making mistakes and improving what
-                                worked.
-                            </p>
-                        </div>
-                        <div className="border-t border-black/25 pt-5">
-                            <h3 className="text-xl font-bold text-secondary">How I work now</h3>
-                            <p className="mt-3 leading-relaxed text-secondary/80">
-                                I build systems rather than isolated campaigns. Websites, local visibility, useful
-                                content and thoughtful automation should continue creating value. AI is a practical tool
-                                within that work, never the goal itself.
-                            </p>
-                        </div>
-                    </div>
+                    <ol className="mt-10 border-t border-black/25">
+                        {[
+                            {
+                                title: "It started with a customer problem",
+                                copy: "I had built a service business, but a good service meant little if the right people could not find it or understand why they should choose it. Solving that problem pulled me into SEO, websites, content, Google Business Profile and digital strategy.",
+                            },
+                            {
+                                title: "The business became the classroom",
+                                copy: "Coaching and experienced marketers gave me useful frameworks. Running real campaigns taught me what those frameworks could not: customers behave differently from theories, mistakes are expensive, and steady improvement usually beats a clever idea that disappears after a month.",
+                            },
+                            {
+                                title: "Living locally changed what I noticed",
+                                copy: "Across different parts of New Zealand, I saw how quickly reputation moves. A recommendation, a review and the feeling that a business will keep its word often matter more than polished promotion. Trust is not a marketing extra here; it is part of the offer.",
+                            },
+                            {
+                                title: "That lesson shaped the systems I build",
+                                copy: "Now I connect websites, local visibility, useful content and automation so they keep creating value together. I use AI when it makes a real process clearer or more consistent—not simply because it is the latest tool.",
+                            },
+                        ].map((chapter, index) => (
+                            <li
+                                key={chapter.title}
+                                className="grid gap-3 border-b border-black/25 py-6 sm:grid-cols-[3rem_.65fr_1.35fr] sm:gap-6"
+                            >
+                                <span className="font-mono text-sm text-secondary/60">0{index + 1}</span>
+                                <h3 className="text-xl font-bold leading-tight text-secondary">{chapter.title}</h3>
+                                <p className="leading-relaxed text-secondary/80">{chapter.copy}</p>
+                            </li>
+                        ))}
+                    </ol>
 
                     <p className="mt-10 max-w-3xl leading-relaxed text-secondary/80">
                         Running businesses here has taught me that every marketing decision is an investment. Instead of
