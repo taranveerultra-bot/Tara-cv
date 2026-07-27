@@ -186,7 +186,7 @@ export const AboutSection = () => (
                         <div className="py-4">
                             <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-secondary/70">Local experience</dt>
                             <dd className="mt-1 font-semibold leading-relaxed text-secondary">
-                                Auckland · Christchurch · Wellington · Taranaki
+                                Mainly Auckland and Christchurch
                             </dd>
                         </div>
                     </dl>
@@ -196,10 +196,10 @@ export const AboutSection = () => (
                         New Zealand is home. Building businesses here taught me how local trust works.
                     </h2>
                     <p className="mt-8 max-w-3xl text-xl leading-relaxed text-secondary">
-                        New Zealand has been home for more than a decade. I studied in Christchurch and have lived in
-                        Auckland, Christchurch, Wellington and Taranaki. Time spent across different parts of the country
-                        has given me firsthand experience of the people, communities and businesses that make Aotearoa
-                        distinctive.
+                        New Zealand has been home for more than a decade. I studied in Christchurch and have spent most
+                        of my time here living in Auckland and Christchurch, with time also spent in Wellington and
+                        Taranaki. Those experiences have given me firsthand knowledge of the people, communities and
+                        businesses that make Aotearoa distinctive.
                     </p>
 
                     <ol className="mt-10 border-t border-black/25">
