@@ -12,7 +12,7 @@ const Hero = () => (
                         Digital marketing consultant · Auckland, NZ
                     </p>
                     <h1 className="max-w-5xl text-balance text-5xl font-extrabold leading-[.88] tracking-[-0.055em] sm:text-7xl lg:text-[6.5rem]">
-                        Building digital growth that{" "}
+                        Building growth that{" "}
                         <span className="relative inline-block">
                             lasts.
                             <span className="absolute inset-x-0 bottom-1 -z-0 h-4 -rotate-1 bg-primary lg:h-6" />

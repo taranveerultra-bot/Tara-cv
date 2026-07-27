@@ -14,8 +14,8 @@ export const ProjectsSection = () => (
             <Section
                 id="projects"
                 eyebrow="Selected work"
-                title="Work with a reason to exist."
-                description="Four real projects across long-term marketing, local services and digital product development. Each one started with a different problem—not a predetermined tool."
+                title="Real businesses. Real work. Growth you can see."
+                description="Six working examples across long-term marketing, search, local services and digital products. The websites, visibility and customer experiences are there to explore—not hidden behind presentation slides."
             >
                 <div className="space-y-20 lg:space-y-28">
                     {projects.map((project, index) => (
@@ -43,14 +43,14 @@ export const ProjectsSection = () => (
                                 <p className="mt-6 text-xl leading-relaxed text-foreground-accent">{project.summary}</p>
                                 <div className="mt-9 grid gap-8 border-t border-black/15 pt-7 sm:grid-cols-2">
                                     <div>
-                                        <p className="text-base font-semibold">Scope</p>
-                                        <p className="mt-3 text-base leading-relaxed text-foreground-accent">
+                                        <p className="text-lg font-semibold">Scope</p>
+                                        <p className="mt-3 text-lg leading-relaxed text-foreground-accent">
                                             {project.responsibilities.join(" · ")}
                                         </p>
                                     </div>
                                     <div>
-                                        <p className="text-base font-semibold">Evidence</p>
-                                        <p className="mt-3 text-base leading-relaxed text-foreground-accent">
+                                        <p className="text-lg font-semibold">Evidence</p>
+                                        <p className="mt-3 text-lg leading-relaxed text-foreground-accent">
                                             {project.results.join(" · ")}
                                         </p>
                                     </div>

@@ -92,4 +92,49 @@ export const projects: IProject[] = [
         image: "/images/projects/matchmaking-bureau.png",
         imageAlt: "The Matchmaking Bureau premium matchmaking platform homepage",
     },
+    {
+        title: "Pop Up Penguins",
+        category: "SEO content platform",
+        summary:
+            "A personal content website where I research keyword opportunities, study search intent and publish useful content designed for compounding organic growth.",
+        outcome: "My live SEO testing environment for continuously improving content strategy.",
+        responsibilities: [
+            "Keyword and search-intent research",
+            "Content strategy and planning",
+            "Content writing and AI-assisted editing",
+            "Internal linking and performance monitoring",
+        ],
+        results: [
+            "Approximately 1,200–1,500 monthly organic visitors",
+            "Organic traffic continues to grow",
+            "Real-world testing informs future SEO and content decisions",
+        ],
+        tags: ["Keyword research", "Content SEO", "Internal linking", "Analytics"],
+        accent: "",
+        image: "/images/projects/pop-up-penguins.png",
+        imageAlt: "Pop Up Penguins content website homepage",
+    },
+    {
+        title: "TaxPop",
+        category: "Tax information platform",
+        summary:
+            "A New Zealand-focused information website with custom calculators and structured educational content designed to make tax topics easier to navigate.",
+        outcome: "Making complex tax information more approachable for New Zealand businesses.",
+        responsibilities: [
+            "HTML development",
+            "Custom tax calculators",
+            "Information architecture",
+            "Content organisation and SEO",
+        ],
+        results: [
+            "31 structured tax topics",
+            "22 interactive calculators",
+            "IRD-linked reference information",
+            "A scalable foundation for further educational content",
+        ],
+        tags: ["HTML", "Calculators", "Information architecture", "SEO"],
+        accent: "",
+        image: "/images/projects/taxpop.png",
+        imageAlt: "TaxPop New Zealand tax reference and calculator platform",
+    },
 ];
