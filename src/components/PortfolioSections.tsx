@@ -247,8 +247,8 @@ export const AboutSection = () => (
                                 copy: "Across different parts of New Zealand, I saw how quickly reputation moves. A recommendation, a review and the feeling that a business will keep its word often matter more than polished promotion. Trust is not a marketing extra here; it is part of the offer.",
                             },
                             {
-                                title: "That lesson shaped the systems I build",
-                                copy: "Now I connect websites, local visibility, useful content and automation so they keep creating value together. I use AI when it makes a real process clearer or more consistent—not simply because it is the latest tool.",
+                                title: "Clear systems make growth easier to manage",
+                                copy: "I am a strong believer in standard operating procedures. Often, the most useful automation starts with a clear document that helps a new person understand the work. Coordinating projects with overseas virtual assistants has reinforced that lesson: I stay hands-on and accountable, while making each process clear enough to follow, measure and improve. AI comes after that foundation, when it can make the work more consistent.",
                             },
                         ].map((chapter, index) => (
                             <li

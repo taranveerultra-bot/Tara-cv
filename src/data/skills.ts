@@ -11,7 +11,7 @@ export const skillGroups: ISkillGroup[] = [
     },
     {
         title: "Automation",
-        skills: ["AI workflows", "LLM integrations", "CRM automation", "Webhooks"],
+        skills: ["SOPs", "AI workflows", "CRM automation", "Systems documentation"],
     },
     {
         title: "Measurement",

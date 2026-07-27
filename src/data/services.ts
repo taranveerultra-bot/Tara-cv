@@ -18,9 +18,9 @@ export const services: IService[] = [
     {
         title: "AI automation",
         description:
-            "Practical automations that connect your tools, remove repetitive work and keep customer follow-up moving.",
+            "Clear standard operating procedures first, then practical automation that removes repetitive work and keeps customer follow-up moving.",
         icon: "automation",
-        deliverables: ["Workflow design", "AI integrations", "Internal tools"],
+        deliverables: ["SOP documentation", "Workflow design", "AI integrations"],
     },
     {
         title: "Google Business Profile",
