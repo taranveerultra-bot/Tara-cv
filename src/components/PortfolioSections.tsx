@@ -174,46 +174,78 @@ export const AboutSection = () => (
                             className="object-cover object-top"
                         />
                     </div>
+                    <dl className="mt-6 max-w-md divide-y divide-black/20 border-y border-black/20">
+                        <div className="py-4">
+                            <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-secondary/70">Home</dt>
+                            <dd className="mt-1 font-semibold text-secondary">New Zealand since 2015</dd>
+                        </div>
+                        <div className="py-4">
+                            <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-secondary/70">Education</dt>
+                            <dd className="mt-1 font-semibold text-secondary">Studied in Queenstown</dd>
+                        </div>
+                        <div className="py-4">
+                            <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-secondary/70">Local experience</dt>
+                            <dd className="mt-1 font-semibold leading-relaxed text-secondary">
+                                Auckland · Christchurch · Wellington · Taranaki
+                            </dd>
+                        </div>
+                    </dl>
                 </div>
                 <div>
                     <h2 className="max-w-5xl text-4xl font-extrabold leading-[.95] sm:text-6xl lg:text-7xl">
-                        I learned marketing because my own business needed customers.
+                        New Zealand is home. Building businesses here taught me how local trust works.
                     </h2>
                     <p className="mt-8 max-w-3xl text-xl leading-relaxed text-secondary">
-                        I didn&apos;t get into marketing because I wanted to become a marketer. I got into it because I
-                        started my own business in New Zealand and needed people to find it, trust it and choose it.
+                        I came to New Zealand in 2015, studied in Queenstown and have since lived in Auckland,
+                        Christchurch, Wellington and Taranaki. More than a decade across different parts of the country
+                        has given me firsthand experience of the people, communities and businesses that make Aotearoa
+                        distinctive.
                     </p>
-                    <p className="mt-6 max-w-3xl leading-relaxed text-secondary/80">
-                        I quickly learned that providing a good service wasn&apos;t enough. Customers had to understand
-                        why the business was right for them. That problem led me into SEO, website development, content
-                        strategy, Google Business Profile optimisation and digital marketing.
-                    </p>
-                    <p className="mt-6 max-w-3xl leading-relaxed text-secondary/80">
-                        I invested in coaching, learned from experienced marketers and spent countless hours studying how
-                        businesses grow. The most useful lessons, however, came from applying those ideas—building real
-                        businesses, testing different approaches, making mistakes and improving what worked.
-                    </p>
-                    <p className="mt-6 max-w-3xl leading-relaxed text-secondary/80">
-                        In New Zealand, reputation travels quickly. A recommendation, a Google review, a useful answer or
-                        a professional first impression can carry real weight. People rarely choose a business on price
-                        or promotion alone; they look for signs that it is credible, local and likely to keep its promise.
-                        That understanding shapes how I approach search, content, websites and customer journeys.
-                    </p>
-                    <p className="mt-6 max-w-3xl leading-relaxed text-secondary/80">
-                        I prefer building systems rather than one-off campaigns. A useful website, strong local
-                        visibility, helpful content and thoughtful automation can continue creating value long after
-                        launch. AI is another tool within that work—not the goal itself. I use it when it can simplify a
-                        real process, make knowledge easier to access or help a team work more consistently.
-                    </p>
-                    <p className="mt-6 max-w-3xl leading-relaxed text-secondary/80">
-                        Running my own businesses has taught me that every marketing decision is an investment. Instead
-                        of asking, “What marketing should we do?”, I prefer asking:
+
+                    <div className="mt-10 grid gap-5 sm:grid-cols-2">
+                        <div className="border-t border-black/25 pt-5">
+                            <h3 className="text-xl font-bold text-secondary">Why I learned marketing</h3>
+                            <p className="mt-3 leading-relaxed text-secondary/80">
+                                I started my own business and needed customers. A good service was not enough; people had
+                                to find it, trust it and understand why it was right for them. That led me into SEO,
+                                websites, content, Google Business Profile and digital strategy.
+                            </p>
+                        </div>
+                        <div className="border-t border-black/25 pt-5">
+                            <h3 className="text-xl font-bold text-secondary">What local customers notice</h3>
+                            <p className="mt-3 leading-relaxed text-secondary/80">
+                                In New Zealand, reputation travels quickly. Reviews, recommendations and a professional
+                                first impression matter because customers look for businesses that feel credible,
+                                familiar and likely to keep their promises.
+                            </p>
+                        </div>
+                        <div className="border-t border-black/25 pt-5">
+                            <h3 className="text-xl font-bold text-secondary">How I learned</h3>
+                            <p className="mt-3 leading-relaxed text-secondary/80">
+                                I invested in coaching and learned from experienced marketers. The biggest lessons came
+                                from applying those ideas in real businesses—testing, making mistakes and improving what
+                                worked.
+                            </p>
+                        </div>
+                        <div className="border-t border-black/25 pt-5">
+                            <h3 className="text-xl font-bold text-secondary">How I work now</h3>
+                            <p className="mt-3 leading-relaxed text-secondary/80">
+                                I build systems rather than isolated campaigns. Websites, local visibility, useful
+                                content and thoughtful automation should continue creating value. AI is a practical tool
+                                within that work, never the goal itself.
+                            </p>
+                        </div>
+                    </div>
+
+                    <p className="mt-10 max-w-3xl leading-relaxed text-secondary/80">
+                        Running businesses here has taught me that every marketing decision is an investment. Instead of
+                        asking, “What marketing should we do?”, I prefer asking:
                     </p>
                     <blockquote className="mt-7 max-w-3xl border-l-4 border-secondary pl-6 text-3xl font-bold leading-tight text-secondary sm:text-4xl">
                         “What will genuinely help this business grow?”
                     </blockquote>
                     <p className="mt-7 max-w-3xl text-xl font-semibold leading-relaxed text-secondary">
-                        I&apos;m naturally curious, always learning and always looking for better ways to help New Zealand
+                        I&apos;m naturally curious, always learning and always looking for better ways to help local
                         businesses grow stronger over time.
                     </p>
                     <div className="mt-12 flex flex-wrap gap-x-10 gap-y-3 border-t border-black/25 pt-6 text-sm font-semibold">

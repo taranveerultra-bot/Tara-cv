@@ -19,8 +19,8 @@ const Hero = () => (
                         </span>
                     </h1>
                     <p className="mt-8 max-w-2xl text-xl leading-relaxed text-foreground-accent lg:text-2xl">
-                        I help New Zealand businesses earn attention and trust through SEO, useful content, better
-                        websites and practical automation.
+                        Growth built for the way New Zealand does business—through trust, reputation, useful work and
+                        relationships that last.
                     </p>
                     <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                         <Link
