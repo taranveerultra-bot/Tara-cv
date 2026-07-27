@@ -7,7 +7,7 @@ export const skillGroups: ISkillGroup[] = [
     },
     {
         title: "Engineering",
-        skills: ["Next.js", "React", "TypeScript", "Tailwind CSS", "APIs"],
+        skills: ["Next.js", "React", "TypeScript", "Performance optimisation", "APIs"],
     },
     {
         title: "Automation",

@@ -130,11 +130,16 @@ export const projects: IProject[] = [
             "31 structured tax topics",
             "22 interactive calculators",
             "IRD-linked reference information",
+            "Mobile Lighthouse: 100 Performance, 91 Accessibility, 100 Best Practices and 100 SEO",
             "A scalable foundation for further educational content",
         ],
         tags: ["HTML", "Calculators", "Information architecture", "SEO"],
         accent: "",
         image: "/images/projects/taxpop.png",
         imageAlt: "TaxPop New Zealand tax reference and calculator platform",
+        evidenceImage: "/images/projects/taxpop-pagespeed.png",
+        evidenceImageAlt:
+            "Google PageSpeed Insights mobile report for TaxPop showing 100 Performance, 91 Accessibility, 100 Best Practices and 100 SEO",
+        evidenceTitle: "Performance that makes a difference",
     },
 ];

@@ -23,6 +23,9 @@ export interface IProject {
     accent: string;
     image: string;
     imageAlt: string;
+    evidenceImage?: string;
+    evidenceImageAlt?: string;
+    evidenceTitle?: string;
     href?: string;
 }
 

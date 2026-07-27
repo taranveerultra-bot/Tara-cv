@@ -15,7 +15,7 @@ export const ProjectsSection = () => (
                 id="projects"
                 eyebrow="Selected work"
                 title="Real businesses. Real work. Growth you can see."
-                description="Six working examples across long-term marketing, search, local services and digital products. The websites, visibility and customer experiences are there to explore—not hidden behind presentation slides."
+                description="Six working examples across long-term marketing, search, local services and digital products. Performance is non-negotiable in every project—from how quickly a page loads to how clearly it helps a customer act."
             >
                 <div className="space-y-20 lg:space-y-28">
                     {projects.map((project, index) => (
@@ -23,7 +23,7 @@ export const ProjectsSection = () => (
                             <figure className={`${index % 2 ? "lg:order-2" : ""} overflow-hidden rounded-[2rem] bg-hero-background`}>
                                 <div className="flex items-center justify-between px-5 py-4">
                                     <span className="font-mono text-xs">0{index + 1}</span>
-                                    <span className="text-xs font-semibold uppercase tracking-[0.14em]">Live work</span>
+                                    <span className="text-xs font-semibold uppercase tracking-[0.14em]">Performance · non-negotiable</span>
                                 </div>
                                 <div className="relative aspect-[16/9] overflow-hidden border-y border-black/10 bg-white">
                                     <Image
@@ -63,6 +63,25 @@ export const ProjectsSection = () => (
                                     ))}
                                 </div>
                             </div>
+                            {project.evidenceImage && (
+                                <figure className="overflow-hidden rounded-[2rem] bg-hero-background lg:col-span-2">
+                                    <div className="px-6 py-5 sm:px-8">
+                                        <p className="text-2xl font-bold sm:text-3xl">{project.evidenceTitle}</p>
+                                        <p className="mt-2 text-base text-foreground-accent">
+                                            Measured on mobile with Google PageSpeed Insights.
+                                        </p>
+                                    </div>
+                                    <div className="relative aspect-[2/1] border-t border-black/10 bg-white">
+                                        <Image
+                                            src={project.evidenceImage}
+                                            alt={project.evidenceImageAlt ?? ""}
+                                            fill
+                                            sizes="100vw"
+                                            className="object-contain object-top"
+                                        />
+                                    </div>
+                                </figure>
+                            )}
                         </article>
                     ))}
                 </div>
