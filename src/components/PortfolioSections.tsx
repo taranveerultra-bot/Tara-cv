@@ -15,7 +15,7 @@ export const ProjectsSection = () => (
                 id="projects"
                 eyebrow="Selected work"
                 title="Work with a reason to exist."
-                description="Four real projects across local growth, organic content and digital product development. Each one started with a different problem—not a predetermined tool."
+                description="Four real projects across long-term marketing, local services and digital product development. Each one started with a different problem—not a predetermined tool."
             >
                 <div className="space-y-20 lg:space-y-28">
                     {projects.map((project, index) => (
@@ -25,39 +25,39 @@ export const ProjectsSection = () => (
                                     <span className="font-mono text-xs">0{index + 1}</span>
                                     <span className="text-xs font-semibold uppercase tracking-[0.14em]">Live work</span>
                                 </div>
-                                <div className="relative aspect-[16/10] overflow-hidden border-y border-black/10 bg-white">
+                                <div className="relative aspect-[16/9] overflow-hidden border-y border-black/10 bg-white">
                                     <Image
                                         src={project.image}
                                         alt={project.imageAlt}
                                         fill
                                         sizes="(min-width: 1024px) 50vw, 100vw"
-                                        className="object-cover object-top"
+                                        className="object-contain object-top"
                                     />
                                 </div>
                                 <figcaption className="px-5 py-4 text-sm font-semibold">{project.title}</figcaption>
                             </figure>
 
                             <div className={index % 2 ? "lg:order-1" : ""}>
-                                <p className="text-sm font-semibold uppercase tracking-[0.14em] text-secondary">The work</p>
-                                <h3 className="mt-4 text-3xl font-bold leading-tight sm:text-4xl">{project.category}</h3>
-                                <p className="mt-5 text-lg leading-relaxed text-foreground-accent">{project.summary}</p>
+                                <p className="text-base font-semibold uppercase tracking-[0.12em] text-secondary">The work</p>
+                                <h3 className="mt-4 text-4xl font-bold leading-tight sm:text-5xl">{project.category}</h3>
+                                <p className="mt-6 text-xl leading-relaxed text-foreground-accent">{project.summary}</p>
                                 <div className="mt-9 grid gap-8 border-t border-black/15 pt-7 sm:grid-cols-2">
                                     <div>
-                                        <p className="text-sm font-semibold">Scope</p>
-                                        <p className="mt-3 text-sm leading-relaxed text-foreground-accent">
+                                        <p className="text-base font-semibold">Scope</p>
+                                        <p className="mt-3 text-base leading-relaxed text-foreground-accent">
                                             {project.responsibilities.join(" · ")}
                                         </p>
                                     </div>
                                     <div>
-                                        <p className="text-sm font-semibold">Evidence</p>
-                                        <p className="mt-3 text-sm leading-relaxed text-foreground-accent">
+                                        <p className="text-base font-semibold">Evidence</p>
+                                        <p className="mt-3 text-base leading-relaxed text-foreground-accent">
                                             {project.results.join(" · ")}
                                         </p>
                                     </div>
                                 </div>
                                 <div className="mt-8 flex flex-wrap gap-x-5 gap-y-2 border-t border-black/15 pt-5">
                                     {project.tags.map((tag) => (
-                                        <span key={tag} className="text-xs font-semibold uppercase tracking-wider text-foreground-accent">
+                                        <span key={tag} className="text-sm font-semibold uppercase tracking-wider text-foreground-accent">
                                             {tag}
                                         </span>
                                     ))}
@@ -106,8 +106,8 @@ export const ExperimentsSection = () => (
             <Section
                 id="experiments"
                 eyebrow="Experiments & ventures"
-                title="The places where I test my own thinking."
-                description="Ongoing ventures let me learn through real decisions: finding an audience, shaping a product and building for the long term."
+                title="Where I test ideas with real users and real search demand."
+                description="These are my working laboratories for SEO, content systems, information architecture and long-term organic growth."
             >
                 <div className="grid gap-5 lg:grid-cols-2">
                     {experiments.map((experiment, index) => (
@@ -121,7 +121,7 @@ export const ExperimentsSection = () => (
                                     alt={experiment.imageAlt}
                                     fill
                                     sizes="(min-width: 1024px) 50vw, 100vw"
-                                    className="object-cover object-top"
+                                    className="object-contain object-top"
                                 />
                             </div>
                             <div className="p-8 sm:p-10">
@@ -143,8 +143,19 @@ export const ExperimentsSection = () => (
 export const AboutSection = () => (
     <div id="about" className="bg-primary py-20 lg:py-32">
         <Container>
-            <div className="grid gap-12 lg:grid-cols-[.55fr_1.45fr]">
-                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-secondary">About Taran</p>
+            <div className="grid items-start gap-12 lg:grid-cols-[.7fr_1.3fr]">
+                <div>
+                    <p className="text-sm font-semibold uppercase tracking-[0.16em] text-secondary">About Taran</p>
+                    <div className="relative mt-7 aspect-[4/5] max-w-md overflow-hidden rounded-[2rem] bg-white">
+                        <Image
+                            src="/images/taran-portrait.jpg"
+                            alt="Portrait of Taran"
+                            fill
+                            sizes="(min-width: 1024px) 35vw, 100vw"
+                            className="object-cover object-top"
+                        />
+                    </div>
+                </div>
                 <div>
                     <h2 className="max-w-5xl text-4xl font-extrabold leading-[.95] sm:text-6xl lg:text-7xl">
                         Curious about the business. Comfortable with the build.
@@ -162,7 +173,7 @@ export const AboutSection = () => (
                         <span>Independent & hands-on</span>
                         <span>Marketing + development</span>
                     </div>
-                    {/* TODO: Add Taran's professional headshot and concise career timeline. */}
+                    {/* TODO: Replace the draft biography with Taran's full personal story after the content interview. */}
                 </div>
             </div>
         </Container>
@@ -174,8 +185,8 @@ export const SkillsSection = () => (
         <Section
             id="skills"
             eyebrow="Capabilities"
-            title="A broad toolkit, used with focus."
-            description="Tools matter when they help answer a real customer or business need."
+            title="From finding the opportunity to building the solution."
+            description="I work across the full growth cycle: understanding demand, creating the experience, automating repeated work and learning from the results."
         >
             <div className="grid gap-px overflow-hidden rounded-[2rem] bg-black/15 sm:grid-cols-2 lg:grid-cols-4">
                 {skillGroups.map((group, index) => (

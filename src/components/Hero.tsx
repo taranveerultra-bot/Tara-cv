@@ -39,12 +39,12 @@ const Hero = () => (
                 </div>
 
                 <aside className="bg-primary p-7 sm:p-9 lg:translate-y-4 lg:rounded-[2rem]" aria-label="How Taran approaches growth">
-                    <p className="text-sm font-semibold uppercase tracking-[0.16em] text-secondary">The approach</p>
+                    <p className="text-sm font-semibold uppercase tracking-[0.16em] text-secondary">How growth compounds</p>
                     <p className="mt-6 text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
-                        Understand the customer. Build the useful thing. Improve it over time.
+                        Good marketing is never finished. It becomes more useful with every improvement.
                     </p>
                     <div className="mt-10 border-t border-black/25">
-                        {["Search visibility", "Trust & experience", "Systems that scale"].map((item, index) => (
+                        {["Get found", "Earn trust", "Build useful systems", "Keep improving"].map((item, index) => (
                             <div key={item} className="flex items-center gap-5 border-b border-black/25 py-4">
                                 <span className="font-mono text-xs">0{index + 1}</span>
                                 <span className="font-semibold">{item}</span>

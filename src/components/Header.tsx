@@ -28,12 +28,12 @@ const Header = () => {
                         </span>
                     </Link>
 
-                    <ul className="hidden items-center gap-6 md:flex">
+                    <ul className="hidden items-center gap-7 md:flex">
                         {menuItems.map((item) => (
                             <li key={item.text}>
                                 <Link
                                     href={item.url}
-                                    className="text-sm font-medium text-foreground-accent transition-colors hover:text-foreground"
+                                    className="text-base font-semibold text-foreground-accent transition-colors hover:text-foreground"
                                 >
                                     {item.text}
                                 </Link>
@@ -43,7 +43,7 @@ const Header = () => {
 
                     <Link
                         href="#contact"
-                        className="hidden items-center gap-2 rounded-full bg-foreground px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-secondary md:flex"
+                        className="hidden min-h-12 items-center gap-2 rounded-full bg-foreground px-7 py-3 text-base font-semibold text-white transition hover:bg-secondary md:flex"
                     >
                         Start a conversation
                         <HiArrowUpRight aria-hidden="true" />

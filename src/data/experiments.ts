@@ -2,21 +2,21 @@ import { IExperiment } from "@/types";
 
 export const experiments: IExperiment[] = [
     {
-        title: "Tui Digital",
+        title: "Pop Up Penguins",
         description:
-            "My personal digital marketing studio where I experiment with SEO, modern web development, AI workflows and content marketing. It represents how I approach building scalable online businesses.",
-        status: "Building",
-        icon: "growth",
-        image: "/images/projects/tui-digital.png",
-        imageAlt: "Tui Digital marketing studio homepage",
+            "My live SEO testing environment. I research keyword opportunities, study search intent and test content, internal linking and AI-assisted editing. It currently attracts approximately 1,200–1,500 monthly organic visitors.",
+        status: "Live",
+        icon: "search",
+        image: "/images/projects/pop-up-penguins.png",
+        imageAlt: "Pop Up Penguins content website homepage",
     },
     {
-        title: "The Matchmaking Bureau",
+        title: "TaxPop",
         description:
-            "An international platform currently under development for South Asian communities, with a focus on thoughtful user experience and long-term scalability.",
+            "A New Zealand tax information experiment with structured educational content and custom calculators. It explores how better information architecture can make complicated subjects easier to understand.",
         status: "Building",
         icon: "code",
-        image: "/images/projects/matchmaking-bureau.png",
-        imageAlt: "The Matchmaking Bureau premium matchmaking platform homepage",
+        image: "/images/projects/taxpop.png",
+        imageAlt: "TaxPop New Zealand tax reference and calculator platform",
     },
 ];
