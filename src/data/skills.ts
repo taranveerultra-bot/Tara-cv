@@ -15,6 +15,6 @@ export const skillGroups: ISkillGroup[] = [
     },
     {
         title: "Measurement",
-        skills: ["Analytics", "Search Console", "Tag Manager", "Looker Studio"],
+        skills: ["Analytics", "Search Console", "Tag Manager"],
     },
 ];
