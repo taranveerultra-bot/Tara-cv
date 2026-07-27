@@ -18,9 +18,9 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header className="fixed inset-x-0 top-0 z-50 mx-auto w-full md:absolute">
+        <header className="fixed inset-x-0 top-0 z-50 mx-auto w-full">
             <Container className="!px-0">
-                <nav className="flex items-center justify-between border-b border-black/5 bg-white/90 px-5 py-3 shadow-sm backdrop-blur-xl md:border-0 md:bg-transparent md:py-8 md:shadow-none">
+                <nav className="flex items-center justify-between border-b border-black/10 bg-hero-background/95 px-5 py-3 backdrop-blur-xl md:px-6 md:py-4">
                     <Link href="#home" className="flex items-center gap-3" aria-label="Taran home">
                         <BrandMark />
                         <span className="manrope text-xl font-semibold text-foreground">
@@ -43,7 +43,7 @@ const Header = () => {
 
                     <Link
                         href="#contact"
-                        className="hidden items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-black transition hover:bg-primary-accent md:flex"
+                        className="hidden items-center gap-2 rounded-full bg-foreground px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-secondary md:flex"
                     >
                         Start a conversation
                         <HiArrowUpRight aria-hidden="true" />

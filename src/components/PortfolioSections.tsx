@@ -1,6 +1,3 @@
-import Link from "next/link";
-import { HiArrowUpRight, HiCheck } from "react-icons/hi2";
-
 import Container from "./Container";
 import Icon from "./Icon";
 import Section from "./Section";
@@ -9,101 +6,70 @@ import { projects } from "@/data/projects";
 import { services } from "@/data/services";
 import { skillGroups } from "@/data/skills";
 
-const ProjectPreview = ({ accent, category }: { accent: string; category: string }) => (
-    <div className={`relative aspect-[16/10] overflow-hidden rounded-2xl bg-gradient-to-br ${accent} bg-[#101318] p-5`}>
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)] bg-[size:28px_28px]" />
-        <div className="relative h-full rounded-xl border border-white/10 bg-black/30 p-4 backdrop-blur">
-            <div className="flex items-center justify-between">
-                <div className="flex gap-1.5">
-                    <span className="h-2 w-2 rounded-full bg-white/30" />
-                    <span className="h-2 w-2 rounded-full bg-white/20" />
-                    <span className="h-2 w-2 rounded-full bg-white/10" />
-                </div>
-                <span className="text-[10px] uppercase tracking-widest text-white/45">{category}</span>
-            </div>
-            <div className="mt-7 grid grid-cols-[1fr_.6fr] gap-3">
-                <div className="space-y-3">
-                    <div className="h-3 w-4/5 rounded-full bg-white/60" />
-                    <div className="h-2 w-full rounded-full bg-white/15" />
-                    <div className="h-2 w-3/4 rounded-full bg-white/15" />
-                    <div className="mt-5 h-16 rounded-lg border border-white/10 bg-white/5" />
-                </div>
-                <div className="flex items-end gap-1 rounded-lg border border-white/10 bg-white/5 p-3">
-                    {[35, 58, 44, 75, 62, 90].map((height, index) => (
-                        <span
-                            key={`${height}-${index}`}
-                            className="flex-1 rounded-t-sm bg-primary/80"
-                            style={{ height: `${height}%` }}
-                        />
-                    ))}
-                </div>
-            </div>
-        </div>
-    </div>
-);
+const projectSurfaces = ["bg-[#163300] text-primary", "bg-primary text-foreground", "bg-[#ffc091] text-foreground", "bg-[#d7e7ff] text-foreground"];
 
 export const ProjectsSection = () => (
-    <Container>
-        <Section
-            id="projects"
-            eyebrow="Selected work"
-            title="Real projects shaped by long-term thinking."
-            description="SEO, content, websites and digital platforms built to solve practical business and customer problems."
-        >
-            <div className="grid gap-6 lg:grid-cols-2">
-                {projects.map((project) => (
-                    <article
-                        key={project.title}
-                        className="group rounded-[1.75rem] border border-black/10 bg-white p-3 transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-950/10"
-                    >
-                        <ProjectPreview accent={project.accent} category={project.category} />
-                        <div className="p-4 pb-5">
-                            <p className="text-sm font-semibold text-secondary">{project.category}</p>
-                            <h3 className="mt-2 text-2xl font-semibold">{project.title}</h3>
-                            <p className="mt-3 text-base leading-relaxed text-foreground-accent">{project.summary}</p>
-                            <p className="mt-4 border-l-2 border-primary pl-3 text-sm font-medium">{project.outcome}</p>
-                            <div className="mt-6 grid gap-5 sm:grid-cols-2">
-                                <div>
-                                    <h4 className="text-sm font-semibold">What I worked on</h4>
-                                    <ul className="mt-3 space-y-2">
-                                        {project.responsibilities.map((item) => (
-                                            <li key={item} className="flex gap-2 text-sm text-foreground-accent">
-                                                <HiCheck className="mt-0.5 h-4 w-4 shrink-0 text-secondary" aria-hidden="true" />
-                                                {item}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h4 className="text-sm font-semibold">Outcomes</h4>
-                                    <ul className="mt-3 space-y-2">
-                                        {project.results.map((item) => (
-                                            <li key={item} className="flex gap-2 text-sm text-foreground-accent">
-                                                <HiCheck className="mt-0.5 h-4 w-4 shrink-0 text-secondary" aria-hidden="true" />
-                                                {item}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="mt-5 flex flex-wrap gap-2">
-                                {project.tags.map((tag) => (
-                                    <span key={tag} className="rounded-full bg-hero-background px-3 py-1 text-xs font-medium">
-                                        {tag}
+    <div className="bg-white">
+        <Container>
+            <Section
+                id="projects"
+                eyebrow="Selected work"
+                title="Work with a reason to exist."
+                description="Four real projects across local growth, organic content and digital product development. Each one started with a different problem—not a predetermined tool."
+            >
+                <div className="space-y-20 lg:space-y-28">
+                    {projects.map((project, index) => (
+                        <article key={project.title} className="grid items-start gap-8 lg:grid-cols-2 lg:gap-16">
+                            <div className={`${index % 2 ? "lg:order-2" : ""} ${projectSurfaces[index]} flex min-h-[24rem] flex-col justify-between rounded-[2rem] p-7 sm:p-10`}>
+                                <div className="flex items-start justify-between gap-6">
+                                    <span className="font-mono text-sm">0{index + 1}</span>
+                                    <span className="max-w-[15rem] text-right text-xs font-semibold uppercase tracking-[0.14em]">
+                                        {project.category}
                                     </span>
-                                ))}
+                                </div>
+                                <div>
+                                    <p className="text-5xl font-extrabold leading-[.9] tracking-[-0.05em] sm:text-7xl">
+                                        {project.title}
+                                    </p>
+                                    <p className="mt-6 max-w-md text-base font-medium leading-relaxed opacity-80">
+                                        {project.outcome}
+                                    </p>
+                                </div>
+                                {/* TODO: Replace this typographic project panel with an approved project screenshot. */}
                             </div>
-                            {project.href && (
-                                <Link href={project.href} className="mt-5 inline-flex items-center gap-1 text-sm font-semibold">
-                                    View case study <HiArrowUpRight aria-hidden="true" />
-                                </Link>
-                            )}
-                        </div>
-                    </article>
-                ))}
-            </div>
-        </Section>
-    </Container>
+
+                            <div className={index % 2 ? "lg:order-1" : ""}>
+                                <p className="text-sm font-semibold uppercase tracking-[0.14em] text-secondary">The work</p>
+                                <h3 className="mt-4 text-3xl font-bold leading-tight sm:text-4xl">{project.category}</h3>
+                                <p className="mt-5 text-lg leading-relaxed text-foreground-accent">{project.summary}</p>
+                                <div className="mt-9 grid gap-8 border-t border-black/15 pt-7 sm:grid-cols-2">
+                                    <div>
+                                        <p className="text-sm font-semibold">Scope</p>
+                                        <p className="mt-3 text-sm leading-relaxed text-foreground-accent">
+                                            {project.responsibilities.join(" · ")}
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p className="text-sm font-semibold">Evidence</p>
+                                        <p className="mt-3 text-sm leading-relaxed text-foreground-accent">
+                                            {project.results.join(" · ")}
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="mt-8 flex flex-wrap gap-x-5 gap-y-2 border-t border-black/15 pt-5">
+                                    {project.tags.map((tag) => (
+                                        <span key={tag} className="text-xs font-semibold uppercase tracking-wider text-foreground-accent">
+                                            {tag}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+                        </article>
+                    ))}
+                </div>
+            </Section>
+        </Container>
+    </div>
 );
 
 export const ServicesSection = () => (
@@ -111,26 +77,22 @@ export const ServicesSection = () => (
         <Container>
             <Section
                 id="services"
-                eyebrow="Services"
-                title="The strategy and technical execution to move forward."
-                description="Engage me for a focused project, a growth sprint or ongoing support across your most important digital priorities."
+                eyebrow="What I do"
+                title="Strategy and execution, connected."
+                description="Support can begin with one focused problem or develop into an ongoing working relationship."
             >
-                <div className="grid gap-px overflow-hidden rounded-[1.75rem] border border-black/10 bg-black/10 md:grid-cols-2 lg:grid-cols-3">
-                    {services.map((service) => (
-                        <article key={service.title} className="bg-white p-7 md:p-8">
-                            <span className="grid h-12 w-12 place-items-center rounded-2xl bg-primary text-black">
-                                <Icon name={service.icon} />
-                            </span>
-                            <h3 className="mt-6 text-xl font-semibold">{service.title}</h3>
-                            <p className="mt-3 text-base leading-relaxed text-foreground-accent">{service.description}</p>
-                            <ul className="mt-5 space-y-2">
-                                {service.deliverables.map((item) => (
-                                    <li key={item} className="flex items-center gap-2 text-sm font-medium">
-                                        <HiCheck className="h-4 w-4 text-secondary" aria-hidden="true" />
-                                        {item}
-                                    </li>
-                                ))}
-                            </ul>
+                <div className="border-t border-black/20">
+                    {services.map((service, index) => (
+                        <article key={service.title} className="group grid gap-4 border-b border-black/20 py-7 md:grid-cols-[4rem_.8fr_1.2fr] md:items-start md:gap-8">
+                            <span className="font-mono text-sm text-foreground-accent">0{index + 1}</span>
+                            <div className="flex items-center gap-4">
+                                <Icon name={service.icon} className="h-6 w-6 text-secondary" />
+                                <h3 className="text-2xl font-bold">{service.title}</h3>
+                            </div>
+                            <div>
+                                <p className="leading-relaxed text-foreground-accent">{service.description}</p>
+                                <p className="mt-3 text-sm font-semibold">{service.deliverables.join(" · ")}</p>
+                            </div>
                         </article>
                     ))}
                 </div>
@@ -140,63 +102,57 @@ export const ServicesSection = () => (
 );
 
 export const ExperimentsSection = () => (
-    <Container>
-        <Section
-            id="experiments"
-            eyebrow="Experiments & ventures"
-            title="Building, testing and learning through my own platforms."
-            description="Ongoing ventures where I explore scalable digital businesses, thoughtful user experiences and practical marketing systems."
-        >
-            <div className="grid gap-5 md:grid-cols-2">
-                {experiments.map((experiment) => (
-                    <article key={experiment.title} className="rounded-3xl border border-black/10 p-6">
-                        <div className="flex items-center justify-between">
-                            <Icon name={experiment.icon} className="h-7 w-7 text-secondary" />
-                            <span className="rounded-full bg-hero-background px-3 py-1 text-xs font-semibold">
-                                {experiment.status}
-                            </span>
-                        </div>
-                        <h3 className="mt-8 text-xl font-semibold">{experiment.title}</h3>
-                        <p className="mt-3 text-base leading-relaxed text-foreground-accent">{experiment.description}</p>
-                    </article>
-                ))}
-            </div>
-        </Section>
-    </Container>
+    <div className="bg-foreground text-white [&_section>div:first-child>p]:text-primary [&_section>div:first-child_div>p]:text-white/60">
+        <Container>
+            <Section
+                id="experiments"
+                eyebrow="Experiments & ventures"
+                title="The places where I test my own thinking."
+                description="Ongoing ventures let me learn through real decisions: finding an audience, shaping a product and building for the long term."
+            >
+                <div className="grid gap-5 lg:grid-cols-2">
+                    {experiments.map((experiment, index) => (
+                        <article
+                            key={experiment.title}
+                            className={index === 0 ? "rounded-[2rem] bg-primary p-8 text-foreground sm:p-10" : "rounded-[2rem] bg-white p-8 text-foreground sm:p-10"}
+                        >
+                            <div className="flex items-center justify-between">
+                                <span className="font-mono text-sm">0{index + 1}</span>
+                                <span className="text-xs font-semibold uppercase tracking-wider">{experiment.status}</span>
+                            </div>
+                            <h3 className="mt-20 text-4xl font-extrabold sm:text-5xl">{experiment.title}</h3>
+                            <p className="mt-5 max-w-xl leading-relaxed opacity-75">{experiment.description}</p>
+                        </article>
+                    ))}
+                </div>
+            </Section>
+        </Container>
+    </div>
 );
 
 export const AboutSection = () => (
-    <div id="about" className="bg-[#0b0d10] py-20 text-white lg:py-28">
+    <div id="about" className="bg-primary py-20 lg:py-32">
         <Container>
-            <div className="grid items-start gap-12 lg:grid-cols-[.9fr_1.1fr]">
+            <div className="grid gap-12 lg:grid-cols-[.55fr_1.45fr]">
+                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-secondary">About Taran</p>
                 <div>
-                    <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">About Taran</p>
-                    <h2 className="mt-4 text-3xl font-bold leading-tight sm:text-5xl">
-                        I enjoy solving business problems with technology.
+                    <h2 className="max-w-5xl text-4xl font-extrabold leading-[.95] sm:text-6xl lg:text-7xl">
+                        Curious about the business. Comfortable with the build.
                     </h2>
-                </div>
-                <div>
-                    <p className="text-xl leading-relaxed text-white/75">
-                        I combine marketing and technical execution to help businesses become easier to find, easier
-                        to trust and easier to engage with.
+                    <p className="mt-8 max-w-3xl text-xl leading-relaxed text-secondary">
+                        I enjoy solving business problems with technology. My work sits between marketing strategy and
+                        hands-on execution, which means I can follow an idea from customer insight through to launch.
                     </p>
-                    <p className="mt-5 leading-relaxed text-white/55">
-                        I believe strong businesses are built through trust, useful content, good user experiences and
-                        patient marketing. Paid advertising can accelerate growth, but lasting visibility comes from
-                        understanding how people search, what customers need and which systems will keep creating value
-                        over time.
+                    <p className="mt-6 max-w-3xl leading-relaxed text-secondary/80">
+                        I believe durable growth comes from trust, useful content and good experiences. Paid advertising
+                        can create momentum, but organic visibility and systems that improve over time create resilience.
                     </p>
-                    <div className="mt-8 grid gap-3 sm:grid-cols-2">
-                        {["Independent & hands-on", "Based in Auckland", "Clear, direct communication", "Built for measurable progress"].map(
-                            (item) => (
-                                <div key={item} className="flex items-center gap-3 rounded-2xl border border-white/10 p-4 text-sm">
-                                    <span className="h-2 w-2 rounded-full bg-primary" />
-                                    {item}
-                                </div>
-                            ),
-                        )}
+                    <div className="mt-12 flex flex-wrap gap-x-10 gap-y-3 border-t border-black/25 pt-6 text-sm font-semibold">
+                        <span>Auckland, New Zealand</span>
+                        <span>Independent & hands-on</span>
+                        <span>Marketing + development</span>
                     </div>
-                    {/* TODO: Add Taran's professional headshot and a concise career timeline. */}
+                    {/* TODO: Add Taran's professional headshot and concise career timeline. */}
                 </div>
             </div>
         </Container>
@@ -208,20 +164,15 @@ export const SkillsSection = () => (
         <Section
             id="skills"
             eyebrow="Capabilities"
-            title="A practical full-stack growth toolkit."
-            description="The disciplines and platforms I use to move from opportunity to execution."
+            title="A broad toolkit, used with focus."
+            description="Tools matter when they help answer a real customer or business need."
         >
-            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-                {skillGroups.map((group) => (
-                    <article key={group.title} className="rounded-3xl border border-black/10 bg-white p-6">
-                        <h3 className="text-lg font-semibold">{group.title}</h3>
-                        <div className="mt-5 flex flex-wrap gap-2">
-                            {group.skills.map((skill) => (
-                                <span key={skill} className="rounded-full bg-hero-background px-3 py-1.5 text-sm">
-                                    {skill}
-                                </span>
-                            ))}
-                        </div>
+            <div className="grid gap-px overflow-hidden rounded-[2rem] bg-black/15 sm:grid-cols-2 lg:grid-cols-4">
+                {skillGroups.map((group, index) => (
+                    <article key={group.title} className={index === 0 ? "bg-primary p-7" : "bg-hero-background p-7"}>
+                        <p className="font-mono text-xs">0{index + 1}</p>
+                        <h3 className="mt-16 text-2xl font-bold">{group.title}</h3>
+                        <p className="mt-4 text-sm leading-relaxed text-foreground-accent">{group.skills.join(" · ")}</p>
                     </article>
                 ))}
             </div>
