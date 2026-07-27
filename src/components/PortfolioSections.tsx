@@ -176,8 +176,8 @@ export const AboutSection = () => (
                     </div>
                     <dl className="mt-6 max-w-md divide-y divide-black/20 border-y border-black/20">
                         <div className="py-4">
-                            <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-secondary/70">Home</dt>
-                            <dd className="mt-1 font-semibold text-secondary">New Zealand for more than a decade</dd>
+                            <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-secondary/70">Based in</dt>
+                            <dd className="mt-1 font-semibold text-secondary">Auckland, New Zealand</dd>
                         </div>
                         <div className="py-4">
                             <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-secondary/70">Education</dt>
@@ -186,7 +186,7 @@ export const AboutSection = () => (
                         <div className="py-4">
                             <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-secondary/70">Local experience</dt>
                             <dd className="mt-1 font-semibold leading-relaxed text-secondary">
-                                Mainly Auckland and Christchurch
+                                More than a decade across New Zealand
                             </dd>
                         </div>
                     </dl>
@@ -198,8 +198,9 @@ export const AboutSection = () => (
                     <p className="mt-8 max-w-3xl text-xl leading-relaxed text-secondary">
                         New Zealand has been home for more than a decade. I studied in Christchurch and have spent most
                         of my time here living in Auckland and Christchurch, with time also spent in Wellington and
-                        Taranaki. Those experiences have given me firsthand knowledge of the people, communities and
-                        businesses that make Aotearoa distinctive.
+                        Taranaki. Auckland is now my main base and commercial focus. The scale of its market, its
+                        competition and the variety of businesses operating here create the kind of growth problems I
+                        enjoy working on.
                     </p>
 
                     <ol className="mt-10 border-t border-black/25">
