@@ -22,7 +22,7 @@ const CTA = () => (
                     className="inline-flex min-h-14 w-full items-center justify-center gap-2 rounded-full bg-primary px-7 py-3.5 font-semibold text-black transition hover:bg-primary-accent"
                 >
                     <HiOutlineEnvelope aria-hidden="true" />
-                    Email Taran
+                    Let&apos;s Talk About Your Business
                 </Link>
                 <Link
                     href={`tel:${siteDetails.phone.href}`}

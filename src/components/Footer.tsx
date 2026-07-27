@@ -14,7 +14,7 @@ const Footer = () => (
                         {siteDetails.siteName}
                     </Link>
                     <p className="mt-4 max-w-md text-sm text-white/60">
-                        SEO, websites, AI automation and digital marketing for ambitious New Zealand businesses.
+                        Sustainable business growth through SEO, websites, AI, automation and long-term digital strategy.
                     </p>
                     <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-sm">
                         <Link href={`mailto:${siteDetails.email}`} className="text-white/60 hover:text-primary">

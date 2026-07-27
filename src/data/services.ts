@@ -4,49 +4,49 @@ export const services: IService[] = [
     {
         title: "SEO strategy",
         description:
-            "Technical foundations, search strategy and useful content built around how your customers actually look for help.",
+            "Understand what your customers search for, strengthen the pages that matter and build organic visibility that keeps creating opportunities.",
         icon: "search",
         deliverables: ["Technical audits", "Keyword strategy", "Content planning"],
     },
     {
         title: "Website development",
         description:
-            "Fast, premium websites that make your offer easier to understand and your business easier to trust.",
+            "Create a website that explains your value clearly, earns trust and gives potential customers a simple path to enquire.",
         icon: "code",
         deliverables: ["Next.js builds", "Landing pages", "Conversion UX"],
     },
     {
         title: "AI automation",
         description:
-            "Practical automations that connect your tools, remove repetitive work and keep customer follow-up moving.",
+            "Reduce repetitive work, make knowledge easier to access and help your team respond more consistently.",
         icon: "automation",
         deliverables: ["Workflow design", "AI integrations", "Internal tools"],
     },
     {
-        title: "Google Business Profile",
+        title: "Google Business Profile optimisation",
         description:
-            "Local visibility improvements for businesses that depend on calls, visits and enquiries from nearby customers.",
+            "Improve how your business appears in local search and Maps so nearby customers can find, trust and contact you.",
         icon: "local",
         deliverables: ["Profile optimisation", "Local signals", "Review strategy"],
     },
     {
-        title: "Content marketing",
+        title: "Content strategy",
         description:
-            "Useful, search-informed content that answers real customer questions and builds trust and authority over time.",
+            "Plan useful content around real customer questions so your business can build authority and attract relevant search demand.",
         icon: "strategy",
         deliverables: ["Content strategy", "Editorial planning", "Search-led publishing"],
     },
     {
         title: "Lead generation",
         description:
-            "Clear customer journeys that connect visibility with focused pages, stronger offers and practical follow-up.",
+            "Connect visibility, landing pages, offers and follow-up into a clearer journey from first visit to qualified enquiry.",
         icon: "growth",
         deliverables: ["Landing pages", "Conversion journeys", "Enquiry systems"],
     },
     {
-        title: "Analytics & measurement",
+        title: "Analytics & continuous improvement",
         description:
-            "Clear tracking and reporting that shows what is working, what is not and where the next opportunity sits.",
+            "Use clear evidence to understand what is working, find missed opportunities and decide what to improve next.",
         icon: "analytics",
         deliverables: ["Analytics", "Search Console", "Dashboards"],
     },

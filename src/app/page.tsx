@@ -2,6 +2,7 @@ import CTA from "@/components/CTA";
 import Hero from "@/components/Hero";
 import {
     AboutSection,
+    ApproachSection,
     ExperimentsSection,
     ProjectsSection,
     ServicesSection,
@@ -11,6 +12,7 @@ import {
 const HomePage = () => (
     <>
         <Hero />
+        <ApproachSection />
         <ProjectsSection />
         <ServicesSection />
         <ExperimentsSection />
