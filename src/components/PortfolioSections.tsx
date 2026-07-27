@@ -177,22 +177,50 @@ export const AboutSection = () => (
                 </div>
                 <div>
                     <h2 className="max-w-5xl text-4xl font-extrabold leading-[.95] sm:text-6xl lg:text-7xl">
-                        Curious about the business. Comfortable with the build.
+                        I learned marketing because my own business needed customers.
                     </h2>
                     <p className="mt-8 max-w-3xl text-xl leading-relaxed text-secondary">
-                        I enjoy solving business problems with technology. My work sits between marketing strategy and
-                        hands-on execution, which means I can follow an idea from customer insight through to launch.
+                        I didn&apos;t get into marketing because I wanted to become a marketer. I got into it because I
+                        started my own business in New Zealand and needed people to find it, trust it and choose it.
                     </p>
                     <p className="mt-6 max-w-3xl leading-relaxed text-secondary/80">
-                        I believe durable growth comes from trust, useful content and good experiences. Paid advertising
-                        can create momentum, but organic visibility and systems that improve over time create resilience.
+                        I quickly learned that providing a good service wasn&apos;t enough. Customers had to understand
+                        why the business was right for them. That problem led me into SEO, website development, content
+                        strategy, Google Business Profile optimisation and digital marketing.
+                    </p>
+                    <p className="mt-6 max-w-3xl leading-relaxed text-secondary/80">
+                        I invested in coaching, learned from experienced marketers and spent countless hours studying how
+                        businesses grow. The most useful lessons, however, came from applying those ideas—building real
+                        businesses, testing different approaches, making mistakes and improving what worked.
+                    </p>
+                    <p className="mt-6 max-w-3xl leading-relaxed text-secondary/80">
+                        In New Zealand, reputation travels quickly. A recommendation, a Google review, a useful answer or
+                        a professional first impression can carry real weight. People rarely choose a business on price
+                        or promotion alone; they look for signs that it is credible, local and likely to keep its promise.
+                        That understanding shapes how I approach search, content, websites and customer journeys.
+                    </p>
+                    <p className="mt-6 max-w-3xl leading-relaxed text-secondary/80">
+                        I prefer building systems rather than one-off campaigns. A useful website, strong local
+                        visibility, helpful content and thoughtful automation can continue creating value long after
+                        launch. AI is another tool within that work—not the goal itself. I use it when it can simplify a
+                        real process, make knowledge easier to access or help a team work more consistently.
+                    </p>
+                    <p className="mt-6 max-w-3xl leading-relaxed text-secondary/80">
+                        Running my own businesses has taught me that every marketing decision is an investment. Instead
+                        of asking, “What marketing should we do?”, I prefer asking:
+                    </p>
+                    <blockquote className="mt-7 max-w-3xl border-l-4 border-secondary pl-6 text-3xl font-bold leading-tight text-secondary sm:text-4xl">
+                        “What will genuinely help this business grow?”
+                    </blockquote>
+                    <p className="mt-7 max-w-3xl text-xl font-semibold leading-relaxed text-secondary">
+                        I&apos;m naturally curious, always learning and always looking for better ways to help New Zealand
+                        businesses grow stronger over time.
                     </p>
                     <div className="mt-12 flex flex-wrap gap-x-10 gap-y-3 border-t border-black/25 pt-6 text-sm font-semibold">
                         <span>Auckland, New Zealand</span>
                         <span>Independent & hands-on</span>
                         <span>Marketing + development</span>
                     </div>
-                    {/* TODO: Replace the draft biography with Taran's full personal story after the content interview. */}
                 </div>
             </div>
         </Container>
