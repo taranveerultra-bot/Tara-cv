@@ -1,33 +1,37 @@
-import React from 'react';
-import Image from 'next/image';
-import { testimonials } from '@/data/testimonials';
+import Container from "./Container";
+import Section from "./Section";
+import { testimonials } from "@/data/testimonials";
 
-const Testimonials: React.FC = () => {
-    return (
-        <div className="grid gap-14 max-w-lg w-full mx-auto lg:gap-8 lg:grid-cols-3 lg:max-w-full">
-            {testimonials.map((testimonial, index) => (
-                <div
-                    key={index}
-                    className=""
-                >
-                    <div className="flex items-center mb-4 w-full justify-center lg:justify-start">
-                        <Image
-                            src={testimonial.avatar}
-                            alt={`${testimonial.name} avatar`}
-                            width={50}
-                            height={50}
-                            className="rounded-full shadow-md"
-                        />
-                        <div className="ml-4">
-                            <h3 className="text-lg font-semibold text-secondary">{testimonial.name}</h3>
-                            <p className="text-sm text-foreground-accent">{testimonial.role}</p>
-                        </div>
-                    </div>
-                    <p className="text-foreground-accent text-center lg:text-left">&quot;{testimonial.message}&quot;</p>
+const Testimonials = () => (
+    <div className="bg-hero-background">
+        <Container>
+            <Section
+                id="testimonials"
+                eyebrow="Feedback"
+                title="Trusted thinking, clear execution."
+                description="Representative feedback structure ready for approved client and professional references."
+            >
+                <div className="grid gap-5 md:grid-cols-3">
+                    {testimonials.map((testimonial) => (
+                        <figure key={testimonial.name} className="flex h-full flex-col rounded-3xl border border-black/10 bg-white p-7">
+                            <blockquote className="flex-1 text-lg leading-relaxed">
+                                “{testimonial.message}”
+                            </blockquote>
+                            <figcaption className="mt-8 flex items-center gap-3">
+                                <span className="grid h-11 w-11 place-items-center rounded-full bg-foreground text-xs font-bold text-white">
+                                    {testimonial.initials}
+                                </span>
+                                <span>
+                                    <span className="block text-sm font-semibold">{testimonial.name}</span>
+                                    <span className="block text-sm text-foreground-accent">{testimonial.role}</span>
+                                </span>
+                            </figcaption>
+                        </figure>
+                    ))}
                 </div>
-            ))}
-        </div>
-    );
-};
+            </Section>
+        </Container>
+    </div>
+);
 
 export default Testimonials;

@@ -3,51 +3,55 @@ export interface IMenuItem {
     url: string;
 }
 
-export interface IBenefit {
+export type IconName =
+    | "analytics"
+    | "automation"
+    | "code"
+    | "growth"
+    | "local"
+    | "search"
+    | "strategy";
+
+export interface IProject {
+    title: string;
+    category: string;
+    summary: string;
+    outcome: string;
+    tags: string[];
+    accent: string;
+    href?: string;
+}
+
+export interface IService {
     title: string;
     description: string;
-    imageSrc: string;
-    bullets: IBenefitBullet[]
+    icon: IconName;
+    deliverables: string[];
 }
 
-export interface IBenefitBullet {
+export interface IExperiment {
     title: string;
     description: string;
-    icon: JSX.Element;
+    status: "Building" | "Exploring" | "Live";
+    icon: IconName;
 }
 
-export interface IPricing {
-    name: string;
-    price: number | string;
-    features: string[];
-}
-
-export interface IFAQ {
-    question: string;
-    answer: string;
+export interface ISkillGroup {
+    title: string;
+    skills: string[];
 }
 
 export interface ITestimonial {
     name: string;
     role: string;
     message: string;
-    avatar: string;
-}
-
-export interface IStats {
-    title: string;
-    icon: JSX.Element;
-    description: string;
+    initials: string;
 }
 
 export interface ISocials {
-    facebook?: string;
     github?: string;
     instagram?: string;
     linkedin?: string;
-    threads?: string;
-    twitter?: string;
-    youtube?: string;
     x?: string;
     [key: string]: string | undefined;
 }

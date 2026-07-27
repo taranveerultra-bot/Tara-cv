@@ -1,31 +1,43 @@
-import { ctaDetails } from "@/data/cta"
+import Link from "next/link";
+import { HiArrowUpRight, HiOutlineEnvelope } from "react-icons/hi2";
 
-import AppStoreButton from "./AppStoreButton"
-import PlayStoreButton from "./PlayStoreButton"
+import { siteDetails } from "@/data/siteDetails";
 
-const CTA: React.FC = () => {
-    return (
-        <section id="cta" className="mt-10 mb-5 lg:my-20">
-            <div className="relative h-full w-full z-10 mx-auto py-12 sm:py-20">
-                <div className="h-full w-full">
-                    <div className="rounded-3xl opacity-95 absolute inset-0 -z-10 h-full w-full bg-[#050a02] bg-[linear-gradient(to_right,#12170f_1px,transparent_1px),linear-gradient(to_bottom,#12170f_1px,transparent_1px)] bg-[size:6rem_4rem]">
-                        <div className="rounded-3xl absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_600px_at_50%_500px,#1C1C02,transparent)]"></div>
-                    </div>
-
-                    <div className="h-full flex flex-col items-center justify-center text-white text-center px-5">
-                        <h2 className="text-2xl sm:text-3xl md:text-5xl md:leading-tight font-semibold mb-4 max-w-2xl">{ctaDetails.heading}</h2>
-
-                        <p className="mx-auto max-w-xl md:px-5">{ctaDetails.subheading}</p>
-
-                        <div className="mt-4 flex flex-col sm:flex-row items-center sm:gap-4">
-                        <AppStoreButton />
-                        <PlayStoreButton />
-                        </div>
-                    </div>
+const CTA = () => (
+    <section id="contact" className="scroll-mt-20 px-5 py-16 lg:py-24">
+        <div className="relative mx-auto max-w-7xl overflow-hidden rounded-[2rem] bg-[#0b0d10] px-6 py-16 text-center text-white sm:px-10 lg:py-24">
+            <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)] bg-[size:5rem_4rem]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_110%,#304fff55,transparent)]" />
+            <div className="relative mx-auto max-w-3xl">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Let&apos;s build momentum</p>
+                <h2 className="mt-4 text-balance text-3xl font-semibold leading-tight sm:text-5xl">
+                    Have a digital problem worth solving?
+                </h2>
+                <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-white/65">
+                    Tell me what you are trying to improve. I&apos;ll bring a clear point of view and a practical next step.
+                </p>
+                <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+                    <Link
+                        href={`mailto:${siteDetails.email}`}
+                        className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-7 py-3.5 font-semibold text-black transition hover:bg-primary-accent sm:w-auto"
+                    >
+                        <HiOutlineEnvelope aria-hidden="true" />
+                        Email Taran
+                    </Link>
+                    <Link
+                        href="https://www.linkedin.com"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/15 px-7 py-3.5 font-semibold transition hover:bg-white/10 sm:w-auto"
+                    >
+                        Connect on LinkedIn
+                        <HiArrowUpRight aria-hidden="true" />
+                    </Link>
+                    {/* TODO: Replace the generic LinkedIn URL with Taran's public profile. */}
                 </div>
             </div>
-        </section>
-    )
-}
+        </div>
+    </section>
+);
 
-export default CTA
+export default CTA;
