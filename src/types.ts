@@ -21,6 +21,8 @@ export interface IProject {
     results: string[];
     tags: string[];
     accent: string;
+    image: string;
+    imageAlt: string;
     href?: string;
 }
 
@@ -36,6 +38,8 @@ export interface IExperiment {
     description: string;
     status: "Building" | "Exploring" | "Live";
     icon: IconName;
+    image: string;
+    imageAlt: string;
 }
 
 export interface ISkillGroup {

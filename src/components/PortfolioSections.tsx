@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import Container from "./Container";
 import Icon from "./Icon";
 import Section from "./Section";
@@ -5,8 +7,6 @@ import { experiments } from "@/data/experiments";
 import { projects } from "@/data/projects";
 import { services } from "@/data/services";
 import { skillGroups } from "@/data/skills";
-
-const projectSurfaces = ["bg-[#163300] text-primary", "bg-primary text-foreground", "bg-[#ffc091] text-foreground", "bg-[#d7e7ff] text-foreground"];
 
 export const ProjectsSection = () => (
     <div className="bg-white">
@@ -20,23 +20,22 @@ export const ProjectsSection = () => (
                 <div className="space-y-20 lg:space-y-28">
                     {projects.map((project, index) => (
                         <article key={project.title} className="grid items-start gap-8 lg:grid-cols-2 lg:gap-16">
-                            <div className={`${index % 2 ? "lg:order-2" : ""} ${projectSurfaces[index]} flex min-h-[24rem] flex-col justify-between rounded-[2rem] p-7 sm:p-10`}>
-                                <div className="flex items-start justify-between gap-6">
-                                    <span className="font-mono text-sm">0{index + 1}</span>
-                                    <span className="max-w-[15rem] text-right text-xs font-semibold uppercase tracking-[0.14em]">
-                                        {project.category}
-                                    </span>
+                            <figure className={`${index % 2 ? "lg:order-2" : ""} overflow-hidden rounded-[2rem] bg-hero-background`}>
+                                <div className="flex items-center justify-between px-5 py-4">
+                                    <span className="font-mono text-xs">0{index + 1}</span>
+                                    <span className="text-xs font-semibold uppercase tracking-[0.14em]">Live work</span>
                                 </div>
-                                <div>
-                                    <p className="text-5xl font-extrabold leading-[.9] tracking-[-0.05em] sm:text-7xl">
-                                        {project.title}
-                                    </p>
-                                    <p className="mt-6 max-w-md text-base font-medium leading-relaxed opacity-80">
-                                        {project.outcome}
-                                    </p>
+                                <div className="relative aspect-[16/10] overflow-hidden border-y border-black/10 bg-white">
+                                    <Image
+                                        src={project.image}
+                                        alt={project.imageAlt}
+                                        fill
+                                        sizes="(min-width: 1024px) 50vw, 100vw"
+                                        className="object-cover object-top"
+                                    />
                                 </div>
-                                {/* TODO: Replace this typographic project panel with an approved project screenshot. */}
-                            </div>
+                                <figcaption className="px-5 py-4 text-sm font-semibold">{project.title}</figcaption>
+                            </figure>
 
                             <div className={index % 2 ? "lg:order-1" : ""}>
                                 <p className="text-sm font-semibold uppercase tracking-[0.14em] text-secondary">The work</p>
@@ -114,14 +113,25 @@ export const ExperimentsSection = () => (
                     {experiments.map((experiment, index) => (
                         <article
                             key={experiment.title}
-                            className={index === 0 ? "rounded-[2rem] bg-primary p-8 text-foreground sm:p-10" : "rounded-[2rem] bg-white p-8 text-foreground sm:p-10"}
+                            className={index === 0 ? "overflow-hidden rounded-[2rem] bg-primary text-foreground" : "overflow-hidden rounded-[2rem] bg-white text-foreground"}
                         >
-                            <div className="flex items-center justify-between">
-                                <span className="font-mono text-sm">0{index + 1}</span>
-                                <span className="text-xs font-semibold uppercase tracking-wider">{experiment.status}</span>
+                            <div className="relative aspect-[16/9] overflow-hidden border-b border-black/10">
+                                <Image
+                                    src={experiment.image}
+                                    alt={experiment.imageAlt}
+                                    fill
+                                    sizes="(min-width: 1024px) 50vw, 100vw"
+                                    className="object-cover object-top"
+                                />
                             </div>
-                            <h3 className="mt-20 text-4xl font-extrabold sm:text-5xl">{experiment.title}</h3>
-                            <p className="mt-5 max-w-xl leading-relaxed opacity-75">{experiment.description}</p>
+                            <div className="p-8 sm:p-10">
+                                <div className="flex items-center justify-between">
+                                    <span className="font-mono text-sm">0{index + 1}</span>
+                                    <span className="text-xs font-semibold uppercase tracking-wider">{experiment.status}</span>
+                                </div>
+                                <h3 className="mt-12 text-4xl font-extrabold sm:text-5xl">{experiment.title}</h3>
+                                <p className="mt-5 max-w-xl leading-relaxed opacity-75">{experiment.description}</p>
+                            </div>
                         </article>
                     ))}
                 </div>

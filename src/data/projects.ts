@@ -10,19 +10,22 @@ export const projects: IProject[] = [
         responsibilities: [
             "Website and performance improvements",
             "SEO strategy and content publishing",
-            "Google Business Profile optimisation",
+            "Google Maps and Business Profile optimisation",
             "Google Ads and review generation",
-            "Local partnerships and offline marketing",
+            "Local partnerships, offline marketing and internal tools",
+            "Sophie staff training bot and standardised operating guides",
         ],
         results: [
             "150+ Google reviews",
             "Strong rankings for competitive cleaning searches in Christchurch",
             "A recognised local presence with sustainable long-term growth",
             "Ongoing expansion into Auckland",
+            "Repeatable staff training, customer-call and job-preparation systems",
         ],
         tags: ["SEO", "Local marketing", "Content", "Google Ads"],
         accent: "from-blue-500/25 via-cyan-400/10 to-transparent",
-        // TODO: Add an approved Harmony Clean screenshot and live project URL.
+        image: "/images/projects/harmony-clean.png",
+        imageAlt: "Harmony Clean Christchurch service page showing navigation, quote call to action and customer review",
     },
     {
         title: "Pop Up Penguins",
@@ -43,7 +46,8 @@ export const projects: IProject[] = [
         ],
         tags: ["Keyword research", "Content SEO", "Internal linking", "Analytics"],
         accent: "from-violet-500/25 via-fuchsia-400/10 to-transparent",
-        // TODO: Add an approved traffic screenshot and live project URL.
+        image: "/images/projects/pop-up-penguins.png",
+        imageAlt: "Pop Up Penguins content website homepage",
     },
     {
         title: "Hyper Carpet Cleaning",
@@ -65,7 +69,8 @@ export const projects: IProject[] = [
         ],
         tags: ["Web development", "Branding", "UX", "Technical SEO"],
         accent: "from-amber-400/30 via-orange-400/10 to-transparent",
-        // TODO: Add approved before-and-after website screenshots and the live URL.
+        image: "/images/projects/hyper-carpet-cleaning.png",
+        imageAlt: "Hyper Carpet Cleaning website homepage with quote form",
     },
     {
         title: "TaxPop",
@@ -86,6 +91,7 @@ export const projects: IProject[] = [
         ],
         tags: ["HTML", "Calculators", "Information architecture", "SEO"],
         accent: "from-emerald-500/25 via-teal-400/10 to-transparent",
-        // TODO: Add an approved TaxPop screenshot and live project URL.
+        image: "/images/projects/taxpop.png",
+        imageAlt: "TaxPop New Zealand tax reference and calculator platform",
     },
 ];
