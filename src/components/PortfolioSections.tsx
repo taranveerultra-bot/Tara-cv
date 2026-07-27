@@ -38,21 +38,18 @@ export const ProjectsSection = () => (
                             </figure>
 
                             <div className={index % 2 ? "lg:order-1" : ""}>
-                                <p className="text-base font-semibold uppercase tracking-[0.12em] text-secondary">Case study</p>
+                                <p className="text-base font-semibold uppercase tracking-[0.12em] text-secondary">The work</p>
                                 <h3 className="mt-4 text-4xl font-bold leading-tight sm:text-5xl">{project.category}</h3>
-                                <div className="mt-6">
-                                    <p className="text-lg font-semibold">What was the problem?</p>
-                                    <p className="mt-3 text-xl leading-relaxed text-foreground-accent">{project.summary}</p>
-                                </div>
+                                <p className="mt-6 text-xl leading-relaxed text-foreground-accent">{project.summary}</p>
                                 <div className="mt-9 grid gap-8 border-t border-black/15 pt-7 sm:grid-cols-2">
                                     <div>
-                                        <p className="text-lg font-semibold">What was my role?</p>
+                                        <p className="text-lg font-semibold">Scope</p>
                                         <p className="mt-3 text-lg leading-relaxed text-foreground-accent">
                                             {project.responsibilities.join(" · ")}
                                         </p>
                                     </div>
                                     <div>
-                                        <p className="text-lg font-semibold">What changed?</p>
+                                        <p className="text-lg font-semibold">Evidence</p>
                                         <p className="mt-3 text-lg leading-relaxed text-foreground-accent">
                                             {project.results.join(" · ")}
                                         </p>
@@ -79,9 +76,9 @@ export const ServicesSection = () => (
         <Container>
             <Section
                 id="services"
-                eyebrow="Services"
-                title="How I Help Businesses"
-                description="Every engagement starts with the business problem. The right answer may involve search, content, a better website, automation or a combination of them."
+                eyebrow="What I do"
+                title="Strategy and execution, connected."
+                description="Support can begin with one focused problem or develop into an ongoing working relationship."
             >
                 <div className="border-t border-black/20">
                     {services.map((service, index) => (
@@ -161,78 +158,27 @@ export const AboutSection = () => (
                 </div>
                 <div>
                     <h2 className="max-w-5xl text-4xl font-extrabold leading-[.95] sm:text-6xl lg:text-7xl">
-                        I learned marketing because my own business needed customers.
+                        Curious about the business. Comfortable with the build.
                     </h2>
                     <p className="mt-8 max-w-3xl text-xl leading-relaxed text-secondary">
-                        My journey started with a practical problem: I had built a business, but I still needed people
-                        to find it, trust it and choose it. That led me into SEO, websites, Google Business Profile,
-                        content marketing and digital strategy.
+                        I enjoy solving business problems with technology. My work sits between marketing strategy and
+                        hands-on execution, which means I can follow an idea from customer insight through to launch.
                     </p>
                     <p className="mt-6 max-w-3xl leading-relaxed text-secondary/80">
-                        I invested in coaching and learned from experienced marketers, but the most useful lessons came
-                        from applying those ideas in real businesses. Over time, I began helping other businesses solve
-                        the same problems: becoming easier to find, creating better customer experiences and building
-                        marketing systems that keep improving.
-                    </p>
-                    <p className="mt-6 max-w-3xl leading-relaxed text-secondary/80">
-                        I enjoy understanding how people search, how businesses grow and where technology can remove
-                        unnecessary work. AI is one of the tools I use to solve those problems; it is never the goal by
-                        itself. I believe marketing should build trust, authority and sustainable growth rather than
-                        chase short-term wins.
-                    </p>
-                    <p className="mt-6 max-w-3xl text-xl font-semibold leading-relaxed text-secondary">
-                        I&apos;m naturally curious, always learning and always looking for better ways to help businesses grow.
+                        I believe durable growth comes from trust, useful content and good experiences. Paid advertising
+                        can create momentum, but organic visibility and systems that improve over time create resilience.
                     </p>
                     <div className="mt-12 flex flex-wrap gap-x-10 gap-y-3 border-t border-black/25 pt-6 text-sm font-semibold">
                         <span>Auckland, New Zealand</span>
                         <span>Independent & hands-on</span>
                         <span>Marketing + development</span>
                     </div>
+                    {/* TODO: Replace the draft biography with Taran's full personal story after the content interview. */}
                 </div>
             </div>
         </Container>
     </div>
 );
-
-export const ApproachSection = () => {
-    const principles = [
-        "Build trust before selling.",
-        "Understand how customers search.",
-        "Create useful content.",
-        "Build systems instead of one-off campaigns.",
-        "Measure, improve and repeat.",
-    ];
-
-    return (
-        <div className="bg-white">
-            <Container>
-                <Section
-                    id="approach"
-                    eyebrow="My approach"
-                    title="How I Think About Growth"
-                    description="Sustainable growth is built through a series of useful decisions, applied consistently and improved with evidence."
-                >
-                    <div className="grid gap-8 lg:grid-cols-[1fr_.85fr]">
-                        <div className="border-t border-black/20">
-                            {principles.map((principle, index) => (
-                                <div key={principle} className="grid grid-cols-[3rem_1fr] gap-4 border-b border-black/20 py-6">
-                                    <span className="font-mono text-sm text-foreground-accent">0{index + 1}</span>
-                                    <p className="text-xl font-semibold">{principle}</p>
-                                </div>
-                            ))}
-                        </div>
-                        <blockquote className="flex items-end rounded-[2rem] bg-primary p-8 sm:p-10">
-                            <p className="text-3xl font-bold leading-tight sm:text-4xl">
-                                “Paid advertising can accelerate growth, but long-term success comes from trust, useful
-                                content and strong organic visibility.”
-                            </p>
-                        </blockquote>
-                    </div>
-                </Section>
-            </Container>
-        </div>
-    );
-};
 
 export const SkillsSection = () => (
     <Container>

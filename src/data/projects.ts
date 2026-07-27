@@ -5,7 +5,7 @@ export const projects: IProject[] = [
         title: "Harmony Clean",
         category: "Long-term digital marketing & SEO growth",
         summary:
-            "Harmony Clean needed a dependable way to attract local customers, earn trust and keep its marketing and team knowledge consistent as the business grew.",
+            "Over the past three years, I have continuously developed Harmony Clean's online presence through SEO, content, local visibility, advertising, partnerships, internal tools and ongoing website improvements.",
         outcome: "An ongoing marketing partnership built around sustainable growth, not a one-off campaign.",
         responsibilities: [
             "Website, SEO and content improvements",
@@ -29,7 +29,7 @@ export const projects: IProject[] = [
         title: "Hyper Carpet Cleaning",
         category: "Modern website rebuild & brand refresh",
         summary:
-            "The existing WordPress website no longer reflected the quality of the service and made it harder for customers to understand the offer or request a quote.",
+            "A complete rebuild of an older WordPress website into a faster, more modern experience focused on trust, usability and lead generation.",
         outcome: "A premium website foundation ready to support future marketing campaigns.",
         responsibilities: [
             "Full website rebuild",
@@ -52,7 +52,7 @@ export const projects: IProject[] = [
         title: "Tui Digital",
         category: "Digital marketing studio",
         summary:
-            "Tui Digital needed a clear way to explain how SEO, paid search, content, web design, automation and AI support work together for New Zealand businesses.",
+            "My digital marketing studio brings SEO, paid search, content, web design, automation and practical AI support together for New Zealand businesses.",
         outcome: "A working expression of how I position, package and deliver connected digital growth services.",
         responsibilities: [
             "Brand positioning and service strategy",
@@ -74,7 +74,7 @@ export const projects: IProject[] = [
         title: "The Matchmaking Bureau",
         category: "International platform in development",
         summary:
-            "The platform needed to present matchmaking as a trusted, discreet service rather than another impersonal dating application, while being able to grow internationally.",
+            "A premium international matchmaking platform currently being developed for South Asian communities, with careful attention to positioning, user experience and trust.",
         outcome: "A long-term digital product designed around discretion, human connection and international scalability.",
         responsibilities: [
             "Brand and product direction",
@@ -96,7 +96,7 @@ export const projects: IProject[] = [
         title: "Pop Up Penguins",
         category: "SEO content platform",
         summary:
-            "I wanted a real environment where I could test how keyword selection, search intent, useful writing and internal linking translate into sustained organic traffic.",
+            "A personal content website where I research keyword opportunities, study search intent and publish useful content designed for compounding organic growth.",
         outcome: "My live SEO testing environment for continuously improving content strategy.",
         responsibilities: [
             "Keyword and search-intent research",
@@ -118,7 +118,7 @@ export const projects: IProject[] = [
         title: "TaxPop",
         category: "Tax information platform",
         summary:
-            "New Zealand tax information is often fragmented and difficult to compare, so the challenge was to organise it around practical questions and useful calculations.",
+            "A New Zealand-focused information website with custom calculators and structured educational content designed to make tax topics easier to navigate.",
         outcome: "Making complex tax information more approachable for New Zealand businesses.",
         responsibilities: [
             "HTML development",
