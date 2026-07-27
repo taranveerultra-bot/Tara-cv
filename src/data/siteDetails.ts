@@ -8,7 +8,11 @@ export const siteDetails = {
     },
     language: "en-NZ",
     locale: "en_NZ",
-    email: "hello@taran.co.nz", // TODO: Replace with Taran's preferred public email address.
+    email: "taranveerebu340@gmail.com",
+    phone: {
+        display: "+64 22 069 2139",
+        href: "+64220692139",
+    },
     location: "Auckland, New Zealand",
     googleAnalyticsId: "", // TODO: Add the production GA4 measurement ID.
 };

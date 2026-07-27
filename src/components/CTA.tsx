@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { HiArrowUpRight, HiOutlineEnvelope } from "react-icons/hi2";
+import { HiArrowUpRight, HiOutlineEnvelope, HiOutlinePhone } from "react-icons/hi2";
 
 import { siteDetails } from "@/data/siteDetails";
 
@@ -23,6 +23,13 @@ const CTA = () => (
                     >
                         <HiOutlineEnvelope aria-hidden="true" />
                         Email Taran
+                    </Link>
+                    <Link
+                        href={`tel:${siteDetails.phone.href}`}
+                        className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/15 px-7 py-3.5 font-semibold transition hover:bg-white/10 sm:w-auto"
+                    >
+                        <HiOutlinePhone aria-hidden="true" />
+                        {siteDetails.phone.display}
                     </Link>
                     <Link
                         href="https://www.linkedin.com"

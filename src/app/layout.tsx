@@ -26,6 +26,15 @@ export const metadata: Metadata = {
         "Google Business Profile optimisation",
     ],
     alternates: { canonical: "/" },
+    robots: {
+        index: false,
+        follow: false,
+        googleBot: {
+            index: false,
+            follow: false,
+            noimageindex: true,
+        },
+    },
     openGraph: {
         title: siteDetails.metadata.title,
         description: siteDetails.metadata.description,

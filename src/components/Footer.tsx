@@ -16,6 +16,14 @@ const Footer = () => (
                     <p className="mt-3 max-w-md text-sm text-foreground-accent">
                         SEO, websites, AI automation and digital marketing for ambitious New Zealand businesses.
                     </p>
+                    <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm">
+                        <Link href={`mailto:${siteDetails.email}`} className="text-foreground-accent hover:text-foreground">
+                            {siteDetails.email}
+                        </Link>
+                        <Link href={`tel:${siteDetails.phone.href}`} className="text-foreground-accent hover:text-foreground">
+                            {siteDetails.phone.display}
+                        </Link>
+                    </div>
                 </div>
                 <nav aria-label="Footer navigation">
                     <ul className="flex flex-wrap gap-x-5 gap-y-2 text-sm">
