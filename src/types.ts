@@ -51,7 +51,6 @@ export interface ITestimonial {
 export interface ISocials {
     github?: string;
     instagram?: string;
-    linkedin?: string;
     x?: string;
     [key: string]: string | undefined;
 }

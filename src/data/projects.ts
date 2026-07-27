@@ -7,7 +7,7 @@ export const projects: IProject[] = [
         summary:
             "A search-led acquisition system combining service pages, local intent content and conversion tracking for a New Zealand service business.",
         outcome: "Built to turn local search demand into qualified enquiries.",
-        tags: ["Local SEO", "Content", "GA4", "CRO"],
+        tags: ["Local SEO", "Content", "Analytics", "CRO"],
         accent: "from-blue-500/25 via-cyan-400/10 to-transparent",
         // TODO: Add the live case-study URL and verified growth metrics.
     },

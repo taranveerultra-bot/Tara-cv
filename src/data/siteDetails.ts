@@ -14,5 +14,4 @@ export const siteDetails = {
         href: "+64220692139",
     },
     location: "Auckland, New Zealand",
-    googleAnalyticsId: "", // TODO: Add the production GA4 measurement ID.
 };

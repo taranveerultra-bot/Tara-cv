@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { HiArrowUpRight, HiOutlineEnvelope, HiOutlinePhone } from "react-icons/hi2";
+import { HiOutlineEnvelope, HiOutlinePhone } from "react-icons/hi2";
 
 import { siteDetails } from "@/data/siteDetails";
 
@@ -31,16 +31,6 @@ const CTA = () => (
                         <HiOutlinePhone aria-hidden="true" />
                         {siteDetails.phone.display}
                     </Link>
-                    <Link
-                        href="https://www.linkedin.com"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/15 px-7 py-3.5 font-semibold transition hover:bg-white/10 sm:w-auto"
-                    >
-                        Connect on LinkedIn
-                        <HiArrowUpRight aria-hidden="true" />
-                    </Link>
-                    {/* TODO: Replace the generic LinkedIn URL with Taran's public profile. */}
                 </div>
             </div>
         </div>

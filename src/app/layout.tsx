@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import { Manrope, Source_Sans_3 } from "next/font/google";
 
 import Footer from "@/components/Footer";
@@ -69,7 +68,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     return (
         <html lang={siteDetails.language}>
             <body className={`${manrope.variable} ${sourceSans.variable} antialiased`}>
-                {siteDetails.googleAnalyticsId && <GoogleAnalytics gaId={siteDetails.googleAnalyticsId} />}
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

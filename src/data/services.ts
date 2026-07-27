@@ -41,6 +41,6 @@ export const services: IService[] = [
         description:
             "Clear tracking and reporting that shows what is working, what is not and where the next opportunity sits.",
         icon: "analytics",
-        deliverables: ["GA4", "Search Console", "Dashboards"],
+        deliverables: ["Analytics", "Search Console", "Dashboards"],
     },
 ];
