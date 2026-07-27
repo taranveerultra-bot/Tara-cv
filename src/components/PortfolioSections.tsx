@@ -15,7 +15,7 @@ export const ProjectsSection = () => (
                 id="projects"
                 eyebrow="Selected work"
                 title="Real businesses. Real work. Growth you can see."
-                description="A selection of real work across long-term marketing, search, local services and digital products. Performance is non-negotiable in every project—from how quickly a page loads to how clearly it helps a customer act."
+                description="A selection of real, end-to-end builds across long-term marketing, search, local services and digital products. Performance is non-negotiable in every project—from how quickly a page loads to how clearly it helps a customer act."
             >
                 <div className="space-y-20 lg:space-y-28">
                     {projects.map((project, index) => (
