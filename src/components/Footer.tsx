@@ -29,9 +29,9 @@ const Footer = () => (
                     <ul className="flex flex-wrap gap-x-5 gap-y-2 text-sm">
                         {menuItems.map((item) => (
                             <li key={item.text}>
-                                <Link href={item.url} className="text-white/60 hover:text-primary">
+                                <a href={item.url} className="text-white/60 hover:text-primary">
                                     {item.text}
-                                </Link>
+                                </a>
                             </li>
                         ))}
                         <li>

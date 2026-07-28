@@ -1,5 +1,7 @@
 "use client";
 
+/* eslint-disable @next/next/no-html-link-for-pages -- Native anchors prevent Next.js from appending repeated URL fragments. */
+
 import Link from "next/link";
 import { useState } from "react";
 import { HiArrowUpRight, HiBars3, HiOutlineXMark } from "react-icons/hi2";
@@ -33,23 +35,23 @@ const Header = () => {
                     <ul className="hidden items-center gap-7 md:flex">
                         {headerMenuItems.map((item) => (
                             <li key={item.text}>
-                                <Link
+                                <a
                                     href={item.url}
                                     className="text-base font-semibold text-foreground-accent transition-colors hover:text-foreground"
                                 >
                                     {item.text}
-                                </Link>
+                                </a>
                             </li>
                         ))}
                     </ul>
 
-                    <Link
+                    <a
                         href="/#contact"
                         className="hidden min-h-12 items-center gap-2 rounded-full bg-foreground px-7 py-3 text-base font-semibold text-white transition hover:bg-secondary md:flex"
                     >
                         Start a conversation
                         <HiArrowUpRight aria-hidden="true" />
-                    </Link>
+                    </a>
 
                     <button
                         onClick={() => setIsOpen((open) => !open)}
@@ -73,13 +75,13 @@ const Header = () => {
                     <ul className="space-y-1">
                         {headerMenuItems.map((item) => (
                             <li key={item.text}>
-                                <Link
+                                <a
                                     href={item.url}
                                     className="block rounded-xl px-3 py-3 font-medium hover:bg-hero-background"
                                     onClick={() => setIsOpen(false)}
                                 >
                                     {item.text}
-                                </Link>
+                                </a>
                             </li>
                         ))}
                     </ul>

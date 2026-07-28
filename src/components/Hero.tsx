@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { HiArrowDown, HiArrowUpRight } from "react-icons/hi2";
 
 import Container from "./Container";
@@ -23,18 +22,18 @@ const Hero = () => (
                         relationships that last.
                     </p>
                     <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-                        <Link
+                        <a
                             href="#projects"
                             className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-foreground px-7 py-3 font-semibold text-white transition hover:bg-secondary"
                         >
                             Explore the work <HiArrowDown aria-hidden="true" />
-                        </Link>
-                        <Link
+                        </a>
+                        <a
                             href="#contact"
                             className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-foreground px-7 py-3 font-semibold transition hover:bg-white"
                         >
                             Discuss your goals <HiArrowUpRight aria-hidden="true" />
-                        </Link>
+                        </a>
                     </div>
                 </div>
 
