@@ -222,61 +222,44 @@ export const AboutSection = () => (
                 </div>
                 <div>
                     <h2 className="max-w-5xl text-4xl font-extrabold leading-[.95] sm:text-6xl lg:text-7xl">
-                        New Zealand is home. Building businesses here taught me how local trust works.
+                        Practical by background. Curious by nature.
                     </h2>
                     <p className="mt-8 max-w-3xl text-xl leading-relaxed text-secondary">
+                        I&apos;m Taran. I started with a mechanical engineering background, which taught me to be
+                        practical, work from the ground up and understand how things fit together. Since then,
+                        I&apos;ve studied and worked across engineering, design, business and marketing.
+                    </p>
+                    <p className="mt-6 max-w-3xl text-xl leading-relaxed text-secondary">
+                        Marketing has been a major part of my work for years, but I&apos;m always willing to learn
+                        something new and take on an unfamiliar problem. Whatever I work on, I care about doing it
+                        properly. I treat every project like my name is on it—because it is.
+                    </p>
+
+                    <p className="mt-6 max-w-3xl leading-relaxed text-secondary/80">
                         New Zealand has been home for more than a decade. I studied in Christchurch and have spent most
-                        of my time here living in Auckland and Christchurch, with time also spent in Wellington and
-                        Tauranga. Auckland is now my main base and commercial focus. The scale of its market, its
-                        competition and the variety of businesses operating here create the kind of growth problems I
-                        enjoy working on.
+                        of my time here in Auckland and Christchurch. Working with local businesses has taught me that
+                        trust, reputation and keeping your word matter as much as the marketing itself.
                     </p>
 
-                    <ol className="mt-10 border-t border-black/25">
-                        {[
-                            {
-                                title: "It started with a customer problem",
-                                copy: "I had built a service business, but a good service meant little if the right people could not find it or understand why they should choose it. Solving that problem pulled me into SEO, websites, content, Google Business Profile and digital strategy.",
-                            },
-                            {
-                                title: "The business became the classroom",
-                                copy: "Coaching and experienced marketers gave me useful frameworks. Running real campaigns taught me what those frameworks could not: customers behave differently from theories, mistakes are expensive, and steady improvement usually beats a clever idea that disappears after a month.",
-                            },
-                            {
-                                title: "Living locally changed what I noticed",
-                                copy: "Across different parts of New Zealand, I saw how quickly reputation moves. A recommendation, a review and the feeling that a business will keep its word often matter more than polished promotion. Trust is not a marketing extra here; it is part of the offer.",
-                            },
-                            {
-                                title: "Clear systems make growth easier to manage",
-                                copy: "I am a strong believer in standard operating procedures. Often, the most useful automation starts with a clear document that helps a new person understand the work. Coordinating projects with overseas virtual assistants has reinforced that lesson: I stay hands-on and accountable, while making each process clear enough to follow, measure and improve. AI comes after that foundation, when it can make the work more consistent.",
-                            },
-                        ].map((chapter, index) => (
-                            <li
-                                key={chapter.title}
-                                className="grid gap-3 border-b border-black/25 py-6 sm:grid-cols-[3rem_.65fr_1.35fr] sm:gap-6"
-                            >
-                                <span className="font-mono text-sm text-secondary/60">0{index + 1}</span>
-                                <h3 className="text-xl font-bold leading-tight text-secondary">{chapter.title}</h3>
-                                <p className="leading-relaxed text-secondary/80">{chapter.copy}</p>
-                            </li>
-                        ))}
-                    </ol>
+                    <p className="mt-6 max-w-3xl leading-relaxed text-secondary/80">
+                        Outside work, I keep active through running and the gym. I also enjoy dancing, trying different
+                        food and travelling when I get the chance.
+                    </p>
 
-                    <p className="mt-10 max-w-3xl leading-relaxed text-secondary/80">
-                        Running businesses here has taught me that every marketing decision is an investment. Instead of
-                        asking, “What marketing should we do?”, I prefer asking:
-                    </p>
-                    <blockquote className="mt-7 max-w-3xl border-l-4 border-secondary pl-6 text-3xl font-bold leading-tight text-secondary sm:text-4xl">
-                        “What will genuinely help this business grow?”
-                    </blockquote>
-                    <p className="mt-7 max-w-3xl text-xl font-semibold leading-relaxed text-secondary">
-                        I&apos;m naturally curious, always learning and always looking for better ways to help local
-                        businesses grow stronger over time.
-                    </p>
+                    <div className="mt-10 max-w-3xl border-y border-black/25 py-7">
+                        <h3 className="text-2xl font-bold text-secondary">Clear systems make good work easier.</h3>
+                        <p className="mt-3 leading-relaxed text-secondary/80">
+                            I&apos;m a strong believer in standard operating procedures. Often, the best automation
+                            starts with a clear document that a new person can understand. Coordinating work with
+                            overseas virtual assistants has reinforced that lesson, while I remain hands-on and
+                            accountable for the result.
+                        </p>
+                    </div>
+
                     <div className="mt-12 flex flex-wrap gap-x-10 gap-y-3 border-t border-black/25 pt-6 text-sm font-semibold">
                         <span>Auckland, New Zealand</span>
                         <span>Independent & hands-on</span>
-                        <span>Marketing + development</span>
+                        <span>Always learning</span>
                     </div>
                 </div>
             </div>
