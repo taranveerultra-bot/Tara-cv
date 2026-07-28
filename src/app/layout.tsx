@@ -67,7 +67,7 @@ const structuredData = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
     return (
-        <html lang={siteDetails.language}>
+        <html lang={siteDetails.language} data-scroll-behavior="smooth">
             <body className={`${manrope.variable} ${sourceSans.variable} antialiased`}>
                 <script
                     type="application/ld+json"
