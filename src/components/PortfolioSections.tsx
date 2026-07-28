@@ -242,8 +242,8 @@ export const AboutSection = () => (
                     </p>
 
                     <p className="mt-6 max-w-3xl leading-relaxed text-secondary/80">
-                        Outside work, I keep active through running and the gym. I also enjoy dancing, trying different
-                        food and travelling when I get the chance.
+                        Outside work, I like to stay active through running and the gym. I enjoy dancing, discovering
+                        new food and travelling when I get the chance.
                     </p>
 
                     <div className="mt-10 max-w-3xl border-y border-black/25 py-7">
