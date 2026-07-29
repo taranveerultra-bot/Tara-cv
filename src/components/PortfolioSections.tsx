@@ -231,9 +231,9 @@ export const AboutSection = () => (
                         Practical by background. Curious by nature.
                     </h2>
                     <p className="mt-8 max-w-3xl text-xl leading-relaxed text-secondary">
-                        I&apos;m Taran. I started with a mechanical engineering background, which taught me to be
-                        practical, work from the ground up and understand how things fit together. Since then,
-                        I&apos;ve studied and worked across engineering, design, business and marketing.
+                        I&apos;m Taran, and I&apos;m 35. I started with a mechanical engineering background, which
+                        taught me to be practical, work from the ground up and understand how things fit together.
+                        Since then, I&apos;ve studied and worked across engineering, design, business and marketing.
                     </p>
                     <p className="mt-6 max-w-3xl text-xl leading-relaxed text-secondary">
                         Marketing has been a major part of my work for years, but I&apos;m always willing to learn
@@ -241,12 +241,17 @@ export const AboutSection = () => (
                         properly. I treat every project like my name is on it—because it is.
                     </p>
 
-                    <p className="mt-6 max-w-3xl leading-relaxed text-secondary/80">
-                        A big part of my day is talking with people, understanding what they need and answering all
-                        kinds of questions. I help turn those conversations into sales, improve the processes behind
-                        the work and deal with everyday operational issues so things run more smoothly. It keeps me
-                        close to customers and the practical side of running a business.
-                    </p>
+                    <div className="mt-8 max-w-3xl border-l-4 border-secondary pl-6">
+                        <h3 className="text-2xl font-bold text-secondary">
+                            A normal workday goes beyond marketing.
+                        </h3>
+                        <p className="mt-3 leading-relaxed text-secondary/80">
+                            I spend a lot of my day talking with people, understanding what they need and answering all
+                            kinds of questions. I help turn those conversations into sales, improve the processes
+                            behind the work and deal with everyday operational issues so things run more smoothly. It
+                            keeps me close to customers and the practical side of running a business.
+                        </p>
+                    </div>
 
                     <p className="mt-6 max-w-3xl leading-relaxed text-secondary/80">
                         New Zealand has been home for more than a decade. I studied in Christchurch and have spent most
