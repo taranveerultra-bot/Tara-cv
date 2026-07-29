@@ -71,7 +71,7 @@ export const ProjectsSection = () => (
                                                 key={link.href}
                                                 href={link.href}
                                                 target="_blank"
-                                                rel="noopener noreferrer"
+                                                rel="nofollow noopener noreferrer"
                                                 className="inline-flex min-h-11 items-center gap-2 rounded-full border border-foreground px-5 py-2.5 text-sm font-semibold transition hover:bg-foreground hover:text-white"
                                             >
                                                 {link.label}
@@ -172,7 +172,7 @@ export const ExperimentsSection = () => (
                                     <Link
                                         href={experiment.href}
                                         target="_blank"
-                                        rel="noopener noreferrer"
+                                        rel="nofollow noopener noreferrer"
                                         className="mt-7 inline-flex min-h-11 items-center gap-2 rounded-full border border-current px-5 py-2.5 text-sm font-semibold transition hover:opacity-60"
                                     >
                                         Visit website
