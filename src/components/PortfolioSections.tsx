@@ -242,6 +242,13 @@ export const AboutSection = () => (
                     </p>
 
                     <p className="mt-6 max-w-3xl leading-relaxed text-secondary/80">
+                        A big part of my day is talking with people, understanding what they need and answering all
+                        kinds of questions. I help turn those conversations into sales, improve the processes behind
+                        the work and deal with everyday operational issues so things run more smoothly. It keeps me
+                        close to customers and the practical side of running a business.
+                    </p>
+
+                    <p className="mt-6 max-w-3xl leading-relaxed text-secondary/80">
                         New Zealand has been home for more than a decade. I studied in Christchurch and have spent most
                         of my time here in Auckland and Christchurch. Working with local businesses has taught me that
                         trust, reputation and keeping your word matter as much as the marketing itself.
