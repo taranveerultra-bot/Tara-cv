@@ -2,9 +2,9 @@ export const siteDetails = {
     siteName: "Taran",
     siteUrl: "https://tara-cv.vercel.app",
     metadata: {
-        title: "Taran | Digital Marketing & Business Growth Consultant",
+        title: "Taran — Marketing, content, websites, automation and analytics",
         description:
-            "Auckland-based consultant helping businesses grow through SEO, websites, AI automation and long-term digital marketing.",
+            "Portfolio and work by Taran, focusing on SEO, content, websites, automation and analytics.",
     },
     language: "en-NZ",
     locale: "en_NZ",

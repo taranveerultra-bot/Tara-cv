@@ -52,11 +52,10 @@ export const metadata: Metadata = {
 
 const structuredData = {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
+    "@type": "Person",
     name: "Taran",
     url: siteDetails.siteUrl,
     description: siteDetails.metadata.description,
-    areaServed: { "@type": "Country", name: "New Zealand" },
     address: {
         "@type": "PostalAddress",
         addressLocality: "Auckland",
