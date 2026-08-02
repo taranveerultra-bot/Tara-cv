@@ -17,13 +17,15 @@ interface Trail {
 }
 
 const TRAIL_COLOURS = [
-    "rgba(22, 51, 0, 0.14)",
-    "rgba(14, 15, 12, 0.09)",
-    "rgba(82, 154, 43, 0.13)",
+    "rgba(106, 196, 59, 0.3)",
+    "rgba(31, 146, 190, 0.26)",
+    "rgba(242, 166, 40, 0.26)",
+    "rgba(120, 91, 211, 0.24)",
+    "rgba(224, 79, 111, 0.22)",
 ];
 
 const createTrail = (x: number, y: number, index: number): Trail => ({
-    points: Array.from({ length: 28 }, () => ({ x, y, vx: 0, vy: 0 })),
+    points: Array.from({ length: 19 }, () => ({ x, y, vx: 0, vy: 0 })),
     spring: 0.18 + index * 0.002,
     friction: 0.68 - index * 0.003,
     colour: TRAIL_COLOURS[index % TRAIL_COLOURS.length],
@@ -112,7 +114,7 @@ const CanvasCursor = () => {
             lastMovement = window.performance.now();
 
             if (trails.length === 0) {
-                trails = Array.from({ length: 10 }, (_, index) =>
+                trails = Array.from({ length: 7 }, (_, index) =>
                     createTrail(pointer.x, pointer.y, index),
                 );
             }
