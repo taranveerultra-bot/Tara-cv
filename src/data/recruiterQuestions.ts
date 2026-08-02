@@ -5,14 +5,14 @@ export interface RecruiterQuestion {
 
 export const recruiterQuestions: RecruiterQuestion[] = [
     {
-        question: "What is your work situation in New Zealand?",
+        question: "Do you have the right to work in New Zealand?",
         answer:
             "I am a New Zealand citizen, so there are no visa or sponsorship requirements for an employer to manage.",
     },
     {
         question: "How many years of experience do you have in marketing?",
         answer:
-            "I have around five years of hands-on experience using marketing tools, platforms and systems. I have been involved in marketing for longer, but my practical, tool-based experience is about five years.",
+            "I have around five years of hands-on experience using marketing tools, platforms and systems, with broader involvement in marketing before that.",
     },
     {
         question: "What marketing tools do you use?",
