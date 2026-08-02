@@ -51,7 +51,7 @@ export const recruiterQuestions: RecruiterQuestion[] = [
         question: "Why should you hire me?",
         answer: [
             "I go out and find solutions. Even when a problem is new or sits outside marketing, I am willing to understand it and help move it forward. If something is beyond my reach, I will say so early, discuss it openly and help find the right person to solve it.",
-            "I value time and do not waste it. I look for better ways to get work done and keep improving the systems around me. You can expect me to be straightforward, accountable and honest about whether something is working.",
+            "I value time and do not waste it. I look for better ways to get work done and keep improving the systems around me. You can expect me to be straightforward, accountable and honest about whether something is working. That is why I believe you should hire me.",
         ],
     },
 ];
