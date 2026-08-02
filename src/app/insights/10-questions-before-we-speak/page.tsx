@@ -50,9 +50,13 @@ export default function RecruiterQuestionsPage() {
                                         <h2 className="text-2xl font-bold leading-tight sm:text-3xl">
                                             {item.question}
                                         </h2>
-                                        <p className="mt-4 text-lg leading-relaxed text-foreground-accent sm:text-xl">
-                                            {item.answer}
-                                        </p>
+                                        <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground-accent sm:text-xl">
+                                            {(Array.isArray(item.answer) ? item.answer : [item.answer]).map(
+                                                (paragraph) => (
+                                                    <p key={paragraph}>{paragraph}</p>
+                                                ),
+                                            )}
+                                        </div>
                                     </div>
                                 </li>
                             ))}

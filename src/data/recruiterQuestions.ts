@@ -1,6 +1,6 @@
 export interface RecruiterQuestion {
     question: string;
-    answer: string;
+    answer: string | string[];
 }
 
 export const recruiterQuestions: RecruiterQuestion[] = [
@@ -49,7 +49,9 @@ export const recruiterQuestions: RecruiterQuestion[] = [
     },
     {
         question: "Why should you hire me?",
-        answer:
-            "I go out and find solutions. When a problem is new, I work to understand it and find a practical way forward. If something is outside my reach, I am honest about it and work with the right people to solve it. I value time, look for better ways to get work done and keep improving systems even when no one is watching. You can expect me to be straightforward, accountable and honest about whether something is working.",
+        answer: [
+            "I go out and find solutions. Even when a problem is new or sits outside marketing, I am willing to understand it and help move it forward. If something is beyond my reach, I will say so early, discuss it openly and help find the right person to solve it.",
+            "I value time and do not waste it. I work in a straightforward, accountable and honest way because clear communication saves time and builds trust. I take loyalty seriously and keep improving the work and systems around me—including this portfolio—as I learn. Those are the qualities I would bring to your team.",
+        ],
     },
 ];
