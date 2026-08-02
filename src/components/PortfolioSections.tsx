@@ -198,7 +198,8 @@ export const AboutSection = () => (
                         Digital Marketing Specialist | SEO | Google Ads | AI &amp; Marketing Automation
                     </h3>
                     <p className="mt-4 max-w-md leading-relaxed text-secondary/80">
-                        Helping businesses generate leads, improve conversions and automate marketing.
+                        I&apos;ve worked across search, content, websites, automation and analytics. I&apos;m interested
+                        in how things work, how people find them and how small improvements create better experiences.
                     </p>
                     <div className="relative mt-7 aspect-[4/5] max-w-md overflow-hidden rounded-[2rem] bg-white">
                         <Image
