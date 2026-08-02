@@ -4,6 +4,12 @@ import Container from "./Container";
 import { menuItems } from "@/data/menuItems";
 import { siteDetails } from "@/data/siteDetails";
 
+const footerMenuItems = menuItems.map((item) => {
+    if (item.text === "Projects") return { ...item, text: "Work samples" };
+    if (item.text === "Services") return { ...item, text: "Areas I enjoy" };
+    return item;
+});
+
 const Footer = () => (
     <footer className="bg-foreground py-12 text-white">
         <Container>
@@ -27,7 +33,7 @@ const Footer = () => (
                 </div>
                 <nav aria-label="Footer navigation">
                     <ul className="flex flex-wrap gap-x-5 gap-y-2 text-sm">
-                        {menuItems.map((item) => (
+                        {footerMenuItems.map((item) => (
                             <li key={item.text}>
                                 <a href={item.url} className="text-white/60 hover:text-primary">
                                     {item.text}
