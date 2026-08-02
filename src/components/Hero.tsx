@@ -10,11 +10,14 @@ const Hero = () => (
                     <p className="mb-7 text-sm font-semibold uppercase tracking-[0.16em] text-secondary">
                         Digital marketing consultant · Auckland, NZ
                     </p>
-                    <h1 className="max-w-5xl text-balance text-5xl font-extrabold leading-[.88] tracking-[-0.055em] sm:text-7xl lg:text-[6.5rem]">
-                        Building growth that{" "}
-                        <span className="relative inline-block">
-                            lasts.
-                            <span className="absolute inset-x-0 bottom-1 -z-0 h-4 -rotate-1 bg-primary lg:h-6" />
+                    <h1 className="max-w-4xl text-5xl font-extrabold leading-[.92] tracking-[-0.05em] sm:text-6xl lg:text-[4.5rem]">
+                        <span className="block sm:whitespace-nowrap">Building growth</span>
+                        <span className="block">
+                            that{" "}
+                            <span className="relative inline-block">
+                                lasts.
+                                <span className="absolute inset-x-0 bottom-0 -z-0 h-2 -rotate-1 bg-primary lg:h-3" />
+                            </span>
                         </span>
                     </h1>
                     <p className="mt-8 max-w-2xl text-xl leading-relaxed text-foreground-accent lg:text-2xl">
