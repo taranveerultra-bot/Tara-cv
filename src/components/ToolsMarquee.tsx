@@ -38,8 +38,7 @@ const ToolsMarquee = () => (
                     </h2>
                 </div>
                 <p className="min-w-0 max-w-xl text-base leading-relaxed text-foreground-accent sm:text-lg md:justify-self-end">
-                    Working across performance marketing, SEO, websites, content and automation to support practical
-                    business growth.
+                    Tools I&apos;ve picked up working across content, websites, automation and analytics.
                 </p>
             </div>
 
