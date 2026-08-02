@@ -255,8 +255,9 @@ export const AboutSection = () => (
 
                     <p className="mt-6 max-w-3xl leading-relaxed text-secondary/80">
                         New Zealand has been home for more than a decade. I studied in Christchurch and have spent most
-                        of my time here in Auckland and Christchurch. Working with local businesses has taught me that
-                        trust, reputation and keeping your word matter as much as the marketing itself.
+                        of my time here in Auckland and Christchurch. Working closely with people and teams in New
+                        Zealand has taught me that trust, reputation and keeping your word matter as much as the
+                        marketing itself.
                     </p>
 
                     <p className="mt-6 max-w-3xl leading-relaxed text-secondary/80">
