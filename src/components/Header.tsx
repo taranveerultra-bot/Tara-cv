@@ -10,7 +10,9 @@ import Container from "./Container";
 import { menuItems } from "@/data/menuItems";
 import { siteDetails } from "@/data/siteDetails";
 
-const headerMenuItems = menuItems.filter((item) => item.text !== "Experiments");
+const headerMenuItems = menuItems
+    .filter((item) => item.text !== "Experiments")
+    .map((item) => (item.text === "Services" ? { ...item, text: "Work samples" } : item));
 
 const BrandMark = () => (
     <span className="grid h-9 w-9 place-items-center rounded-full bg-foreground text-sm font-bold text-white">
