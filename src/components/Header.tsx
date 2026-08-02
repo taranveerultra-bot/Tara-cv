@@ -12,7 +12,11 @@ import { siteDetails } from "@/data/siteDetails";
 
 const headerMenuItems = menuItems
     .filter((item) => item.text !== "Experiments")
-    .map((item) => (item.text === "Services" ? { ...item, text: "Work samples" } : item));
+    .map((item) => {
+        if (item.text === "Projects") return { ...item, text: "Work samples" };
+        if (item.text === "Services") return { ...item, text: "Areas I enjoy" };
+        return item;
+    });
 
 const BrandMark = () => (
     <span className="grid h-9 w-9 place-items-center rounded-full bg-foreground text-sm font-bold text-white">
