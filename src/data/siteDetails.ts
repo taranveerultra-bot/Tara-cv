@@ -1,6 +1,6 @@
 export const siteDetails = {
     siteName: "Taran",
-    siteUrl: "https://tara-cv.vercel.app",
+    siteUrl: "https://www.taranakl.com",
     metadata: {
         title: "Taran — Marketing, content, websites, automation and analytics",
         description:
