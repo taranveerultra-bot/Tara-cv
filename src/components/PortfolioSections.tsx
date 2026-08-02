@@ -296,9 +296,8 @@ export const SkillsSection = () => (
             <div className="grid gap-px overflow-hidden rounded-[2rem] bg-black/15 sm:grid-cols-2 lg:grid-cols-4">
                 {skillGroups.map((group, index) => (
                     <article key={group.title} className={index === 0 ? "bg-primary p-7" : "bg-hero-background p-7"}>
-                        <p className="font-mono text-xs">0{index + 1}</p>
-                        <h3 className="mt-16 text-2xl font-bold">{group.title}</h3>
-                        <p className="mt-4 text-sm leading-relaxed text-foreground-accent">{group.skills.join(" · ")}</p>
+                        <h3 className="text-2xl font-bold">{group.title}</h3>
+                        <p className="mt-3 text-sm leading-relaxed text-foreground-accent">{group.skills.join(" · ")}</p>
                     </article>
                 ))}
             </div>

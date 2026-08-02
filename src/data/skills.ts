@@ -3,18 +3,18 @@ import { ISkillGroup } from "@/types";
 export const skillGroups: ISkillGroup[] = [
     {
         title: "Growth",
-        skills: ["SEO", "Local SEO", "Lead generation", "Content strategy", "CRO"],
+        skills: ["SEO", "Local visibility", "Lead generation"],
     },
     {
         title: "Web & performance",
-        skills: ["Website strategy", "Fast loading", "Mobile experience", "Technical SEO", "Integrations"],
+        skills: ["Websites", "Fast loading", "Technical SEO"],
     },
     {
         title: "Automation",
-        skills: ["SOPs", "AI workflows", "CRM automation", "Systems documentation"],
+        skills: ["SOPs", "AI workflows", "CRM automation"],
     },
     {
         title: "Measurement",
-        skills: ["Analytics", "Search Console", "Tag Manager"],
+        skills: ["Analytics", "Search Console", "Improvement"],
     },
 ];
