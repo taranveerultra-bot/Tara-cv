@@ -114,8 +114,8 @@ export const ServicesSection = () => (
             <Section
                 id="services"
                 eyebrow="What I do"
-                title="What I bring to a team"
-                description="Experience across SEO, websites, content, automation and measurement. I like working on focused problems with people who care about doing things well."
+                title="The kind of work I enjoy"
+                description="Search, content, websites, automation, measurement—the practical parts of marketing where ideas turn into something real. I like being part of that process."
             >
                 <div className="border-t border-black/20">
                     {services.map((service, index) => (
