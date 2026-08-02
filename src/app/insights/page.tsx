@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 
 import Container from "@/components/Container";
+import { recruiterQuestions } from "@/data/recruiterQuestions";
 
 export const metadata: Metadata = {
-    title: "Insights",
-    description: "Original insights from Taran about marketing, business systems and sustainable growth.",
+    title: "10 Questions You Might Have",
+    description: "Straight answers from Taran about experience, work rights, availability and approach to work.",
     alternates: { canonical: "/insights" },
 };
 
@@ -13,26 +14,36 @@ export default function InsightsPage() {
         <>
             <section className="bg-primary pb-20 pt-36 sm:pb-28 sm:pt-44">
                 <Container>
-                    <p className="text-sm font-bold uppercase tracking-[0.18em]">Useful thinking, clearly explained</p>
+                    <p className="text-sm font-bold uppercase tracking-[0.18em]">A little more about me</p>
                     <h1 className="mt-5 max-w-5xl text-balance text-6xl font-extrabold leading-[0.95] sm:text-8xl">
-                        Questions businesses ask before they know what they need.
+                        10 questions you might have before we speak.
                     </h1>
                     <p className="mt-8 max-w-3xl text-xl leading-relaxed sm:text-2xl">
-                        Practical answers about marketing, CRM, websites, search and automation—written to help
-                        you understand the problem before choosing a solution.
+                        Straight answers about my experience, work rights, availability and the way I approach work.
                     </p>
                 </Container>
             </section>
 
             <section className="py-20 sm:py-28">
                 <Container>
-                    <div className="rounded-[2rem] bg-hero-background p-8 sm:p-12">
-                        <p className="text-sm font-bold uppercase tracking-[0.16em] text-secondary">Coming soon</p>
-                        <h2 className="mt-5 max-w-3xl text-4xl font-extrabold sm:text-5xl">
-                            Insights coming soon.
-                        </h2>
-                        {/* TODO: Add only articles based on Taran's original ideas and final approval. */}
-                    </div>
+                    <ol className="border-t border-black/20">
+                        {recruiterQuestions.map((item, index) => (
+                            <li
+                                key={item.question}
+                                className="grid gap-5 border-b border-black/20 py-8 sm:py-10 md:grid-cols-[4rem_minmax(0,1fr)] md:gap-8"
+                            >
+                                <span className="font-mono text-sm text-secondary">
+                                    {String(index + 1).padStart(2, "0")}
+                                </span>
+                                <div className="max-w-4xl">
+                                    <h2 className="text-2xl font-bold leading-tight sm:text-3xl">{item.question}</h2>
+                                    <p className="mt-4 text-lg leading-relaxed text-foreground-accent sm:text-xl">
+                                        {item.answer}
+                                    </p>
+                                </div>
+                            </li>
+                        ))}
+                    </ol>
                 </Container>
             </section>
         </>
