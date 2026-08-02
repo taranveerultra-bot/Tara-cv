@@ -6,7 +6,8 @@ export interface RecruiterQuestion {
 export const recruiterQuestions: RecruiterQuestion[] = [
     {
         question: "What is your work situation in New Zealand?",
-        answer: "I am a New Zealand citizen. I have full work rights and do not require visa sponsorship.",
+        answer:
+            "I am a New Zealand citizen, so there are no visa or sponsorship requirements for an employer to manage.",
     },
     {
         question: "How many years of experience do you have in marketing?",
@@ -16,26 +17,26 @@ export const recruiterQuestions: RecruiterQuestion[] = [
     {
         question: "What marketing tools do you use?",
         answer:
-            "I work confidently across SEO tools, Google Ads, analytics platforms, automation systems and content tools. You can see the broader list of tools and capabilities on my portfolio.",
+            "I use a broad mix of established marketing tools, including Google Ads, Analytics, Search Console and SEO platforms. I also regularly test newer AI and automation tools, choosing what fits the work rather than relying on one platform.",
     },
     {
         question: "What is your expected salary?",
         answer:
-            "I prefer to understand the role, expectations and alignment first. Once we both feel the position is a good fit, I am happy to discuss compensation.",
+            "I prefer to understand the role, expectations and fit first. If we both feel the role is right, I am flexible and confident we can agree on fair compensation.",
     },
     {
-        question: "Are you willing to work remotely?",
+        question: "Are you comfortable working in a hybrid role?",
         answer:
-            "Yes. I prefer remote work because it saves time and helps me stay productive. I am comfortable working independently, communicating clearly and remaining accountable for results.",
+            "Yes. I am comfortable with hybrid work and value the face-to-face connection that comes from spending time with a team in person.",
     },
     {
-        question: "Are you willing to work nights or flexible hours?",
+        question: "Are you willing to work flexible hours?",
         answer:
             "Yes. I focus on completing goals and delivering outcomes, so I am flexible with working hours when needed.",
     },
     {
-        question: "Do you have reliable transport?",
-        answer: "Yes. I have my own car and I am comfortable travelling when required.",
+        question: "Do you have reliable transport, and can you travel?",
+        answer: "Yes. I have my own car and can travel nationally or internationally when required.",
     },
     {
         question: "Are you comfortable with background checks?",
@@ -47,8 +48,8 @@ export const recruiterQuestions: RecruiterQuestion[] = [
             "I answer this in the cover letter I prepare for each application, because the reasons should be specific to the role and the team.",
     },
     {
-        question: "Why should we hire you?",
+        question: "Why should you hire me?",
         answer:
-            "I go out and find solutions. Even when a problem is new, I work to understand it and figure out a practical way forward. If something is outside my reach, I am honest about it. I care about learning, improving and delivering work I can stand behind.",
+            "I go out and find solutions. When a problem is new, I work to understand it and find a practical way forward. If something is outside my reach, I am honest about it and work with the right people to solve it. I value time, look for better ways to get work done and keep improving systems even when no one is watching. You can expect me to be straightforward, accountable and honest about whether something is working.",
     },
 ];
