@@ -9,13 +9,16 @@ import {
     HiDocumentMagnifyingGlass,
     HiDocumentText,
     HiEnvelope,
+    HiFilm,
     HiFunnel,
     HiLightBulb,
     HiMagnifyingGlass,
     HiMapPin,
+    HiPaintBrush,
     HiPresentationChartLine,
 } from "react-icons/hi2";
 import {
+    SiAnthropic,
     SiCanva,
     SiCss3,
     SiGithub,
@@ -81,8 +84,11 @@ export const toolCategories: ToolCategory[] = [
         title: "AI and research",
         items: [
             { name: "OpenAI", icon: SiOpenai },
+            { name: "Claude AI", icon: SiAnthropic },
             { name: "AI Automation", icon: HiCpuChip },
             { name: "AI Workflows", icon: HiCodeBracket },
+            { name: "Seedance", icon: HiFilm },
+            { name: "OpenArt AI", icon: HiPaintBrush },
             { name: "SEMrush", icon: SiSemrush },
             { name: "Ahrefs", icon: HiChartBar },
         ],
