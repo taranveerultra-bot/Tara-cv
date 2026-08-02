@@ -6,7 +6,7 @@ const Hero = () => (
     <section id="home" className="overflow-hidden bg-hero-background pb-16 pt-28 lg:pb-24 lg:pt-36">
         <Container>
             <div className="grid items-center gap-12 lg:grid-cols-[1.18fr_.82fr] lg:gap-16">
-                <div>
+                <div className="lg:-translate-y-4">
                     <p className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-secondary">
                         Digital marketing consultant · Auckland, NZ
                     </p>
