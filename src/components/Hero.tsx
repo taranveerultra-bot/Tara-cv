@@ -17,10 +17,6 @@ const Hero = () => (
                             <span className="absolute inset-x-0 bottom-1 -z-0 h-4 -rotate-1 bg-primary lg:h-6" />
                         </span>
                     </h1>
-                    <p className="mt-8 max-w-2xl text-xl leading-relaxed text-foreground-accent lg:text-2xl">
-                        Growth built for the way New Zealand does business—through trust, reputation, useful work and
-                        relationships that last.
-                    </p>
                     <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                         <a
                             href="#projects"
