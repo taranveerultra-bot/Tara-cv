@@ -7,7 +7,7 @@ const Hero = () => (
         <Container>
             <div className="grid items-end gap-12 lg:grid-cols-[1.18fr_.82fr] lg:gap-16">
                 <div>
-                    <p className="mb-7 text-sm font-semibold uppercase tracking-[0.16em] text-secondary">
+                    <p className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-secondary">
                         Digital marketing consultant · Auckland, NZ
                     </p>
                     <h1 className="max-w-5xl text-balance text-5xl font-extrabold leading-[.88] tracking-[-0.055em] sm:text-7xl lg:text-[6.5rem]">
