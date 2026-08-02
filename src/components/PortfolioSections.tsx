@@ -293,12 +293,23 @@ export const SkillsSection = () => (
             title="From finding the opportunity to building the solution."
             description="I work across the full growth cycle: understanding demand, creating the experience, automating repeated work and learning from the results."
         >
-            <div className="grid gap-px overflow-hidden rounded-[2rem] bg-black/15 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid border-y border-black/15 sm:grid-cols-2 lg:grid-cols-4">
                 {skillGroups.map((group, index) => (
-                    <article key={group.title} className={index === 0 ? "bg-primary p-7" : "bg-hero-background p-7"}>
-                        <p className="font-mono text-xs">0{index + 1}</p>
-                        <h3 className="mt-16 text-2xl font-bold">{group.title}</h3>
-                        <p className="mt-4 text-sm leading-relaxed text-foreground-accent">{group.skills.join(" · ")}</p>
+                    <article
+                        key={group.title}
+                        className={`py-7 sm:px-7 lg:py-9 ${
+                            index % 2 === 1 ? "sm:border-l sm:border-black/15" : ""
+                        } ${index >= 2 ? "border-t border-black/15 lg:border-t-0" : ""} ${
+                            index > 0 ? "lg:border-l lg:border-black/15" : ""
+                        }`}
+                    >
+                        <span className="inline-flex h-8 min-w-8 items-center justify-center rounded-full bg-primary px-2 font-mono text-xs">
+                            0{index + 1}
+                        </span>
+                        <h3 className="mt-5 text-xl font-bold sm:text-2xl">{group.title}</h3>
+                        <p className="mt-3 text-base leading-relaxed text-foreground-accent">
+                            {group.skills.join(" · ")}
+                        </p>
                     </article>
                 ))}
             </div>
