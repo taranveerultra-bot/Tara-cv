@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Manrope, Source_Sans_3 } from "next/font/google";
 
 import CanvasCursor from "@/components/CanvasCursor";
+import CornerCat from "@/components/CornerCat";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { siteDetails } from "@/data/siteDetails";
@@ -74,6 +75,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
                 />
                 <CanvasCursor />
+                <CornerCat />
                 <Header />
                 <main>{children}</main>
                 <Footer />
