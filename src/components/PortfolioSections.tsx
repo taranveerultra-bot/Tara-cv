@@ -282,6 +282,18 @@ export const AboutSection = () => (
                     </div>
                 </div>
             </div>
+            <div className="mt-12 flex flex-col gap-5 border-t border-black/25 pt-8 sm:flex-row sm:items-center sm:justify-between">
+                <p className="max-w-2xl text-lg font-semibold text-secondary">
+                    You may still have questions about my experience, availability or approach to work.
+                </p>
+                <Link
+                    href="/insights/10-questions-before-we-speak"
+                    className="inline-flex min-h-12 shrink-0 items-center justify-center gap-2 rounded-full bg-foreground px-7 py-3 font-semibold text-white transition hover:bg-secondary"
+                >
+                    Read my answers
+                    <HiArrowUpRight aria-hidden="true" />
+                </Link>
+            </div>
         </Container>
     </div>
 );
