@@ -288,6 +288,8 @@ export const AboutSection = () => (
                 </p>
                 <Link
                     href="/insights/10-questions-before-we-speak"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex min-h-12 shrink-0 items-center justify-center gap-2 rounded-full bg-foreground px-7 py-3 font-semibold text-white transition hover:bg-secondary"
                 >
                     Read my answers
