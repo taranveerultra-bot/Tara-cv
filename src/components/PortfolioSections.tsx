@@ -193,7 +193,7 @@ export const AboutSection = () => (
         <Container>
             <div className="grid items-start gap-12 lg:grid-cols-[.7fr_1.3fr]">
                 <div>
-                    <p className="text-sm font-semibold uppercase tracking-[0.16em] text-secondary">About Taran</p>
+                    <p className="text-sm font-semibold uppercase tracking-[0.16em] text-secondary">About me</p>
                     <h3 className="mt-5 max-w-md text-2xl font-extrabold leading-tight text-secondary">
                         Digital Marketing Specialist | SEO | Google Ads | AI &amp; Marketing Automation
                     </h3>
