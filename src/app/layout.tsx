@@ -27,7 +27,7 @@ export const metadata: Metadata = {
         "AI automation consultant",
         "Google Business Profile optimisation",
     ],
-    alternates: { canonical: "/" },
+    alternates: { canonical: siteDetails.siteUrl },
     robots: {
         index: false,
         follow: false,
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: siteDetails.metadata.title,
         description: siteDetails.metadata.description,
-        url: "/",
+        url: siteDetails.siteUrl,
         siteName: siteDetails.siteName,
         locale: siteDetails.locale,
         type: "website",
