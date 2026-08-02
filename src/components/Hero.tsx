@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { HiArrowDown, HiArrowUpRight } from "react-icons/hi2";
 
 import Container from "./Container";
@@ -7,6 +8,16 @@ const Hero = () => (
         <Container>
             <div className="grid items-end gap-12 lg:grid-cols-[1.18fr_.82fr] lg:gap-16">
                 <div>
+                    <div className="relative mb-8 aspect-[40/21] w-full max-w-md overflow-hidden rounded-[1.75rem] border border-black/10 bg-black shadow-sm">
+                        <Image
+                            src="/images/moonlit-archer.jpg"
+                            alt="A moonlit archer aiming across a distant mountain landscape"
+                            fill
+                            priority
+                            sizes="(max-width: 640px) calc(100vw - 40px), 448px"
+                            className="object-cover"
+                        />
+                    </div>
                     <p className="mb-7 text-sm font-semibold uppercase tracking-[0.16em] text-secondary">
                         Digital marketing consultant · Auckland, NZ
                     </p>
