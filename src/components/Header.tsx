@@ -49,7 +49,7 @@ const Header = () => {
                         href="/#contact"
                         className="hidden min-h-12 items-center gap-2 rounded-full bg-foreground px-7 py-3 text-base font-semibold text-white transition hover:bg-secondary md:flex"
                     >
-                        Start a conversation
+                        Say hello
                         <HiArrowUpRight aria-hidden="true" />
                     </a>
 

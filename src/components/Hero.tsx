@@ -28,7 +28,7 @@ const Hero = () => (
                             href="#contact"
                             className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-foreground px-7 py-3 font-semibold transition hover:bg-white"
                         >
-                            Discuss your goals <HiArrowUpRight aria-hidden="true" />
+                            Reach out <HiArrowUpRight aria-hidden="true" />
                         </a>
                     </div>
                 </div>
