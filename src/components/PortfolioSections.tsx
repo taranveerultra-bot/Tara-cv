@@ -247,10 +247,9 @@ export const AboutSection = () => (
                             A normal workday goes beyond marketing.
                         </h3>
                         <p className="mt-3 leading-relaxed text-secondary/80">
-                            I spend a lot of my day talking with people, understanding what they need and answering all
-                            kinds of questions. I help turn those conversations into sales, improve the processes
-                            behind the work and deal with everyday operational issues so things run more smoothly. It
-                            keeps me close to customers and the practical side of running a business.
+                            I spend a lot of my day talking with people, understanding what they need and helping teams
+                            move things forward. I work across sales conversations, process improvements and everyday
+                            operational challenges—staying close to customers and the practical side of how things run.
                         </p>
                     </div>
 
