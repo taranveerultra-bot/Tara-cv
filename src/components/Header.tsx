@@ -2,7 +2,6 @@
 
 /* eslint-disable @next/next/no-html-link-for-pages -- Native anchors prevent Next.js from appending repeated URL fragments. */
 
-import Link from "next/link";
 import { useState } from "react";
 import { HiArrowUpRight, HiBars3, HiOutlineXMark } from "react-icons/hi2";
 
@@ -31,12 +30,12 @@ const Header = () => {
         <header className="fixed inset-x-0 top-0 z-50 mx-auto w-full">
             <Container className="!px-0">
                 <nav className="flex items-center justify-between border-b border-black/10 bg-hero-background/95 px-5 py-3 backdrop-blur-xl md:px-6 md:py-4">
-                    <Link href="/" className="flex items-center gap-3" aria-label="Taran home">
+                    <a href="/" className="flex items-center gap-3" aria-label="Taran home">
                         <BrandMark />
                         <span className="manrope text-xl font-semibold text-foreground">
                             {siteDetails.siteName}
                         </span>
-                    </Link>
+                    </a>
 
                     <ul className="hidden items-center gap-7 md:flex">
                         {headerMenuItems.map((item) => (
