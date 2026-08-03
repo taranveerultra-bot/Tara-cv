@@ -4,8 +4,11 @@ import { HiOutlineEnvelope, HiOutlinePhone } from "react-icons/hi2";
 import { siteDetails } from "@/data/siteDetails";
 
 const CTA = () => (
-    <section id="contact" className="scroll-mt-20 bg-hero-background px-5 py-20 lg:py-32">
-        <div className="mx-auto grid max-w-7xl gap-10 rounded-[2rem] bg-white p-7 sm:p-10 lg:grid-cols-[1.35fr_.65fr] lg:p-16">
+    <section
+        id="contact"
+        className="scroll-mt-20 bg-gradient-to-br from-primary/25 via-hero-background to-white px-5 py-20 lg:py-32"
+    >
+        <div className="mx-auto grid max-w-7xl gap-10 rounded-[2rem] border border-white/80 bg-white/55 p-7 shadow-[0_24px_80px_rgba(22,51,0,0.10)] backdrop-blur-xl sm:p-10 lg:grid-cols-[1.35fr_.65fr] lg:p-16">
             <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.16em] text-secondary">Let&apos;s connect</p>
                 <h2 className="mt-5 max-w-4xl text-balance text-4xl font-extrabold leading-[.95] sm:text-6xl">
@@ -26,7 +29,7 @@ const CTA = () => (
                 </Link>
                 <Link
                     href={`tel:${siteDetails.phone.href}`}
-                    className="inline-flex min-h-14 w-full items-center justify-center gap-2 rounded-full border border-foreground px-7 py-3.5 font-semibold transition hover:bg-hero-background"
+                    className="inline-flex min-h-14 w-full items-center justify-center gap-2 rounded-full border border-foreground bg-white/35 px-7 py-3.5 font-semibold backdrop-blur-md transition hover:bg-white/70"
                 >
                     <HiOutlinePhone aria-hidden="true" />
                     {siteDetails.phone.display}
