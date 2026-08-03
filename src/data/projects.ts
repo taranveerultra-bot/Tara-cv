@@ -100,6 +100,32 @@ export const projects: IProject[] = [
         imageAlt: "The Matchmaking Bureau premium matchmaking platform homepage",
     },
     {
+        title: "Festival for the Future",
+        category: "Aotearoa festival guide & directory",
+        summary:
+            "A region-first discovery platform for festivals across Aotearoa New Zealand, bringing cultural events, local stories and useful visitor information into one warm, easy-to-explore guide.",
+        outcome:
+            "A scalable content platform that helps people discover festivals by place while creating room for festival submissions and local business listings.",
+        responsibilities: [
+            "Website concept, design and development",
+            "Region-first content and information architecture",
+            "Festival and local business directory structure",
+            "Responsive experience and publishing foundation",
+        ],
+        results: [
+            "18 regional discovery paths",
+            "Festival submission journey",
+            "Growing Christchurch business directory",
+            "Foundation for ongoing festival and regional content",
+        ],
+        tags: ["Web development", "Content strategy", "Information architecture", "Directories"],
+        accent: "",
+        image: "/images/projects/festival-for-the-future.png",
+        imageAlt:
+            "Festival for the Future homepage showing its Aotearoa festival guide, navigation and illustrated hero",
+        links: [{ label: "Visit website", href: "https://festivalforthefuture.org.nz/" }],
+    },
+    {
         title: "Pop Up Penguins",
         category: "SEO content platform",
         summary:
