@@ -5,7 +5,6 @@ import CanvasCursor from "@/components/CanvasCursor";
 import CornerCat from "@/components/CornerCat";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import ImpactExperience from "@/components/ImpactExperience";
 import { siteDetails } from "@/data/siteDetails";
 
 import "./globals.css";
@@ -79,7 +78,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 <CornerCat />
                 <Header />
                 <main>{children}</main>
-                <ImpactExperience />
                 <Footer />
             </body>
         </html>
