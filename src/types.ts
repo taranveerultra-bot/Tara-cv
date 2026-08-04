@@ -26,6 +26,7 @@ export interface IProject {
     evidenceImage?: string;
     evidenceImageAlt?: string;
     evidenceTitle?: string;
+    evidenceDescription?: string;
     links?: Array<{
         label: string;
         href: string;

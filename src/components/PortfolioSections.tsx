@@ -86,7 +86,7 @@ export const ProjectsSection = () => (
                                     <div className="px-6 py-5 sm:px-8">
                                         <p className="text-2xl font-bold sm:text-3xl">{project.evidenceTitle}</p>
                                         <p className="mt-2 text-base text-foreground-accent">
-                                            Measured on mobile with Google PageSpeed Insights.
+                                            {project.evidenceDescription}
                                         </p>
                                     </div>
                                     <div className="relative aspect-[2/1] border-t border-black/10 bg-white">

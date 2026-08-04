@@ -24,6 +24,12 @@ export const projects: IProject[] = [
         accent: "",
         image: "/images/projects/harmony-clean.png",
         imageAlt: "Harmony Clean Christchurch service page showing navigation, quote call to action and customer review",
+        evidenceImage: "/images/projects/harmony-google-ads-score.png",
+        evidenceImageAlt:
+            "Google Ads campaign dashboard showing a 97.7 percent optimisation score",
+        evidenceTitle: "Google Ads optimisation",
+        evidenceDescription:
+            "A 97.7% campaign optimisation score maintained through regular monitoring and account improvements.",
         links: [
             { label: "Christchurch website", href: "https://harmonyclean.co.nz/" },
             { label: "Auckland website", href: "https://harmonycleanauckland.co.nz/" },
@@ -175,6 +181,7 @@ export const projects: IProject[] = [
         evidenceImageAlt:
             "Google PageSpeed Insights mobile report for TaxPop showing 100 Performance, 91 Accessibility, 100 Best Practices and 100 SEO",
         evidenceTitle: "Performance that makes a difference",
+        evidenceDescription: "Measured on mobile with Google PageSpeed Insights.",
         links: [{ label: "Visit website", href: "https://taxpop.co.nz/" }],
     },
 ];
