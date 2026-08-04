@@ -30,6 +30,7 @@ export const projects: IProject[] = [
         evidenceTitle: "Google Ads optimisation",
         evidenceDescription:
             "A 97.7% campaign optimisation score maintained through regular monitoring and account improvements.",
+        evidenceCompact: true,
         links: [
             { label: "Christchurch website", href: "https://harmonyclean.co.nz/" },
             { label: "Auckland website", href: "https://harmonycleanauckland.co.nz/" },

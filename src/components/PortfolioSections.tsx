@@ -82,7 +82,11 @@ export const ProjectsSection = () => (
                                 )}
                             </div>
                             {project.evidenceImage && (
-                                <figure className="overflow-hidden rounded-[2rem] bg-hero-background lg:col-span-2">
+                                <figure
+                                    className={`w-full overflow-hidden rounded-[2rem] bg-hero-background lg:col-span-2 ${
+                                        project.evidenceCompact ? "mx-auto max-w-3xl" : ""
+                                    }`}
+                                >
                                     <div className="px-6 py-5 sm:px-8">
                                         <p className="text-2xl font-bold sm:text-3xl">{project.evidenceTitle}</p>
                                         <p className="mt-2 text-base text-foreground-accent">
