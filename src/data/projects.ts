@@ -153,6 +153,12 @@ export const projects: IProject[] = [
         accent: "",
         image: "/images/projects/pop-up-penguins.png",
         imageAlt: "Pop Up Penguins content website homepage",
+        evidenceImage: "/images/projects/pop-up-penguins-search-growth.png",
+        evidenceImageAlt:
+            "Google Search Console performance report for Pop Up Penguins showing 5,880 clicks, 1.31 million impressions and increasing organic visibility",
+        evidenceTitle: "Organic is the best kind of growth",
+        evidenceDescription:
+            "1.31 million Google Search impressions and 5,880 organic clicks, with visibility and traffic continuing to grow.",
         links: [{ label: "Visit website", href: "https://popuppenguins.co.nz/" }],
     },
     {
