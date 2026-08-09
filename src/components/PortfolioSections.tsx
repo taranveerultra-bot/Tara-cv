@@ -83,7 +83,7 @@ export const ProjectsSection = () => (
                             </div>
                             {project.evidenceImage && (
                                 <figure
-                                    className={`w-full overflow-hidden rounded-[2rem] bg-hero-background lg:col-span-2 ${
+                                    className={`order-3 w-full overflow-hidden rounded-[2rem] bg-hero-background lg:col-span-2 ${
                                         project.evidenceCompact ? "mx-auto max-w-3xl" : ""
                                     }`}
                                 >
