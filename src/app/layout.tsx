@@ -31,9 +31,15 @@ export const metadata: Metadata = {
     robots: {
         index: false,
         follow: false,
+        nocache: true,
+        noarchive: true,
+        nosnippet: true,
+        noimageindex: true,
         googleBot: {
             index: false,
             follow: false,
+            noarchive: true,
+            nosnippet: true,
             noimageindex: true,
         },
     },
