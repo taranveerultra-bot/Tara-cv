@@ -129,25 +129,6 @@ export const AICreativeSection = () => (
                     >
                         100% AI video and image production.
                     </h2>
-                    <p className="mt-7 max-w-2xl text-lg leading-relaxed text-white/70">
-                        A practical experiment in taking an idea from AI-generated imagery through motion, editing
-                        and a finished short-form video.
-                    </p>
-                    <div className="mt-8 flex flex-wrap gap-3">
-                        {[
-                            "AI image generation",
-                            "AI video generation",
-                            "Creative direction",
-                            "Short-form editing",
-                        ].map((capability) => (
-                            <span
-                                key={capability}
-                                className="rounded-full border border-white/25 px-4 py-2 text-sm font-semibold text-white/80"
-                            >
-                                {capability}
-                            </span>
-                        ))}
-                    </div>
                     <Link
                         href="https://youtube.com/shorts/VYMwhRfioBY?feature=share"
                         target="_blank"
