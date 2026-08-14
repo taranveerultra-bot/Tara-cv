@@ -129,15 +129,6 @@ export const AICreativeSection = () => (
                     >
                         100% AI video and image production.
                     </h2>
-                    <Link
-                        href="https://youtube.com/shorts/VYMwhRfioBY?feature=share"
-                        target="_blank"
-                        rel="nofollow noopener noreferrer"
-                        className="mt-8 inline-flex min-h-11 items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-foreground transition hover:bg-primary-accent"
-                    >
-                        Watch on YouTube
-                        <HiArrowUpRight aria-hidden="true" />
-                    </Link>
                 </div>
 
                 <div className="mx-auto w-full max-w-sm overflow-hidden rounded-[2rem] border border-white/15 bg-black shadow-2xl">
