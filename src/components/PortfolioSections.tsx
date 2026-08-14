@@ -135,7 +135,7 @@ export const AICreativeSection = () => (
                     <div className="aspect-[9/16]">
                         <iframe
                             className="h-full w-full"
-                            src="https://www.youtube-nocookie.com/embed/VYMwhRfioBY"
+                            src="https://www.youtube-nocookie.com/embed/S-qZfGwx3rQ"
                             title="100% AI-generated video production work sample"
                             loading="lazy"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
