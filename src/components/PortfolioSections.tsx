@@ -116,7 +116,7 @@ export const AICreativeSection = () => (
         <Container>
             <section
                 id="ai-creative"
-                className="grid gap-12 py-20 lg:grid-cols-[1fr_.65fr] lg:items-center lg:gap-20 lg:py-28"
+                className="grid gap-12 py-20 lg:grid-cols-[.75fr_1.25fr] lg:items-center lg:gap-16 lg:py-28"
                 aria-labelledby="ai-creative-heading"
             >
                 <div>
@@ -131,17 +131,32 @@ export const AICreativeSection = () => (
                     </h2>
                 </div>
 
-                <div className="mx-auto w-full max-w-sm overflow-hidden rounded-[2rem] border border-white/15 bg-black shadow-2xl">
-                    <div className="aspect-[9/16]">
-                        <iframe
-                            className="h-full w-full"
-                            src="https://www.youtube-nocookie.com/embed/S-qZfGwx3rQ"
-                            title="100% AI-generated video production work sample"
-                            loading="lazy"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerPolicy="strict-origin-when-cross-origin"
-                            allowFullScreen
-                        />
+                <div className="grid gap-5 sm:grid-cols-2">
+                    <div className="mx-auto w-full max-w-sm overflow-hidden rounded-[2rem] border border-white/15 bg-black shadow-2xl">
+                        <div className="aspect-[9/16]">
+                            <iframe
+                                className="h-full w-full"
+                                src="https://www.youtube-nocookie.com/embed/S-qZfGwx3rQ"
+                                title="100% AI-generated video production work sample one"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerPolicy="strict-origin-when-cross-origin"
+                                allowFullScreen
+                            />
+                        </div>
+                    </div>
+                    <div className="mx-auto w-full max-w-sm overflow-hidden rounded-[2rem] border border-white/15 bg-black shadow-2xl">
+                        <div className="aspect-[9/16]">
+                            <iframe
+                                className="h-full w-full"
+                                src="https://www.youtube-nocookie.com/embed/938mezzkcqw"
+                                title="100% AI-generated video production work sample two"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerPolicy="strict-origin-when-cross-origin"
+                                allowFullScreen
+                            />
+                        </div>
                     </div>
                 </div>
             </section>
