@@ -4,7 +4,6 @@ import ToolsMarquee from "@/components/ToolsMarquee";
 import {
     AICreativeSection,
     AboutSection,
-    ExperimentsSection,
     ProjectsSection,
     ServicesSection,
     SkillsSection,
@@ -15,9 +14,8 @@ const HomePage = () => (
         <Hero />
         <ToolsMarquee />
         <ProjectsSection />
-        <AICreativeSection />
         <ServicesSection />
-        <ExperimentsSection />
+        <AICreativeSection />
         <AboutSection />
         <SkillsSection />
         <CTA />

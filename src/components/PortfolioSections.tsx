@@ -5,7 +5,6 @@ import { HiArrowUpRight } from "react-icons/hi2";
 import Container from "./Container";
 import Icon from "./Icon";
 import Section from "./Section";
-import { experiments } from "@/data/experiments";
 import { projects } from "@/data/projects";
 import { services } from "@/data/services";
 import { skillGroups } from "@/data/skills";
@@ -198,57 +197,6 @@ export const ServicesSection = () => (
                             <div>
                                 <p className="leading-relaxed text-foreground-accent">{service.description}</p>
                                 <p className="mt-3 text-sm font-semibold">{service.deliverables.join(" · ")}</p>
-                            </div>
-                        </article>
-                    ))}
-                </div>
-            </Section>
-        </Container>
-    </div>
-);
-
-export const ExperimentsSection = () => (
-    <div className="bg-foreground text-white [&_section>div:first-child>p]:text-primary [&_section>div:first-child_div>p]:text-white/60">
-        <Container>
-            <Section
-                id="experiments"
-                eyebrow="Experiments & ventures"
-                title="Where I test ideas with real users and real search demand."
-                description="These are my working laboratories for SEO, content systems, information architecture and long-term organic growth."
-            >
-                <div className="grid gap-5 lg:grid-cols-2">
-                    {experiments.map((experiment, index) => (
-                        <article
-                            key={experiment.title}
-                            className={index === 0 ? "overflow-hidden rounded-[2rem] bg-primary text-foreground" : "overflow-hidden rounded-[2rem] bg-white text-foreground"}
-                        >
-                            <div className="relative aspect-[16/9] overflow-hidden border-b border-black/10">
-                                <Image
-                                    src={experiment.image}
-                                    alt={experiment.imageAlt}
-                                    fill
-                                    sizes="(min-width: 1024px) 50vw, 100vw"
-                                    className="object-contain object-top"
-                                />
-                            </div>
-                            <div className="p-8 sm:p-10">
-                                <div className="flex items-center justify-between">
-                                    <span className="font-mono text-sm">0{index + 1}</span>
-                                    <span className="text-xs font-semibold uppercase tracking-wider">{experiment.status}</span>
-                                </div>
-                                <h3 className="mt-12 text-4xl font-extrabold sm:text-5xl">{experiment.title}</h3>
-                                <p className="mt-5 max-w-xl leading-relaxed opacity-75">{experiment.description}</p>
-                                {experiment.href && (
-                                    <Link
-                                        href={experiment.href}
-                                        target="_blank"
-                                        rel="nofollow noopener noreferrer"
-                                        className="mt-7 inline-flex min-h-11 items-center gap-2 rounded-full border border-current px-5 py-2.5 text-sm font-semibold transition hover:opacity-60"
-                                    >
-                                        Visit website
-                                        <HiArrowUpRight aria-hidden="true" />
-                                    </Link>
-                                )}
                             </div>
                         </article>
                     ))}
