@@ -82,7 +82,13 @@ export const projects: IProject[] = [
         accent: "",
         image: "/images/projects/tui-digital.png",
         imageAlt: "Tui Digital marketing studio homepage",
-        links: [{ label: "Visit website", href: "https://tuidigital.co.nz/" }],
+        links: [
+            { label: "Visit website", href: "https://tuidigital.co.nz/" },
+            {
+                label: "100% AI video production",
+                href: "https://youtube.com/shorts/VYMwhRfioBY?feature=share",
+            },
+        ],
     },
     {
         title: "The Matchmaking Bureau",
