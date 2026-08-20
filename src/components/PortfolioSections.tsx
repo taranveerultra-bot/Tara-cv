@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { HiArrowUpRight } from "react-icons/hi2";
+import { SiFacebook, SiInstagram, SiMeta, SiX } from "react-icons/si";
 
 import Container from "./Container";
 import Icon from "./Icon";
@@ -156,6 +157,26 @@ export const AICreativeSection = () => (
                                 referrerPolicy="strict-origin-when-cross-origin"
                                 allowFullScreen
                             />
+                        </div>
+                    </div>
+                    <div className="space-y-5 border-t border-white/20 pt-6 sm:col-span-2">
+                        <div className="flex items-start gap-3">
+                            <SiMeta className="mt-1 h-5 w-5 shrink-0 text-primary" aria-hidden="true" />
+                            <p className="text-base leading-relaxed text-white/75">
+                                <span className="font-semibold text-white">Meta Ads</span> for targeted paid
+                                distribution across Facebook and Instagram when it supports the goal.
+                            </p>
+                        </div>
+                        <div className="flex items-start gap-3">
+                            <div className="mt-1 flex shrink-0 gap-2 text-primary" aria-hidden="true">
+                                <SiX className="h-4 w-4" />
+                                <SiFacebook className="h-4 w-4" />
+                                <SiInstagram className="h-4 w-4" />
+                            </div>
+                            <p className="text-base leading-relaxed text-white/75">
+                                I also adapt and distribute content across X, Facebook and Instagram when an existing
+                                audience can give the work greater reach and a longer life.
+                            </p>
                         </div>
                     </div>
                 </div>
