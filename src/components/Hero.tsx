@@ -1,10 +1,20 @@
+import Image from "next/image";
 import { HiArrowDown, HiArrowUpRight } from "react-icons/hi2";
 
 import Container from "./Container";
 
 const Hero = () => (
-    <section id="home" className="overflow-hidden bg-hero-background pb-16 pt-28 lg:pb-24 lg:pt-36">
-        <Container>
+    <section id="home" className="relative overflow-hidden bg-hero-background pb-16 pt-28 lg:pb-24 lg:pt-36">
+        <Image
+            src="/images/hero-network-background.png"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="pointer-events-none object-cover object-center opacity-90"
+        />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-hero-background via-hero-background/65 to-transparent" />
+        <Container className="relative z-10">
             <div className="grid items-center gap-12 lg:grid-cols-[1.18fr_.82fr] lg:gap-16">
                 <div className="lg:-translate-y-4">
                     <p className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-secondary">
