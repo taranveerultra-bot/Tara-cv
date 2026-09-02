@@ -6,9 +6,9 @@ import { SiFacebook, SiInstagram, SiMeta, SiX } from "react-icons/si";
 import Container from "./Container";
 import Icon from "./Icon";
 import Section from "./Section";
-import { projects } from "@/data/projects";
 import { services } from "@/data/services";
 import { skillGroups } from "@/data/skills";
+import ProjectsCarousel from "./ProjectsCarousel";
 
 export const ProjectsSection = () => (
     <div className="bg-white">
@@ -19,78 +19,7 @@ export const ProjectsSection = () => (
                 description="A selection of real, end-to-end builds across long-term marketing, search, local services and digital products. Performance is non-negotiable in every project—from how quickly a page loads to how clearly it helps a customer act."
                 centered
             >
-                <div className="space-y-20 lg:space-y-28">
-                    {projects.map((project, index) => (
-                        <article key={project.title} className="grid items-start gap-8 lg:grid-cols-2 lg:gap-16">
-                            <figure className={`${index % 2 ? "lg:order-2" : ""} overflow-hidden rounded-[2rem] bg-hero-background`}>
-                                <div className="flex items-center justify-between px-5 py-4">
-                                    <span className="font-mono text-xs">0{index + 1}</span>
-                                    <span className="text-xs font-semibold uppercase tracking-[0.14em]">Performance · non-negotiable</span>
-                                </div>
-                                <div className="relative aspect-[16/9] overflow-hidden border-y border-black/10 bg-white">
-                                    <Image
-                                        src={project.image}
-                                        alt={project.imageAlt}
-                                        fill
-                                        sizes="(min-width: 1024px) 50vw, 100vw"
-                                        className="object-contain object-top"
-                                    />
-                                </div>
-                            </figure>
-
-                            <div className={index % 2 ? "lg:order-1" : ""}>
-                                <h3 className="text-4xl font-bold leading-tight sm:text-5xl">{project.category}</h3>
-                                <p className="mt-6 text-xl leading-relaxed text-foreground-accent">{project.summary}</p>
-                                <div className="mt-8 flex flex-wrap gap-x-5 gap-y-2 border-t border-black/15 pt-5">
-                                    {project.tags.map((tag) => (
-                                        <span key={tag} className="text-sm font-semibold uppercase tracking-wider text-foreground-accent">
-                                            {tag}
-                                        </span>
-                                    ))}
-                                </div>
-                                {project.links && (
-                                    <div className="mt-6 flex flex-wrap gap-3">
-                                        {project.links.map((link) => (
-                                            <Link
-                                                key={link.href}
-                                                href={link.href}
-                                                target="_blank"
-                                                rel="nofollow noopener noreferrer"
-                                                className="inline-flex min-h-11 items-center gap-2 rounded-full border border-foreground px-5 py-2.5 text-sm font-semibold transition hover:bg-foreground hover:text-white"
-                                            >
-                                                {link.label}
-                                                <HiArrowUpRight aria-hidden="true" />
-                                            </Link>
-                                        ))}
-                                    </div>
-                                )}
-                            </div>
-                            {project.evidenceImage && (
-                                <figure
-                                    className={`order-3 w-full overflow-hidden rounded-[2rem] bg-hero-background lg:col-span-2 ${
-                                        project.evidenceCompact ? "mx-auto max-w-3xl" : ""
-                                    }`}
-                                >
-                                    <div className="px-6 py-5 sm:px-8">
-                                        <p className="text-2xl font-bold sm:text-3xl">{project.evidenceTitle}</p>
-                                        <p className="mt-2 text-base text-foreground-accent">
-                                            {project.evidenceDescription}
-                                        </p>
-                                    </div>
-                                    <div className="relative aspect-[2/1] border-t border-black/10 bg-white">
-                                        <Image
-                                            src={project.evidenceImage}
-                                            alt={project.evidenceImageAlt ?? ""}
-                                            fill
-                                            sizes="100vw"
-                                            className="object-contain object-top"
-                                        />
-                                    </div>
-                                </figure>
-                            )}
-                        </article>
-                    ))}
-                </div>
+                <ProjectsCarousel />
             </Section>
         </Container>
     </div>
