@@ -56,8 +56,9 @@ const ProjectsCarousel = () => {
                 if (!event.currentTarget.contains(event.relatedTarget)) setIsPaused(false);
             }}
         >
-            <div className="overflow-hidden rounded-[2rem] border border-black/15 bg-hero-background">
-                <article
+            <div className="relative">
+                <div className="overflow-hidden rounded-[2rem] border border-black/15 bg-hero-background">
+                    <article
                     key={`${slide.project.title}-${slide.kind}`}
                     className="animate-[carousel-enter_500ms_ease-out]"
                     aria-label={`Slide ${activeSlide + 1} of ${slides.length}`}
@@ -137,11 +138,29 @@ const ProjectsCarousel = () => {
                             </div>
                         </div>
                     )}
-                </article>
+                    </article>
+                </div>
+
+                <button
+                    type="button"
+                    onClick={() => move(-1)}
+                    className="absolute left-4 top-1/2 z-10 hidden h-16 w-16 -translate-y-1/2 items-center justify-center rounded-full border border-black/20 bg-white/95 text-2xl shadow-lg backdrop-blur transition hover:scale-105 hover:bg-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary sm:inline-flex"
+                    aria-label="Show previous project"
+                >
+                    <HiArrowLeft aria-hidden="true" />
+                </button>
+                <button
+                    type="button"
+                    onClick={() => move(1)}
+                    className="absolute right-4 top-1/2 z-10 hidden h-16 w-16 -translate-y-1/2 items-center justify-center rounded-full bg-foreground text-2xl text-white shadow-lg transition hover:scale-105 hover:bg-secondary focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary sm:inline-flex"
+                    aria-label="Show next project"
+                >
+                    <HiArrowRight aria-hidden="true" />
+                </button>
             </div>
 
-            <div className="mt-6 flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
-                <div className="flex gap-3">
+            <div className="mt-6 flex flex-col items-center gap-5">
+                <div className="flex gap-3 sm:hidden">
                     <button
                         type="button"
                         onClick={() => move(-1)}
@@ -159,7 +178,7 @@ const ProjectsCarousel = () => {
                         Next <HiArrowRight aria-hidden="true" />
                     </button>
                 </div>
-                <div className="flex flex-wrap gap-2" aria-label="Choose a slide">
+                <div className="flex flex-wrap justify-center gap-2" aria-label="Choose a slide">
                     {slides.map((item, index) => (
                         <button
                             key={`${item.project.title}-${item.kind}`}
