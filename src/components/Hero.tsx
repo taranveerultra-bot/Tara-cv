@@ -2,6 +2,7 @@ import Image from "next/image";
 import { HiArrowDown, HiArrowUpRight } from "react-icons/hi2";
 
 import Container from "./Container";
+import MeditatingTiger from "./MeditatingTiger";
 
 const Hero = () => (
     <section id="home" className="relative overflow-hidden bg-hero-background pb-16 pt-28 lg:pb-24 lg:pt-36">
@@ -15,7 +16,7 @@ const Hero = () => (
         />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-hero-background via-hero-background/65 to-transparent" />
         <Container className="relative z-10">
-            <div className="grid items-center gap-12 lg:grid-cols-[1.18fr_.82fr] lg:gap-16">
+            <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_.9fr] lg:gap-16">
                 <div className="lg:-translate-y-4">
                     <p className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-secondary">
                         Digital marketing consultant · Auckland, NZ
@@ -43,22 +44,8 @@ const Hero = () => (
                     </div>
                 </div>
 
-                <aside className="bg-primary p-7 sm:p-9 lg:translate-y-4 lg:rounded-[2rem]" aria-label="How Taran approaches growth">
-                    <p className="text-sm font-semibold uppercase tracking-[0.16em] text-secondary">How growth compounds</p>
-                    <p className="mt-6 text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
-                        Good marketing is never finished. It becomes more useful with every improvement.
-                    </p>
-                    <div className="mt-10 border-t border-black/25">
-                        {["Get found", "Earn trust", "Build useful systems", "Keep improving"].map((item, index) => (
-                            <div key={item} className="flex items-center gap-5 border-b border-black/25 py-4">
-                                <span className="font-mono text-xs">0{index + 1}</span>
-                                <span className="font-semibold">{item}</span>
-                            </div>
-                        ))}
-                    </div>
-                    <p className="mt-6 text-sm leading-relaxed text-secondary">
-                        Available for marketing roles and selected long-term projects.
-                    </p>
+                <aside className="flex items-center justify-center lg:translate-y-4" aria-label="Meditating tiger">
+                    <MeditatingTiger />
                 </aside>
             </div>
         </Container>
