@@ -343,6 +343,7 @@ export const SkillsSection = () => (
         <Section
             id="skills"
             title="From finding the opportunity to building the solution."
+            centered
         >
             <div className="grid border-y border-black/15 sm:grid-cols-2 lg:grid-cols-4">
                 {skillGroups.map((group, index) => (
