@@ -58,9 +58,9 @@ const ProjectsCarousel = () => {
         >
             <div className="relative">
                 <div className="overflow-hidden rounded-[2rem] border border-black/15 bg-hero-background">
-                    <article
+                <article
                     key={`${slide.project.title}-${slide.kind}`}
-                    className="animate-[carousel-enter_500ms_ease-out]"
+                    className="project-carousel-slide"
                     aria-label={`Slide ${activeSlide + 1} of ${slides.length}`}
                 >
                     <div className="flex items-center justify-between border-b border-black/10 px-5 py-4 sm:px-7">
