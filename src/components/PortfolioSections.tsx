@@ -185,6 +185,37 @@ export const AICreativeSection = () => (
     </div>
 );
 
+export const WhatIThinkSection = () => (
+    <div className="bg-white">
+        <Container>
+            <section
+                className="grid items-center gap-8 border-y border-black/15 py-14 sm:py-16 md:grid-cols-[.75fr_1.25fr] md:gap-12"
+                aria-labelledby="what-i-think-heading"
+            >
+                <h2
+                    id="what-i-think-heading"
+                    className="text-4xl font-extrabold leading-none tracking-tight sm:text-5xl"
+                >
+                    What I think.
+                </h2>
+                <Link
+                    href="/insights"
+                    aria-label="Read Taran's articles and thoughts"
+                    className="group relative aspect-[16/9] w-full overflow-hidden rounded-[2rem] bg-black outline-none ring-primary transition focus-visible:ring-4"
+                >
+                    <Image
+                        src="/images/what-i-think-brain.png"
+                        alt="A connected wireframe brain representing ideas and thought"
+                        fill
+                        sizes="(min-width: 768px) 60vw, 100vw"
+                        className="object-cover transition duration-500 group-hover:scale-[1.03]"
+                    />
+                </Link>
+            </section>
+        </Container>
+    </div>
+);
+
 export const ServicesSection = () => (
     <div className="bg-hero-background">
         <Container>

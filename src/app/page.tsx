@@ -7,6 +7,7 @@ import {
     ProjectsSection,
     ServicesSection,
     SkillsSection,
+    WhatIThinkSection,
 } from "@/components/PortfolioSections";
 
 const HomePage = () => (
@@ -16,6 +17,7 @@ const HomePage = () => (
         <ProjectsSection />
         <ServicesSection />
         <AICreativeSection />
+        <WhatIThinkSection />
         <AboutSection />
         <SkillsSection />
         <CTA />
