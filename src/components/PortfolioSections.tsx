@@ -205,7 +205,6 @@ export const ServicesSection = () => (
         <Container>
             <Section
                 id="services"
-                eyebrow="Areas I enjoy"
                 title="The kind of work I enjoy"
             >
                 <div className="border-t border-black/20">
