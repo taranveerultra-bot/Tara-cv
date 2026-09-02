@@ -43,20 +43,6 @@ export const ProjectsSection = () => (
                                 <p className="text-base font-semibold uppercase tracking-[0.12em] text-secondary">The work</p>
                                 <h3 className="mt-4 text-4xl font-bold leading-tight sm:text-5xl">{project.category}</h3>
                                 <p className="mt-6 text-xl leading-relaxed text-foreground-accent">{project.summary}</p>
-                                <div className="mt-9 grid gap-8 border-t border-black/15 pt-7 sm:grid-cols-2">
-                                    <div>
-                                        <p className="text-lg font-semibold">Scope</p>
-                                        <p className="mt-3 text-lg leading-relaxed text-foreground-accent">
-                                            {project.responsibilities.join(" · ")}
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <p className="text-lg font-semibold">Evidence</p>
-                                        <p className="mt-3 text-lg leading-relaxed text-foreground-accent">
-                                            {project.results.join(" · ")}
-                                        </p>
-                                    </div>
-                                </div>
                                 <div className="mt-8 flex flex-wrap gap-x-5 gap-y-2 border-t border-black/15 pt-5">
                                     {project.tags.map((tag) => (
                                         <span key={tag} className="text-sm font-semibold uppercase tracking-wider text-foreground-accent">
