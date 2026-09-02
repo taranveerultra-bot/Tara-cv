@@ -36,7 +36,6 @@ export const ProjectsSection = () => (
                                         className="object-contain object-top"
                                     />
                                 </div>
-                                <figcaption className="px-5 py-4 text-sm font-semibold">{project.title}</figcaption>
                             </figure>
 
                             <div className={index % 2 ? "lg:order-1" : ""}>
