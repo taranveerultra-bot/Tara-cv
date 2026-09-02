@@ -2,52 +2,38 @@ import { IService } from "@/types";
 
 export const services: IService[] = [
     {
-        title: "SEO strategy",
+        title: "SEO & content",
         description:
-            "Technical foundations, search strategy and useful content built around how your customers actually look for help.",
+            "I enjoy understanding what people search for, finding useful keywords and improving pages over time. SEO is a game of patience, and that is part of what I like about it.",
         icon: "search",
-        deliverables: ["Technical audits", "Keyword strategy", "Content planning"],
+        deliverables: ["Search behaviour", "Keywords", "Useful content"],
     },
     {
-        title: "Website development",
+        title: "Websites",
         description:
-            "Fast, premium websites that make your offer easier to understand and your business easier to trust.",
+            "I care about speed, performance and simple design. A good website does not need more—it needs the right things, presented clearly.",
         icon: "code",
-        deliverables: ["High-performance websites", "Landing pages", "Conversion UX"],
+        deliverables: ["Speed", "Minimal design", "Clear structure"],
     },
     {
-        title: "AI automation",
+        title: "Automation & SOPs",
         description:
-            "Clear standard operating procedures first, then practical automation that removes repetitive work and keeps customer follow-up moving.",
+            "Not everything should be automated, but repetitive work can often be made easier. I enjoy creating practical workflows, small tools and clear standard operating procedures.",
         icon: "automation",
-        deliverables: ["SOP documentation", "Workflow design", "AI integrations"],
+        deliverables: ["SOPs", "Small tools", "Practical workflows"],
     },
     {
-        title: "Google Business Profile",
+        title: "Analytics & lead quality",
         description:
-            "Local visibility improvements for businesses that depend on calls, visits and enquiries from nearby customers.",
-        icon: "local",
-        deliverables: ["Profile optimisation", "Local signals", "Review strategy"],
-    },
-    {
-        title: "Content marketing",
-        description:
-            "Useful, search-informed content that answers real customer questions and builds trust and authority over time.",
-        icon: "strategy",
-        deliverables: ["Content strategy", "Editorial planning", "Search-led publishing"],
-    },
-    {
-        title: "Lead generation",
-        description:
-            "Clear customer journeys that connect visibility with focused pages, stronger offers and practical follow-up.",
-        icon: "growth",
-        deliverables: ["Landing pages", "Conversion journeys", "Enquiry systems"],
-    },
-    {
-        title: "Analytics & measurement",
-        description:
-            "Clear tracking and reporting that shows what is working, what is not and where the next opportunity sits.",
+            "I like using data to understand where people arrive, what they read and whether the work attracts the right enquiries—not simply more of them.",
         icon: "analytics",
-        deliverables: ["Analytics", "Search Console", "Dashboards"],
+        deliverables: ["Visitor journeys", "Conversion quality", "Continuous improvement"],
+    },
+    {
+        title: "Local visibility & reputation",
+        description:
+            "I enjoy helping a brand become known and trusted in its community. Genuine reviews and a healthy local reputation matter more than chasing the biggest number.",
+        icon: "local",
+        deliverables: ["Local search", "Reviews", "Brand trust"],
     },
 ];

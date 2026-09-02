@@ -2,7 +2,7 @@ interface SectionProps {
     id: string;
     eyebrow?: string;
     title: string;
-    description: string;
+    description?: string;
 }
 
 const Section = ({
@@ -19,7 +19,9 @@ const Section = ({
             )}
             <div>
                 <h2 className="max-w-4xl text-balance text-4xl font-extrabold leading-[.95] sm:text-5xl lg:text-7xl">{title}</h2>
-                <p className="mt-6 max-w-2xl leading-relaxed text-foreground-accent">{description}</p>
+                {description && (
+                    <p className="mt-6 max-w-2xl leading-relaxed text-foreground-accent">{description}</p>
+                )}
             </div>
         </div>
         {children}
