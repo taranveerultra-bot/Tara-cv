@@ -40,8 +40,7 @@ export const ProjectsSection = () => (
                             </figure>
 
                             <div className={index % 2 ? "lg:order-1" : ""}>
-                                <p className="text-base font-semibold uppercase tracking-[0.12em] text-secondary">The work</p>
-                                <h3 className="mt-4 text-4xl font-bold leading-tight sm:text-5xl">{project.category}</h3>
+                                <h3 className="text-4xl font-bold leading-tight sm:text-5xl">{project.category}</h3>
                                 <p className="mt-6 text-xl leading-relaxed text-foreground-accent">{project.summary}</p>
                                 <div className="mt-8 flex flex-wrap gap-x-5 gap-y-2 border-t border-black/15 pt-5">
                                     {project.tags.map((tag) => (
