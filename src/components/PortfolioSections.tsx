@@ -231,8 +231,7 @@ export const AboutSection = () => (
         <Container>
             <div className="grid items-start gap-12 lg:grid-cols-[.7fr_1.3fr]">
                 <div>
-                    <p className="text-sm font-semibold uppercase tracking-[0.16em] text-secondary">About me</p>
-                    <h3 className="mt-5 max-w-md text-2xl font-extrabold leading-tight text-secondary">
+                    <h3 className="max-w-md text-2xl font-extrabold leading-tight text-secondary">
                         Digital Marketing Specialist | SEO | Google Ads | AI &amp; Marketing Automation
                     </h3>
                     <p className="mt-4 max-w-md leading-relaxed text-secondary/80">
@@ -342,9 +341,7 @@ export const SkillsSection = () => (
     <Container>
         <Section
             id="skills"
-            eyebrow="Capabilities"
             title="From finding the opportunity to building the solution."
-            description="I work across the full growth cycle: understanding demand, creating the experience, automating repeated work and learning from the results."
         >
             <div className="grid border-y border-black/15 sm:grid-cols-2 lg:grid-cols-4">
                 {skillGroups.map((group, index) => (

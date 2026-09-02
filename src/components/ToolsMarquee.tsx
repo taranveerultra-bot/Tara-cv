@@ -30,9 +30,6 @@ const ToolsMarquee = () => (
         <Container>
             <div className="mb-10 grid gap-4 border-t border-black/15 pt-8 md:grid-cols-[minmax(0,.8fr)_minmax(0,1.2fr)] md:items-end">
                 <div>
-                    <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-foreground">
-                        Skills and tools
-                    </p>
                     <h2 id="tools-heading" className="text-3xl font-bold tracking-tight sm:text-4xl">
                         Tools and capabilities I use
                     </h2>
