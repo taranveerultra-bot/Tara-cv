@@ -72,8 +72,8 @@ const ProjectsCarousel = () => {
                     </div>
 
                     {slide.kind === "project" ? (
-                        <div className="grid lg:grid-cols-2">
-                            <div className="relative min-h-72 border-b border-black/10 bg-white sm:min-h-[25rem] lg:border-b-0 lg:border-r">
+                        <div className="grid lg:h-[32rem] lg:grid-cols-2">
+                            <div className="relative min-h-72 border-b border-black/10 bg-white sm:min-h-[25rem] lg:min-h-0 lg:border-b-0 lg:border-r">
                                 <Image
                                     src={slide.project.image}
                                     alt={slide.project.imageAlt}
@@ -83,12 +83,12 @@ const ProjectsCarousel = () => {
                                     className="object-contain object-top"
                                 />
                             </div>
-                            <div className="flex flex-col justify-center p-7 sm:p-10 lg:p-12">
-                                <h3 className="text-3xl font-bold leading-tight sm:text-5xl">{slide.project.category}</h3>
-                                <p className="mt-5 text-lg leading-relaxed text-foreground-accent">
+                            <div className="flex flex-col justify-center p-7 sm:p-9 lg:p-8">
+                                <h3 className="text-3xl font-bold leading-tight sm:text-4xl">{slide.project.category}</h3>
+                                <p className="mt-4 text-base leading-relaxed text-foreground-accent sm:text-lg">
                                     {slide.project.summary}
                                 </p>
-                                <div className="mt-7 flex flex-wrap gap-x-5 gap-y-2 border-t border-black/15 pt-5">
+                                <div className="mt-5 flex flex-wrap gap-x-4 gap-y-2 border-t border-black/15 pt-4">
                                     {slide.project.tags.map((tag) => (
                                         <span key={tag} className="text-xs font-semibold uppercase tracking-wider">
                                             {tag}
@@ -96,14 +96,14 @@ const ProjectsCarousel = () => {
                                     ))}
                                 </div>
                                 {slide.project.links ? (
-                                    <div className="mt-6 flex flex-wrap gap-3">
+                                    <div className="mt-5 flex flex-wrap gap-2">
                                         {slide.project.links.map((link) => (
                                             <Link
                                                 key={link.href}
                                                 href={link.href}
                                                 target="_blank"
                                                 rel="nofollow noopener noreferrer"
-                                                className="inline-flex min-h-11 items-center gap-2 rounded-full border border-foreground px-5 py-2.5 text-sm font-semibold transition hover:bg-foreground hover:text-white"
+                                                className="inline-flex min-h-10 items-center gap-2 rounded-full border border-foreground px-4 py-2 text-sm font-semibold transition hover:bg-foreground hover:text-white"
                                             >
                                                 {link.label}
                                                 <HiArrowUpRight aria-hidden="true" />
@@ -114,8 +114,8 @@ const ProjectsCarousel = () => {
                             </div>
                         </div>
                     ) : (
-                        <div className="grid lg:grid-cols-[1.35fr_.65fr]">
-                            <div className="relative min-h-72 border-b border-black/10 bg-white sm:min-h-[30rem] lg:border-b-0 lg:border-r">
+                        <div className="grid lg:h-[32rem] lg:grid-cols-[1.35fr_.65fr]">
+                            <div className="relative min-h-72 border-b border-black/10 bg-white sm:min-h-[30rem] lg:min-h-0 lg:border-b-0 lg:border-r">
                                 <Image
                                     src={slide.project.evidenceImage!}
                                     alt={slide.project.evidenceImageAlt ?? ""}
