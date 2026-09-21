@@ -162,11 +162,12 @@ export const AboutSection = () => (
             <div className="grid items-start gap-12 lg:grid-cols-[.7fr_1.3fr]">
                 <div>
                     <h3 className="max-w-md text-2xl font-extrabold leading-tight text-secondary">
-                        Digital Marketing Specialist | SEO | Google Ads | AI &amp; Marketing Automation
+                        Business Growth and Operations Specialist | Marketing | Process Improvement | Customer Experience
                     </h3>
                     <p className="mt-4 max-w-md leading-relaxed text-secondary/80">
-                        I&apos;ve worked across search, content, websites, automation and analytics. I&apos;m interested
-                        in how things work, how people find them and how small improvements create better experiences.
+                        I help businesses grow and run more smoothly by aligning marketing, operations and day-to-day
+                        execution. I focus on practical improvements that reduce friction, improve customer experience
+                        and support sustainable growth.
                     </p>
                     <div className="relative mt-7 aspect-[4/5] max-w-md overflow-hidden rounded-[2rem] bg-white">
                         <Image
