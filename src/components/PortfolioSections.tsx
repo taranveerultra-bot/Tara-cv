@@ -15,8 +15,8 @@ export const ProjectsSection = () => (
         <Container>
             <Section
                 id="projects"
-                title="Real businesses. Real work. Growth you can see."
-                description="A selection of real, end-to-end builds across long-term marketing, search, local services and digital products. Performance is non-negotiable in every project—from how quickly a page loads to how clearly it helps a customer act."
+                title="4+ years of marketing experience. Real projects. Measurable growth."
+                description="10+ years of New Zealand experience across different industries."
                 centered
             >
                 <ProjectsCarousel />
