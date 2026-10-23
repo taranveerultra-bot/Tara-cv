@@ -189,6 +189,13 @@ export const projects: IProject[] = [
             "Google PageSpeed Insights mobile report for TaxPop showing 100 Performance, 91 Accessibility, 100 Best Practices and 100 SEO",
         evidenceTitle: "Performance that makes a difference",
         evidenceDescription: "Measured on mobile with Google PageSpeed Insights.",
+        additionalEvidence: [
+            {
+                image: "/images/projects/taxpop-organic-growth.png",
+                imageAlt:
+                    "TaxPop website beside an Ubersuggest report showing 503 organic keywords and 1,400 monthly organic visits",
+            },
+        ],
         links: [{ label: "Visit website", href: "https://taxpop.co.nz/" }],
     },
 ];

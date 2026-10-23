@@ -28,6 +28,12 @@ export interface IProject {
     evidenceTitle?: string;
     evidenceDescription?: string;
     evidenceCompact?: boolean;
+    additionalEvidence?: Array<{
+        image: string;
+        imageAlt: string;
+        title?: string;
+        description?: string;
+    }>;
     links?: Array<{
         label: string;
         href: string;

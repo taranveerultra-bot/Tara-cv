@@ -7,10 +7,26 @@ import { HiArrowLeft, HiArrowRight, HiArrowUpRight } from "react-icons/hi2";
 
 import { projects } from "@/data/projects";
 
-const slides = projects.flatMap((project, projectIndex) => [
-    { kind: "project" as const, project, projectIndex },
-    ...(project.evidenceImage ? [{ kind: "evidence" as const, project, projectIndex }] : []),
-]);
+const slides = projects.flatMap((project, projectIndex) => {
+    const evidence = [
+        ...(project.evidenceImage
+            ? [
+                  {
+                      image: project.evidenceImage,
+                      imageAlt: project.evidenceImageAlt ?? "",
+                      title: project.evidenceTitle,
+                      description: project.evidenceDescription,
+                  },
+              ]
+            : []),
+        ...(project.additionalEvidence ?? []),
+    ];
+
+    return [
+        { kind: "project" as const, project, projectIndex },
+        ...evidence.map((item) => ({ kind: "evidence" as const, project, projectIndex, evidence: item })),
+    ];
+});
 
 const ProjectsCarousel = () => {
     const [activeSlide, setActiveSlide] = useState(0);
@@ -59,7 +75,7 @@ const ProjectsCarousel = () => {
             <div className="relative">
                 <div className="overflow-hidden rounded-[2rem] border border-black/15 bg-hero-background">
                 <article
-                    key={`${slide.project.title}-${slide.kind}`}
+                    key={slide.kind === "project" ? slide.project.title : slide.evidence.image}
                     className="project-carousel-slide"
                     aria-label={`Slide ${activeSlide + 1} of ${slides.length}`}
                 >
@@ -114,12 +130,12 @@ const ProjectsCarousel = () => {
                                 ) : null}
                             </div>
                         </div>
-                    ) : (
+                    ) : slide.evidence.title || slide.evidence.description ? (
                         <div className="grid lg:h-[32rem] lg:grid-cols-[1.35fr_.65fr]">
                             <div className="relative min-h-72 border-b border-black/10 bg-white sm:min-h-[30rem] lg:min-h-0 lg:border-b-0 lg:border-r">
                                 <Image
-                                    src={slide.project.evidenceImage!}
-                                    alt={slide.project.evidenceImageAlt ?? ""}
+                                    src={slide.evidence.image}
+                                    alt={slide.evidence.imageAlt}
                                     fill
                                     sizes="(min-width: 1024px) 65vw, 100vw"
                                     className="object-contain"
@@ -130,12 +146,22 @@ const ProjectsCarousel = () => {
                                     {slide.project.title}
                                 </p>
                                 <h3 className="mt-4 text-3xl font-bold leading-tight sm:text-5xl">
-                                    {slide.project.evidenceTitle}
+                                    {slide.evidence.title}
                                 </h3>
                                 <p className="mt-5 text-lg leading-relaxed text-foreground-accent">
-                                    {slide.project.evidenceDescription}
+                                    {slide.evidence.description}
                                 </p>
                             </div>
+                        </div>
+                    ) : (
+                        <div className="relative min-h-80 bg-white sm:min-h-[32rem]">
+                            <Image
+                                src={slide.evidence.image}
+                                alt={slide.evidence.imageAlt}
+                                fill
+                                sizes="100vw"
+                                className="object-contain"
+                            />
                         </div>
                     )}
                     </article>
@@ -181,7 +207,7 @@ const ProjectsCarousel = () => {
                 <div className="flex flex-wrap justify-center gap-2" aria-label="Choose a slide">
                     {slides.map((item, index) => (
                         <button
-                            key={`${item.project.title}-${item.kind}`}
+                            key={item.kind === "project" ? item.project.title : item.evidence.image}
                             type="button"
                             onClick={() => setActiveSlide(index)}
                             className={`h-2.5 rounded-full transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary ${
