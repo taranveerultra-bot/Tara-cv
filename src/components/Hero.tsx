@@ -18,13 +18,10 @@ const Hero = () => (
         <Container className="relative z-10">
             <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_.9fr] lg:gap-16">
                 <div className="lg:-translate-y-4">
-                    <p className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-secondary">
-                        Business growth · Operations · Agentic web browsing
-                    </p>
                     <h1 className="max-w-5xl text-balance text-5xl font-extrabold leading-[.88] tracking-[-0.055em] sm:text-7xl lg:text-[6.5rem]">
-                        Building growth that{" "}
+                        Business growth for an agentic{" "}
                         <span className="relative inline-block">
-                            lasts.
+                            future.
                             <span className="absolute inset-x-0 bottom-1 -z-0 h-4 -rotate-1 bg-primary lg:h-6" />
                         </span>
                     </h1>
