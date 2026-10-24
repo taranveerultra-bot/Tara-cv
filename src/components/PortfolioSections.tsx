@@ -15,7 +15,7 @@ export const ProjectsSection = () => (
         <Container>
             <Section
                 id="projects"
-                title="4+ years of marketing experience. Real projects. Measurable growth."
+                title="5+ years of marketing experience. Real projects. Measurable growth."
                 description="10+ years of New Zealand experience across different industries."
                 centered
             >
