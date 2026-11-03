@@ -4,6 +4,7 @@ interface SectionProps {
     title: string;
     description?: string;
     centered?: boolean;
+    compactTitle?: boolean;
 }
 
 const Section = ({
@@ -12,6 +13,7 @@ const Section = ({
     title,
     description,
     centered = false,
+    compactTitle = false,
     children,
 }: React.PropsWithChildren<SectionProps>) => (
     <section id={id} className="scroll-mt-20 py-20 lg:py-32">
@@ -24,7 +26,14 @@ const Section = ({
                 <p className="text-sm font-semibold uppercase tracking-[0.16em] text-secondary">{eyebrow}</p>
             )}
             <div className={centered ? "mx-auto" : ""}>
-                <h2 className={`max-w-4xl text-balance text-4xl font-extrabold leading-[.95] sm:text-5xl lg:text-7xl ${centered ? "mx-auto" : ""}`}>{title}</h2>
+                <h2
+                    className={`${compactTitle
+                        ? "max-w-5xl text-xl font-semibold leading-relaxed sm:text-2xl"
+                        : "max-w-4xl text-balance text-4xl font-extrabold leading-[.95] sm:text-5xl lg:text-7xl"
+                    } ${centered ? "mx-auto" : ""}`}
+                >
+                    {title}
+                </h2>
                 {description && (
                     <p className={`mt-6 max-w-2xl leading-relaxed text-foreground-accent ${centered ? "mx-auto" : ""}`}>{description}</p>
                 )}

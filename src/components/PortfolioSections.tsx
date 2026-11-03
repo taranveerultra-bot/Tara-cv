@@ -15,9 +15,9 @@ export const ProjectsSection = () => (
         <Container>
             <Section
                 id="projects"
-                title="5+ years of marketing experience. Real projects. Measurable growth."
-                description="10+ years of New Zealand experience across different industries."
+                title="I bring 10+ years of New Zealand work experience across different industries, including 5+ years in digital marketing and around 6 years in mechanical engineering working with machinery and computer-controlled equipment. I have also worked in warehouses, five-star hotels, hospitality and temporary roles—building my experience from the ground up."
                 centered
+                compactTitle
             >
                 <ProjectsCarousel />
             </Section>
