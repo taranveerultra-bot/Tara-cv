@@ -8,7 +8,7 @@ export const siteDetails = {
     },
     language: "en-NZ",
     locale: "en_NZ",
-    email: "taranveerebu340@gmail.com",
+    email: "taranveerultra@gmail.com",
     phone: {
         display: "+64 22 069 2139",
         href: "+64220692139",
