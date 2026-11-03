@@ -7,7 +7,6 @@ import Container from "./Container";
 import Icon from "./Icon";
 import Section from "./Section";
 import { services } from "@/data/services";
-import { skillGroups } from "@/data/skills";
 import ProjectsCarousel from "./ProjectsCarousel";
 
 export const ProjectsSection = () => (
@@ -269,33 +268,3 @@ export const AboutSection = () => (
     </div>
 );
 
-export const SkillsSection = () => (
-    <Container>
-        <Section
-            id="skills"
-            title="From finding the opportunity to building the solution."
-            centered
-        >
-            <div className="grid border-y border-black/15 sm:grid-cols-2 lg:grid-cols-4">
-                {skillGroups.map((group, index) => (
-                    <article
-                        key={group.title}
-                        className={`py-7 sm:px-7 lg:py-9 ${
-                            index % 2 === 1 ? "sm:border-l sm:border-black/15" : ""
-                        } ${index >= 2 ? "border-t border-black/15 lg:border-t-0" : ""} ${
-                            index > 0 ? "lg:border-l lg:border-black/15" : ""
-                        }`}
-                    >
-                        <span className="inline-flex h-8 min-w-8 items-center justify-center rounded-full bg-primary px-2 font-mono text-xs">
-                            0{index + 1}
-                        </span>
-                        <h3 className="mt-5 text-xl font-bold sm:text-2xl">{group.title}</h3>
-                        <p className="mt-3 text-base leading-relaxed text-foreground-accent">
-                            {group.skills.join(" · ")}
-                        </p>
-                    </article>
-                ))}
-            </div>
-        </Section>
-    </Container>
-);
