@@ -134,7 +134,7 @@ export const ServicesSection = () => (
         <Container>
             <Section
                 id="services"
-                title="The kind of work I enjoy"
+                title="The work I do every day—and my expertise."
             >
                 <div className="border-t border-black/20">
                     {services.map((service, index) => (
