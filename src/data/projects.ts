@@ -107,6 +107,30 @@ export const projects: IProject[] = [
         imageAlt: "The Matchmaking Bureau premium matchmaking platform homepage",
     },
     {
+        title: "Aotearoa Club",
+        category: "Community discovery platform in development",
+        summary:
+            "Currently in development, Aotearoa Club is being built as a content-led platform for discovering activities and community experiences across New Zealand. Facebook, Instagram, SEO and long-term content planning will be a major part of its growth.",
+        outcome:
+            "A scalable discovery platform designed to connect people with local activities, culture and community experiences.",
+        responsibilities: [
+            "Website concept and development",
+            "SEO and information architecture",
+            "Facebook and Instagram planning",
+            "Long-term content strategy",
+        ],
+        results: [
+            "Core discovery experience in development",
+            "Auckland and Christchurch launch focus",
+            "Foundation for future content and community growth",
+        ],
+        tags: ["Development", "SEO", "Content planning", "Facebook", "Instagram"],
+        accent: "",
+        image: "/images/projects/aotearoa-club.png",
+        imageAlt:
+            "Aotearoa Club activity discovery homepage featuring culture, dance and mindful movement experiences",
+    },
+    {
         title: "Festival for the Future",
         category: "Aotearoa festival guide & directory",
         summary:
