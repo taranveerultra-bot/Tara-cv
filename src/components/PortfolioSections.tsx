@@ -194,6 +194,37 @@ export const AboutSection = () => (
                             </dd>
                         </div>
                     </dl>
+                    <div className="mt-6 max-w-md rounded-[2rem] border border-black/20 bg-white/70 p-5">
+                        <div className="flex items-center gap-4">
+                            <Image
+                                src="/images/google-ads-search-certified.png"
+                                alt="Google Ads Search Certified badge"
+                                width={104}
+                                height={104}
+                                className="h-24 w-24 shrink-0 rounded-full"
+                            />
+                            <div className="min-w-0">
+                                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-secondary/65">
+                                    Certification
+                                </p>
+                                <h3 className="mt-1 text-xl font-bold leading-tight text-secondary">
+                                    Google Ads Search Certification
+                                </h3>
+                                <p className="mt-2 text-sm text-secondary/75">
+                                    Skillshop · Valid until 19 November 2027
+                                </p>
+                            </div>
+                        </div>
+                        <Link
+                            href="https://skillshop.credential.net/e5e90a98-3c4b-4a10-b481-b19713b00d52"
+                            target="_blank"
+                            rel="nofollow noopener noreferrer"
+                            className="mt-5 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-full border border-secondary px-5 py-2.5 text-sm font-semibold text-secondary transition hover:bg-secondary hover:text-white"
+                        >
+                            Verify credential
+                            <HiArrowUpRight aria-hidden="true" />
+                        </Link>
+                    </div>
                 </div>
                 <div>
                     <h2 className="max-w-5xl text-4xl font-extrabold leading-[.95] sm:text-6xl lg:text-7xl">
