@@ -21,11 +21,13 @@ const certifications: Certification[] = [
         title: "Google Ads Search Certification",
         badge: "/images/google-ads-search-certified.png",
         badgeAlt: "Google Ads Search Certified badge",
+        credentialUrl: "https://skillshop.credential.net/e5e90a98-3c4b-4a10-b481-b19713b00d52",
     },
     {
         title: "Google Analytics Certification",
         badge: "/images/google-analytics-certified.png",
         badgeAlt: "Google Analytics Certified badge",
+        credentialUrl: "https://skillshop.credential.net/807c8ed7-4da4-4960-aac6-e001e9344d5c",
     },
     {
         title: "SEO Essentials with Semrush",
