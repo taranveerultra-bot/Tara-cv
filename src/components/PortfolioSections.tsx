@@ -33,8 +33,8 @@ const certifications: Certification[] = [
     },
     {
         title: "Content Marketing Certified",
-        badge: "/images/hubspot-content-marketing-certified.png",
-        badgeAlt: "HubSpot Academy Content Marketing Certified badge",
+        badge: "/images/hubspot-logo.png",
+        badgeAlt: "HubSpot logo",
         credentialUrl: "https://app-ap1.hubspot.com/academy/achievements/v8g50dsz/en/1/taran-veer/content-marketing-certified",
     },
 ];
