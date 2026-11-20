@@ -178,24 +178,8 @@ export const AboutSection = () => (
         <Container>
             <div className="grid items-start gap-12 lg:grid-cols-[.7fr_1.3fr]">
                 <div>
-                    <h3 className="max-w-md text-2xl font-extrabold leading-tight text-secondary">
-                        Business Growth and Operations Specialist | Marketing | Process Improvement | Customer Experience
-                    </h3>
-                    <p className="mt-4 max-w-md leading-relaxed text-secondary/80">
-                        I help businesses grow and run more smoothly by aligning marketing, operations and day-to-day
-                        execution. I focus on practical improvements that reduce friction, improve customer experience
-                        and support sustainable growth.
-                    </p>
-                    <div className="relative mt-7 aspect-[4/5] max-w-md overflow-hidden rounded-[2rem] bg-white">
-                        <Image
-                            src="/images/taran-portrait.png"
-                            alt="Portrait of Taran"
-                            fill
-                            sizes="(min-width: 1024px) 35vw, 100vw"
-                            className="object-cover object-top"
-                        />
-                    </div>
-                    <dl className="mt-6 max-w-md divide-y divide-black/20 border-y border-black/20">
+                    <h3 className="max-w-md text-2xl font-extrabold leading-tight text-secondary">At a glance</h3>
+                    <dl className="mt-5 max-w-md divide-y divide-black/20 border-y border-black/20">
                         <div className="py-4">
                             <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-secondary/70">Based in</dt>
                             <dd className="mt-1 font-semibold text-secondary">Auckland, New Zealand</dd>

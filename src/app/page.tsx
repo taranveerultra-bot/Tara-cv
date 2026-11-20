@@ -1,5 +1,6 @@
 import CTA from "@/components/CTA";
 import Hero from "@/components/Hero";
+import TigerInterlude from "@/components/TigerInterlude";
 import ToolsMarquee from "@/components/ToolsMarquee";
 import {
     AICreativeSection,
@@ -18,6 +19,7 @@ const HomePage = () => (
         <AICreativeSection />
         <WhatIThinkSection />
         <AboutSection />
+        <TigerInterlude />
         <CTA />
     </>
 );
