@@ -29,6 +29,8 @@ const certifications: Certification[] = [
     },
     {
         title: "SEO Essentials with Semrush",
+        badge: "/images/semrush-logo.png",
+        badgeAlt: "Semrush logo",
         credentialUrl: "https://static.semrush.com/academy/certificates/cc07759122/taran-veer_25.pdf",
     },
     {
