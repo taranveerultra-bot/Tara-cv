@@ -31,6 +31,12 @@ const certifications: Certification[] = [
         title: "SEO Essentials with Semrush",
         credentialUrl: "https://static.semrush.com/academy/certificates/cc07759122/taran-veer_25.pdf",
     },
+    {
+        title: "Content Marketing Certified",
+        badge: "/images/hubspot-content-marketing-certified.png",
+        badgeAlt: "HubSpot Academy Content Marketing Certified badge",
+        credentialUrl: "https://app-ap1.hubspot.com/academy/achievements/v8g50dsz/en/1/taran-veer/content-marketing-certified",
+    },
 ];
 
 export const ProjectsSection = () => (
