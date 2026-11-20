@@ -9,6 +9,23 @@ import Section from "./Section";
 import { services } from "@/data/services";
 import ProjectsCarousel from "./ProjectsCarousel";
 
+const certifications = [
+    {
+        title: "Google Ads Search Certification",
+        badge: "/images/google-ads-search-certified.png",
+        badgeAlt: "Google Ads Search Certified badge",
+        validUntil: "19 November 2027",
+        credentialUrl: "https://skillshop.credential.net/e5e90a98-3c4b-4a10-b481-b19713b00d52",
+    },
+    {
+        title: "Google Analytics Certification",
+        badge: "/images/google-analytics-certified.png",
+        badgeAlt: "Google Analytics Certified badge",
+        validUntil: "20 November 2027",
+        credentialUrl: "https://skillshop.credential.net/807c8ed7-4da4-4960-aac6-e001e9344d5c",
+    },
+];
+
 export const ProjectsSection = () => (
     <div className="bg-white">
         <Container>
@@ -171,7 +188,7 @@ export const AboutSection = () => (
                     </p>
                     <div className="relative mt-7 aspect-[4/5] max-w-md overflow-hidden rounded-[2rem] bg-white">
                         <Image
-                            src="/images/taran-portrait.jpg"
+                            src="/images/taran-portrait.png"
                             alt="Portrait of Taran"
                             fill
                             sizes="(min-width: 1024px) 35vw, 100vw"
@@ -194,36 +211,43 @@ export const AboutSection = () => (
                             </dd>
                         </div>
                     </dl>
-                    <div className="mt-6 max-w-md rounded-[2rem] border border-black/20 bg-white/70 p-5">
-                        <div className="flex items-center gap-4">
-                            <Image
-                                src="/images/google-ads-search-certified.png"
-                                alt="Google Ads Search Certified badge"
-                                width={104}
-                                height={104}
-                                className="h-24 w-24 shrink-0 rounded-full"
-                            />
-                            <div className="min-w-0">
-                                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-secondary/65">
-                                    Certification
-                                </p>
-                                <h3 className="mt-1 text-xl font-bold leading-tight text-secondary">
-                                    Google Ads Search Certification
-                                </h3>
-                                <p className="mt-2 text-sm text-secondary/75">
-                                    Skillshop · Valid until 19 November 2027
-                                </p>
-                            </div>
-                        </div>
-                        <Link
-                            href="https://skillshop.credential.net/e5e90a98-3c4b-4a10-b481-b19713b00d52"
-                            target="_blank"
-                            rel="nofollow noopener noreferrer"
-                            className="mt-5 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-full border border-secondary px-5 py-2.5 text-sm font-semibold text-secondary transition hover:bg-secondary hover:text-white"
-                        >
-                            Verify credential
-                            <HiArrowUpRight aria-hidden="true" />
-                        </Link>
+                    <div className="mt-6 max-w-md space-y-4">
+                        {certifications.map((certification) => (
+                            <article
+                                key={certification.title}
+                                className="rounded-[2rem] border border-black/20 bg-white/70 p-5"
+                            >
+                                <div className="flex items-center gap-4">
+                                    <Image
+                                        src={certification.badge}
+                                        alt={certification.badgeAlt}
+                                        width={104}
+                                        height={104}
+                                        className="h-24 w-24 shrink-0 rounded-full"
+                                    />
+                                    <div className="min-w-0">
+                                        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-secondary/65">
+                                            Certification
+                                        </p>
+                                        <h3 className="mt-1 text-xl font-bold leading-tight text-secondary">
+                                            {certification.title}
+                                        </h3>
+                                        <p className="mt-2 text-sm text-secondary/75">
+                                            Skillshop · Valid until {certification.validUntil}
+                                        </p>
+                                    </div>
+                                </div>
+                                <Link
+                                    href={certification.credentialUrl}
+                                    target="_blank"
+                                    rel="nofollow noopener noreferrer"
+                                    className="mt-5 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-full border border-secondary px-5 py-2.5 text-sm font-semibold text-secondary transition hover:bg-secondary hover:text-white"
+                                >
+                                    View verified credential
+                                    <HiArrowUpRight aria-hidden="true" />
+                                </Link>
+                            </article>
+                        ))}
                     </div>
                 </div>
                 <div>
