@@ -36,6 +36,12 @@ const certifications: Certification[] = [
         credentialUrl: "https://static.semrush.com/academy/certificates/cc07759122/taran-veer_25.pdf",
     },
     {
+        title: "Local SEO Essentials with Semrush",
+        badge: "/images/semrush-logo.png",
+        badgeAlt: "Semrush logo",
+        credentialUrl: "https://static.semrush.com/academy/certificates/7ee9f9d0da/taran-veer_25.pdf",
+    },
+    {
         title: "Content Marketing Certified",
         badge: "/images/hubspot-logo.png",
         badgeAlt: "HubSpot logo",
