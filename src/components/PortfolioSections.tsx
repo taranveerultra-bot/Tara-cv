@@ -9,7 +9,14 @@ import Section from "./Section";
 import { services } from "@/data/services";
 import ProjectsCarousel from "./ProjectsCarousel";
 
-const certifications = [
+type Certification = {
+    title: string;
+    badge?: string;
+    badgeAlt?: string;
+    credentialUrl?: string;
+};
+
+const certifications: Certification[] = [
     {
         title: "Google Ads Search Certification",
         badge: "/images/google-ads-search-certified.png",
@@ -19,6 +26,10 @@ const certifications = [
         title: "Google Analytics Certification",
         badge: "/images/google-analytics-certified.png",
         badgeAlt: "Google Analytics Certified badge",
+    },
+    {
+        title: "SEO Essentials with Semrush",
+        credentialUrl: "https://static.semrush.com/academy/certificates/cc07759122/taran-veer_25.pdf",
     },
 ];
 
@@ -198,13 +209,22 @@ export const AboutSection = () => (
                                 className="rounded-[2rem] border border-black/20 bg-white/70 p-5"
                             >
                                 <div className="flex items-center gap-4">
-                                    <Image
-                                        src={certification.badge}
-                                        alt={certification.badgeAlt}
-                                        width={104}
-                                        height={104}
-                                        className="h-24 w-24 shrink-0 rounded-full"
-                                    />
+                                    {certification.badge && certification.badgeAlt ? (
+                                        <Image
+                                            src={certification.badge}
+                                            alt={certification.badgeAlt}
+                                            width={104}
+                                            height={104}
+                                            className="h-24 w-24 shrink-0 rounded-full"
+                                        />
+                                    ) : (
+                                        <div
+                                            className="flex h-24 w-24 shrink-0 items-center justify-center rounded-full bg-[#ff642d] text-4xl font-extrabold text-white"
+                                            aria-hidden="true"
+                                        >
+                                            S
+                                        </div>
+                                    )}
                                     <div className="min-w-0">
                                         <p className="text-xs font-semibold uppercase tracking-[0.14em] text-secondary/65">
                                             Certification
@@ -214,6 +234,17 @@ export const AboutSection = () => (
                                         </h3>
                                     </div>
                                 </div>
+                                {certification.credentialUrl ? (
+                                    <Link
+                                        href={certification.credentialUrl}
+                                        target="_blank"
+                                        rel="nofollow noopener noreferrer"
+                                        className="mt-5 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-full border border-secondary px-5 py-2.5 text-sm font-semibold text-secondary transition hover:bg-secondary hover:text-white"
+                                    >
+                                        View certificate
+                                        <HiArrowUpRight aria-hidden="true" />
+                                    </Link>
+                                ) : null}
                             </article>
                         ))}
                     </div>
