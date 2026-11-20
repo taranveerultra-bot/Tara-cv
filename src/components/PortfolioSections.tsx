@@ -14,14 +14,12 @@ const certifications = [
         title: "Google Ads Search Certification",
         badge: "/images/google-ads-search-certified.png",
         badgeAlt: "Google Ads Search Certified badge",
-        validUntil: null,
         credentialUrl: "https://skillshop.credential.net/e5e90a98-3c4b-4a10-b481-b19713b00d52",
     },
     {
         title: "Google Analytics Certification",
         badge: "/images/google-analytics-certified.png",
         badgeAlt: "Google Analytics Certified badge",
-        validUntil: "20 November 2027",
         credentialUrl: "https://skillshop.credential.net/807c8ed7-4da4-4960-aac6-e001e9344d5c",
     },
 ];
@@ -216,11 +214,6 @@ export const AboutSection = () => (
                                         <h3 className="mt-1 text-xl font-bold leading-tight text-secondary">
                                             {certification.title}
                                         </h3>
-                                        <p className="mt-2 text-sm text-secondary/75">
-                                            {certification.validUntil
-                                                ? `Skillshop · Valid until ${certification.validUntil}`
-                                                : "Skillshop"}
-                                        </p>
                                     </div>
                                 </div>
                                 <Link
