@@ -10,10 +10,6 @@ const CTA = () => (
                 <h2 className="max-w-4xl text-balance text-4xl font-extrabold leading-[.95] sm:text-6xl">
                     Let&apos;s see where a conversation leads.
                 </h2>
-                <p className="mt-7 max-w-2xl text-lg leading-relaxed text-foreground-accent">
-                    If you think my experience could be useful, let&apos;s meet for a coffee or jump on a call and
-                    explore the possibilities.
-                </p>
             </div>
             <div className="flex flex-col justify-end gap-3">
                 <Link
