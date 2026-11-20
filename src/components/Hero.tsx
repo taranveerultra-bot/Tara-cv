@@ -18,9 +18,9 @@ const Hero = () => (
             <div className="grid items-center gap-12 lg:grid-cols-[1.15fr_.85fr] lg:gap-16">
                 <div>
                     <h1 className="max-w-5xl text-balance text-5xl font-extrabold leading-[.9] tracking-[-0.055em] sm:text-7xl lg:text-[5.8rem]">
-                        I&apos;m Taran. I improve how businesses grow and{" "}
+                        I&apos;m Taran. I make things work{" "}
                         <span className="relative inline-block">
-                            operate.
+                            better.
                             <span className="absolute inset-x-0 bottom-1 -z-10 h-4 -rotate-1 bg-primary lg:h-6" />
                         </span>
                     </h1>
