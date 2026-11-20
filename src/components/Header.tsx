@@ -3,7 +3,7 @@
 /* eslint-disable @next/next/no-html-link-for-pages -- Native anchors prevent Next.js from appending repeated URL fragments. */
 
 import { useState } from "react";
-import { HiArrowUpRight, HiBars3, HiOutlineXMark } from "react-icons/hi2";
+import { HiBars3, HiOutlineXMark } from "react-icons/hi2";
 
 import Container from "./Container";
 import { menuItems } from "@/data/menuItems";
@@ -55,7 +55,6 @@ const Header = () => {
                         className="hidden min-h-12 items-center gap-2 rounded-full bg-foreground px-7 py-3 text-base font-semibold text-white transition hover:bg-secondary md:flex"
                     >
                         Say hello
-                        <HiArrowUpRight aria-hidden="true" />
                     </a>
 
                     <button

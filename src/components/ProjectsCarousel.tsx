@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { HiArrowLeft, HiArrowRight, HiArrowUpRight } from "react-icons/hi2";
+import { HiArrowLeft, HiArrowRight } from "react-icons/hi2";
 
 import { projects } from "@/data/projects";
 
@@ -123,7 +123,6 @@ const ProjectsCarousel = () => {
                                                 className="inline-flex min-h-10 items-center gap-2 rounded-full border border-foreground px-4 py-2 text-sm font-semibold transition hover:bg-foreground hover:text-white"
                                             >
                                                 {link.label}
-                                                <HiArrowUpRight aria-hidden="true" />
                                             </Link>
                                         ))}
                                     </div>

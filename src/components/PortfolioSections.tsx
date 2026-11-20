@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { HiArrowUpRight } from "react-icons/hi2";
 import { SiFacebook, SiInstagram, SiMeta, SiX } from "react-icons/si";
 
 import Container from "./Container";
@@ -330,7 +329,6 @@ export const AboutSection = () => (
                     className="inline-flex min-h-12 shrink-0 items-center justify-center gap-2 rounded-full bg-foreground px-7 py-3 font-semibold text-white transition hover:bg-secondary"
                 >
                     Read my answers
-                    <HiArrowUpRight aria-hidden="true" />
                 </Link>
             </div>
         </Container>

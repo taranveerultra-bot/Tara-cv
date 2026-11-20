@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { HiArrowUpRight } from "react-icons/hi2";
 
 import Container from "@/components/Container";
 import { insights } from "@/data/insights";
@@ -52,7 +51,6 @@ export default function InsightsPage() {
                                     </div>
                                     <span className="inline-flex items-center gap-2 font-semibold transition-transform group-hover:-translate-y-1 group-hover:translate-x-1">
                                         Read insight
-                                        <HiArrowUpRight aria-hidden="true" />
                                     </span>
                                 </Link>
                             </article>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { HiArrowDown, HiArrowUpRight } from "react-icons/hi2";
+import { HiArrowDown } from "react-icons/hi2";
 
 import Container from "./Container";
 
@@ -39,7 +39,7 @@ const Hero = () => (
                             href="#contact"
                             className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-foreground px-7 py-3 font-semibold transition hover:bg-white"
                         >
-                            Get in touch <HiArrowUpRight aria-hidden="true" />
+                            Get in touch
                         </a>
                     </div>
                 </div>
