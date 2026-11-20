@@ -13,12 +13,12 @@ import {
 const HomePage = () => (
     <>
         <Hero />
+        <AboutSection />
         <ToolsMarquee />
         <ProjectsSection />
         <ServicesSection />
         <AICreativeSection />
         <WhatIThinkSection />
-        <AboutSection />
         <TigerInterlude />
         <CTA />
     </>
