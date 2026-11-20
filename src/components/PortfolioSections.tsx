@@ -14,7 +14,7 @@ const certifications = [
         title: "Google Ads Search Certification",
         badge: "/images/google-ads-search-certified.png",
         badgeAlt: "Google Ads Search Certified badge",
-        validUntil: "19 November 2027",
+        validUntil: null,
         credentialUrl: "https://skillshop.credential.net/e5e90a98-3c4b-4a10-b481-b19713b00d52",
     },
     {
@@ -233,7 +233,9 @@ export const AboutSection = () => (
                                             {certification.title}
                                         </h3>
                                         <p className="mt-2 text-sm text-secondary/75">
-                                            Skillshop · Valid until {certification.validUntil}
+                                            {certification.validUntil
+                                                ? `Skillshop · Valid until ${certification.validUntil}`
+                                                : "Skillshop"}
                                         </p>
                                     </div>
                                 </div>
