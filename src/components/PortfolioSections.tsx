@@ -14,13 +14,11 @@ const certifications = [
         title: "Google Ads Search Certification",
         badge: "/images/google-ads-search-certified.png",
         badgeAlt: "Google Ads Search Certified badge",
-        credentialUrl: "https://skillshop.credential.net/e5e90a98-3c4b-4a10-b481-b19713b00d52",
     },
     {
         title: "Google Analytics Certification",
         badge: "/images/google-analytics-certified.png",
         badgeAlt: "Google Analytics Certified badge",
-        credentialUrl: "https://skillshop.credential.net/807c8ed7-4da4-4960-aac6-e001e9344d5c",
     },
 ];
 
@@ -216,15 +214,6 @@ export const AboutSection = () => (
                                         </h3>
                                     </div>
                                 </div>
-                                <Link
-                                    href={certification.credentialUrl}
-                                    target="_blank"
-                                    rel="nofollow noopener noreferrer"
-                                    className="mt-5 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-full border border-secondary px-5 py-2.5 text-sm font-semibold text-secondary transition hover:bg-secondary hover:text-white"
-                                >
-                                    View verified credential
-                                    <HiArrowUpRight aria-hidden="true" />
-                                </Link>
                             </article>
                         ))}
                     </div>
